@@ -19,7 +19,7 @@
     - **query** -- You can pass options to the loader by writing them as query string or by using the query property as we have done it.
 
     - **cacheDirectory** -- Default false. When set, the given directory will be use to cache the results of the loader. Future webpack builds will attempt to read from the cache to avoid needing to run the potentially expensive Babel recompilation process on each run.
-
+    ***
     We have also added a key named 'resolve' to our module exports object. 'resolve' is a section which lets us specify what kind of file types we can process without specially given them a file extension. This allow us to us to use the syntax such as:
 
     ```
