@@ -1,0 +1,35 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.1",
+  "description": "webpack starter kit for react/redux applications",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d",
+    "start": "webpack-dev-server --inline -d",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "webpack --config webpack-production.config.js -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sso66/webpack-starter.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "node",
+    "git"
+  ],
+  "author": "Sun Stephen Oo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sso66/webpack-starter/issues"
+  },
+  "homepage": "https://github.com/sso66/webpack-starter#readme",
+  "devDependencies": {
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "dependencies": {}
+}
