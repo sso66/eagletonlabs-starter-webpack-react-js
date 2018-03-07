@@ -26,7 +26,7 @@
     ```
     require('/logger')
     ```
-    instead of:
+    `instead of:`
     ```
     require('logger.es6')
     ```
