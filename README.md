@@ -30,6 +30,6 @@
     require('logger.es6')
     ```
     ***
-  - Creating a **npm start script**
+  - Creating a **npm start** script
 
   - Separating production and development builds
