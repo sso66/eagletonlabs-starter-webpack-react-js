@@ -33,3 +33,5 @@
   - Creating a **npm start** script
 
   - Separating production and development builds
+
+- Implementing React with Webpack
