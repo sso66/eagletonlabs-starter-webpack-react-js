@@ -1,8 +1,8 @@
 // webpack-production.config.js
 console.info('webpack-production.config.js');
 
-var WebpackStripLoader = require('strip-loader');
-var devConfig = require('./webpack.config.js');
+const WebpackStripLoader = require('strip-loader');
+const devConfig = require('./webpack.config.js');
 
 const stripLoader = {
   test: [/\js$/, /\es6$/],
