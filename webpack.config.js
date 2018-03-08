@@ -1,13 +1,6 @@
 // webpack.config.js
 console.info('Mounting webpack.config.js...');
 
-// const HTMLWebpackPlugin = require('html-webpack-plugin');
-// const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  // template: __dirname + '/public/templates/index.html',
-  // filename: 'index.html',
-  // inject: 'body',
-// });
-
 module.exports = {
   entry: __dirname + '/public/app.js',
   output: {
@@ -27,7 +20,7 @@ module.exports = {
         }
       },  
       {
-        test: [/\.js$/, /\.es6$/],
+        test: [/\.js$/, /\.es6$/, /\.jsx$/],
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
@@ -37,8 +30,7 @@ module.exports = {
     ]
   },
     resolve: {
-    extensions: ['.js', '.es6']
+    extensions: ['.js', '.es6', 'jsx']
   },
-  //plugins: [HTMLWebpackPluginConfig] 
 };
 // eof
