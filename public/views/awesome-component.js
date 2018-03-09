@@ -1,4 +1,4 @@
-// awesome-component.jsx
+// awesome-component.js
 import React, { Component } from 'react';
 
 class AwesomeComponent extends Component {

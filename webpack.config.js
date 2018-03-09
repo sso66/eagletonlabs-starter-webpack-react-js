@@ -30,7 +30,7 @@ module.exports = {
     ]
   },
     resolve: {
-    extensions: ['.js', '.es6', 'jsx']
+    extensions: ['.js', '.es6', '.jsx']
   },
 };
 // eof

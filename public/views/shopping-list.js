@@ -1,4 +1,4 @@
-// shopping-list.jsx
+// shopping-list.js
 import React, { Component } from 'react';
 
 class ShoppingList extends Component {
