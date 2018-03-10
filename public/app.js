@@ -7,6 +7,7 @@ require('./views/logger.es6');
 
 import React from "react";
 import { render } from "react-dom";
+
 import Hello from "./views/hello";
 import ShoppingList from "./views/shopping-list";
 import AwesomeComponent from "./views/awesome-component";
@@ -17,6 +18,7 @@ class App extends React.Component {
      return (
         <div> 
           <Game />
+          
           <h1>Webpack React</h1>
           <p>Hello React</p>
           <Hello name="World" />
