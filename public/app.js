@@ -2,16 +2,22 @@
 console.info('Mounting app.js...');
 document.write("welcome to my app<br />");
 
-require('./views/logger');
-require('./views/logger.es6');
+require('./components/logger');
+require('./components/logger.es6');
 
 import React from "react";
 import { render } from "react-dom";
 
-import Hello from "./views/hello";
-import ShoppingList from "./views/shopping-list";
-import AwesomeComponent from "./views/awesome-component";
-import Game from "./views/Game0.react";
+import Hello from "./components/hello";
+import ShoppingList from "./components/shopping-list";
+import AwesomeComponent from "./components/awesome-component";
+//import Game from "./components/Game0.react";
+import Game from "./components/Game1.react";
+//import Game from "./components/Game2.react";
+//import Game from "./components/Game4.react";
+//import Game from "./components/Game4.react";
+//import Game from "./components/Game5.react";
+//import Game from "./components/Game6.react";
 
 class App extends React.Component {
    render() {
@@ -22,7 +28,7 @@ class App extends React.Component {
           <h1>Webpack React</h1>
           <p>Hello React</p>
           <Hello name="World" />
-          <ShoppingList />
+          <ShoppingList name="Stephen" />
           <AwesomeComponent />
 
         </div>

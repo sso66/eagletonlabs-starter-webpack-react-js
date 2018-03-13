@@ -19,6 +19,10 @@
   <body>
 
     <script type='text/babel'>
+   		var greeting = "Hello"
+		var url = "http://google.com"
+		var link = <a href={url}>{greeting + "!"}</a>
+		// yields <a href="http://google.com">Hello!</a>
       ReactDOM.render(
         <div>Virtual DOM
           <h1>header: React JS Template</h1>
