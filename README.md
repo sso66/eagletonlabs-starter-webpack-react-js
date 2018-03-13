@@ -48,7 +48,7 @@
 
 - Implementing React with Webpack
 ***
-## tic-tac-toe game - react project
+## Tic-Tac-Toe Game - React Project
 
 ### 1. Before We Start
 	1.1 What We're Building
