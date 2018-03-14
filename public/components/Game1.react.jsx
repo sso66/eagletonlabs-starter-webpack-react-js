@@ -4,11 +4,18 @@
 import React from 'react';
 
 class Square extends React.Component {   
+  constructor() {
+    super();
+    this.state = {
+      value: null,
+    }
+  }
   render() {
     return (
-      <button className="square" onClick={() => alert('click')}>
-        { /* TODO */}
-        { this.props.value }
+      <button className="square" onClick={() => this.setState({ value: 'X' })}>
+        {/* TODO */}
+        Game1&nbsp;&nbsp;&nbsp;
+        { this.state.value }
       </button>
     );
   };
