@@ -40,7 +40,7 @@
     ***
     We have also added a key named 'resolve' to our module exports object. 
     'resolve' is a section which lets us specify what kind of file types we can process without specially given them a file extension. 
-    This allow us to use the syntax such as:
+    This allow us to use custom file extension such as:
 
     ```
     require('/logger')
@@ -54,7 +54,7 @@
 
   - Separating production and development builds as well as creating a **npm deploy** script
 
-- Implementing Intro To React
+- Implementing Intro to React with Webpack
 
 ***
 ## Tic-Tac-Toe Game - React Project
