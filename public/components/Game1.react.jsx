@@ -1,5 +1,5 @@
 /* Game1.react.js */
-// Passing Data Through Props
+// Passing Data Through Props and State
 
 import React from 'react';
 
@@ -12,9 +12,9 @@ class Square extends React.Component {
   }
   render() {
     return (
-      <button className="square" onClick={() => this.setState({ value: 'X' })}>
+      <button className="square" onClick={()=> this.setState({ value: 'X'})}>
         {/* TODO */}
-        Game1&nbsp;&nbsp;&nbsp;
+        1
         { this.state.value }
       </button>
     );

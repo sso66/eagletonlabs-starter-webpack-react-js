@@ -17,8 +17,7 @@ import AwesomeComponent from "./components/awesome-component";
 //import Game from "./components/Game1.react";
 //import Game from "./components/Game2.react";
 //import Game from "./components/Game3.react";
-//import Game from "./components/Game4.react";
-import Game from "./components/Game5.react";
+import Game from "./components/Game4.react";
 
 import Contacts from "./components/contacts"
 
@@ -26,16 +25,19 @@ class App extends React.Component {
    render() {
      return (
         <div> 
+          <h2>Webpack Starter</h2>
+          <p>React Application Model</p>
+
           <Game />
           {/*
-          <h1>Webpack React</h1>
-          <p>Hello React</p>
          
           <Hello name="World" />
           <ShoppingList name="Stephen" />
           <AwesomeComponent />
-          */}
+
           <Contacts />
+          
+          */}
         </div>
       )
    }

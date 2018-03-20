@@ -7,7 +7,7 @@ class Square extends React.Component {
   render() {
     return (
       <button className="square" onClick={() => alert('click')}>
-        { /* TODO */}
+        {/* TODO */}
         { this.props.value }
       </button>
     );
@@ -16,7 +16,7 @@ class Square extends React.Component {
 
 class Board extends React.Component { 
   render() {
-    return <Square value={"Game 0"} />;
+    return <Square value={"0"} />;
   };
 }
 

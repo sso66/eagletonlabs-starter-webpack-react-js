@@ -2,20 +2,21 @@
 body { background-color: orange; }
 div { background-color: black;  }
 
-.container { }
-.header, .content { background-color: aqua; border: 1px dotted white; color: blue; }
-h2 { color: yellow; font-size: 2em; }
+.container { border: 1px dotted white; }
+
+.header, .main { 
+	background-color: yellow; 
+	border: 1px dotted white; 
+}
 
 button { background-color: green; font-size: 1.1em; }
 
-#root {
-	color: white; 
-}
+/* React Component Style Models */
+#root { color: white; }
 .list-of-items { background-color: black; border: 1px solid blue; }
 .shopping-list { background-color: black; }
 
-
-/* Tic-Tac-Toe Game - React JS Project */
+/* Tic-Tac-Toe Game - React JS Project Styles */
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
