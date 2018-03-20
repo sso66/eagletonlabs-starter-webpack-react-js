@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack -d",
-    "start": "webpack-dev-server --inline -d",
+    "start": "webpack-dev-server --progress -d",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "webpack --config webpack-production.config.js -p"
   },
@@ -16,9 +16,11 @@
   "keywords": [
     "babel",
     "react",
+    "jshint",
     "webpack",
     "node",
-    "git"
+    "git",
+    "github"
   ],
   "author": "Sun Stephen Oo",
   "license": "ISC",

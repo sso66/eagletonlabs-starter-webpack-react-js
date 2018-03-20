@@ -1,5 +1,5 @@
-/* Game1.react.js */
-// Getting Started 
+/* Game2.react.js */
+// Getting Started with prop and state
 
 import React from 'react';
 
@@ -13,8 +13,8 @@ class Square extends React.Component {
   
   render() {
     return (
-      <button className="square" onClick={()=> /* alert('click') */ this.setState({ value: 'X'})}>
-        { /* this.props.value */ this.state.value }
+      <button className="square" onClick={()=> this.setState({ value: 'X'})}>
+        { this.state.value }
       </button>
     );
   };
@@ -68,6 +68,5 @@ class Game extends React.Component {
 }
 
 // ========================================
-
-ReactDOM.render(<Game />, document.getElementById("root"));
+export default Game;
 // eof

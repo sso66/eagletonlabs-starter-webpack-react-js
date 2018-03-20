@@ -2,15 +2,22 @@
 / index.html
 %html
   %head
-    %title Tic-Tac-Toe Game - React JS Project
+    %title React JS Template
     %meta{charset:"utf-8"}
-    %link{href:"wireframe.css", rel:"stylesheet"}
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+    %script{src:"https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"} 
+    %script{src:"https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"}  
+    %script{src:"https://unpkg.com/babel-standalone@6.15.0/babel.min.js"}      
   %body
-    #react-app
-      Tic-Tac-Toe Game - React JS Project
-      .container
-        .header
-        .content
-
-    %script{src:"./app.react.js"}
+    #root
+    %script{type:"text/babel"}
+      \ReactDOM.render(
+      %div
+        Virtual DOM
+        %h1 
+          header: React JS Template
+        %p 
+          content: NPM, React Library, Babel Transpiler, and Webpack Module Loader
+      ,document.getElementById('root')
+      \);
 / eof

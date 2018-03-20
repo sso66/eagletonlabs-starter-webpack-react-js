@@ -7,7 +7,7 @@ const devConfig = require('./webpack.config.js');
 const stripLoader = {
   test: [/\js$/, /\es6$/],
   exclude: /node_modules/,
-  loader: WebpackStripLoader.loader('console.log')
+  loader: WebpackStripLoader.loader('console.log') // remove logging statements
 };
 
 devConfig.module.rules.push(stripLoader);

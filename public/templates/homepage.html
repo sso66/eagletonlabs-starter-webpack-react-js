@@ -1,37 +1,23 @@
 <!DOCTYPE html>
-<!-- homepage.html -->
+<!-- index.html -->
 <html>
-  <head>
-    <title>React JS Template</title>
-    <meta charset='utf-8'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <style>
-      body { 
-    	background-color: orange;  
-      }
-      div { border: 1px dotted white; color: blue; }
-      h1, p { font-size: 1.3em; }
-    </style>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js'></script>
-    <script src='https://unpkg.com/babel-standalone@6.15.0/babel.min.js'></script>
+	  <head>
+	<title>Webpack React</title>
+	<meta charset='utf-8'>
+	<meta content='width=device-width, initial-scale=1' name='viewport'>
+	<!-- <link href='public/styles/wireframe.css' rel='stylesheet'>-->
+	<style>
+	  body { 
+		background-color: orange;  
+	  }
+	  div { border: 1px dotted white; }
+	  h1 { background-color: black; }
+	  p { font-size: 1.3em; }
+	</style>
   </head>
-  <body>
-
-    <script type='text/babel'>
-   		var greeting = "Hello"
-		var url = "http://google.com"
-		var link = <a href={url}>{greeting + "!"}</a>
-		// yields <a href="http://google.com">Hello!</a>
-      ReactDOM.render(
-        <div>Virtual DOM
-          <h1>header: React JS Template</h1>
-          <p>content: NPM, React Library, Babel Transpiler, and Webpack Module Loader</p>
-        </div>
-        ,document.getElementById('root')
-      );
-    </script>
-    <div id='root'></div>
+  <body> 
+   <div id='root'></div>
+   <script src='bundle.js'></script>
   </body>
 </html>
-<!-- eof -->
+<!-- eof -->  
