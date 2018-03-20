@@ -27,7 +27,7 @@
         - **exclude** -- which files the loader should exclude / ignore. 
         	We have added the node_modules folder.
 
-        - **loader** -- the name of the loader we are going to use (babel-loader)
+        - **loader** -- the name of the loader we are going to use (e.g. babel-loader)
 
         - **query** -- 
         	You can pass options to the loader by writing them as query string or by using the query property as we have done it.
@@ -38,7 +38,9 @@
 
         - **preset** -- let us uses the react and es2015 (ES6) presets
     ***
-    We have also added a key named 'resolve' to our module exports object. 'resolve' is a section which lets us specify what kind of file types we can process without specially given them a file extension. This allow us to us to use the syntax such as:
+    We have also added a key named 'resolve' to our module exports object. 
+    'resolve' is a section which lets us specify what kind of file types we can process without specially given them a file extension. 
+    This allow us to use the syntax such as:
 
     ```
     require('/logger')
