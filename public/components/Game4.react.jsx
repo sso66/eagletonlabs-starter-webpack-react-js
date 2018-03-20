@@ -1,9 +1,7 @@
 /* Game3.react.js */
 // Sorting a History
-'use strict';
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
 
 function Square(props) {
   return (
@@ -121,10 +119,8 @@ class Game extends React.Component {
 }
 
 // ========================================
-ReactDOM.render(
-  <Game />, 
-  document.getElementById("root")
-);
+export default Game;
+
 // Declare a Winner
 function calculateWinner(squares) {
   const lines = [

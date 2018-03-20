@@ -1,5 +1,5 @@
 /* Game2.react.js */
-// Getting Started with prop and state
+// An Interactive Component
 
 import React from 'react';
 

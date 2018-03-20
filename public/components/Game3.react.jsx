@@ -1,9 +1,7 @@
 /* Game2.react.js */
 // Lifting State Up
-'use strict';
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
 
 class Square extends React.Component {   
   constructor() {
@@ -125,8 +123,6 @@ function calculateWinner(squares) {
     return null;
   }
 }
-
 // ========================================
-
-ReactDOM.render(<Game />, document.getElementById("root"));
+export default Game;
 // eof

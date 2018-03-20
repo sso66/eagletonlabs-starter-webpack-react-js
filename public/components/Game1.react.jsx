@@ -1,5 +1,5 @@
 /* Game1.react.js */
-// Getting Started with React: state
+// Passing Data Through Props
 
 import React from 'react';
 

@@ -14,11 +14,10 @@ import AwesomeComponent from "./components/awesome-component";
 
 //import Game from "./components/Game0.react";
 //import Game from "./components/Game1.react";
-import Game from "./components/Game2.react";
+//import Game from "./components/Game2.react";
 //import Game from "./components/Game3.react";
 //import Game from "./components/Game4.react";
-//import Game from "./components/Game5.react";
-//import Game from "./components/Game6.react";
+import Game from "./components/Game5.react";
 
 import Contacts from "./components/contacts"
 

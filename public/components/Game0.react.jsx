@@ -1,5 +1,5 @@
 /* Game0.react.js */
-// Getting Started with React prop
+// Getting Started 
 
 import React from 'react';
 
