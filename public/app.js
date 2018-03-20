@@ -4,6 +4,7 @@ console.info('Mounting app.js...');
 
 require('./components/logger');
 require('./components/logger.es6');
+require('./components/startup')
 
 import React from "react";
 import { render } from "react-dom";
@@ -26,14 +27,14 @@ class App extends React.Component {
      return (
         <div> 
           <Game />
-          {/* 
+          {/*
           <h1>Webpack React</h1>
           <p>Hello React</p>
          
           <Hello name="World" />
           <ShoppingList name="Stephen" />
           <AwesomeComponent />
-          JSX comment */}
+          */}
           <Contacts />
         </div>
       )
