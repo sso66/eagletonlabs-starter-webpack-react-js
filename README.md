@@ -69,7 +69,7 @@
 	2.1 What is react?
 	2.2 Getting Started
 	2.3 Passing Data Through Props
-	2.4 An Interactive Component
+	2.4 An Interactive Component wit State
 	2.5 Developer Tools
 	
 ### 3. Lifting State Up: next state
