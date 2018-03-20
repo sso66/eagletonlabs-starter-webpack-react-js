@@ -47,14 +47,14 @@
     ```
     instead of:
     ```
-    require('logger.es6')
+    require('logger.es6') 
     ```
     ***
-  - Creating a **npm start** script
+  - Creating a **npm built** and a **npm start** script
 
-  - Separating production and development builds
+  - Separating production and development builds as well as creating a **npm deploy** script
 
-- Implementing React with Webpack
+- Implementing Intro To React
 
 ***
 ## Tic-Tac-Toe Game - React Project
