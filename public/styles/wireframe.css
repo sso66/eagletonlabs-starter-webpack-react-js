@@ -1,20 +1,23 @@
 /* wireframe.css */
-body { background-color: orange; }
-div { background-color: black;  }
 
-.container { border: 1px dotted white; }
+body { background-color: orange; }
+div { background-color: silver;  }
+
+.container { border: 1px dotted blue; }
 
 .header, .main { 
 	background-color: yellow; 
-	border: 1px dotted white; 
+	border: 1px double silver; 
 }
 
 button { background-color: green; font-size: 1.1em; }
-
+*/
 /* React Component Style Models */
+/*
 #root { color: white; }
 .list-of-items { background-color: black; border: 1px solid blue; }
 .shopping-list { background-color: black; }
+*/
 
 /* Tic-Tac-Toe Game - React JS Project Styles */
 body {
