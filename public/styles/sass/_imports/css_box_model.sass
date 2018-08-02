@@ -1,0 +1,48 @@
+//cb_css_box_model.sass
+/* cb_css_box_model.css */
+// options:
+//   --style expanded (development)
+//   --style compact (test)
+//   --style compressed (deployment)
+
+//___ Variables ___
+// layout rules 
+$margin: auto
+$background-color: red
+$background-image: url('logo.png')
+$border: 1px solid blue
+$padding: 1em
+$content: '(' attr(href) ')'
+$outline: 1px solid white
+// typogrphy rules
+$text-align: center
+$color: #336699
+$font-size: 2em
+
+//___ Mixins ___
+@mixin box 
+  margin: $margin
+  padding: $padding + 1em
+  
+//___ Extends ___
+%box
+  // layout rules 
+  margin: $margin
+  background-color: $background-color
+  background-image: $background-image
+  border: $border
+  padding: $padding
+  content: $content
+  outline: $outline
+  // typography rules 
+  text-align: $text-align
+  color: $color
+  font-size: $font-size
+
+//___ Components ___
+#box  
+  @extend %box
+  @include box
+  @media print
+    font-size: 1.5em
+// eof
