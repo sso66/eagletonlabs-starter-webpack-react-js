@@ -54,7 +54,8 @@
 
   - Separating production and development builds as well as creating a **npm deploy** script
 
-- Implementing Intro to React with Webpack
-
+- Implementing React with Webpack
+- Implementing Three with Webpcak
+- Integrating Redux with React and Three Components
 
 	

@@ -1,4 +1,4 @@
-## Tic-Tac-Toe Game - React Project
+## Tic-Tac-Toe Game - React Tutorial Project
 
 ### 1. Before We Start
 	1.1 What We're Building
