@@ -6,7 +6,7 @@ console.info('Mounting app.js...');
 //require('./components/logger.es6');
 //require('./components/startup');
 
-import React from "react";
+import { Component } from "react";
 import { render } from "react-dom";
 /*
 import Hello from "./components/hello";

@@ -6,8 +6,9 @@ div { background-color: silver;  }
 .container { border: 1px dotted blue; }
 
 .header, .main { 
-	background-color: yellow; 
+	background-color: black; 
 	border: 1px double silver; 
+	color: white;
 }
 
 button { background-color: green; font-size: 1.1em; }
