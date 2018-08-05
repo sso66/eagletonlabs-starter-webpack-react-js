@@ -5,12 +5,12 @@ module.exports = {
 	entry: __dirname + '/src/app.js',
 	output: {
 		filename: 'bundle.js',
-    	path: __dirname + '/build'
-  	},
-  	//watch: true,
+		path: __dirname + '/build'
+	},
+	//watch: true,
 	module: {
 		rules: [
-      		{
+			{
 				// test: /\.jshint$/,
 				// exclude: /node_modules/,
 				// loader: 'jshint-loader',
@@ -28,11 +28,10 @@ module.exports = {
 				}
 			}
 		]
- 	},
+	},
 	resolve: {
 		extensions: [ '.js', '.es6', '.jsx' ]
 	},
 };
 
 // eof
-
