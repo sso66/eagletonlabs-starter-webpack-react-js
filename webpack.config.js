@@ -18,7 +18,7 @@ module.exports = {
 				// cacheDirectory: true,
 				// presets: ['react', 'es2015']
 				// }
-	      	},
+			},
 			{
 				test: [ /\.js$/, /\.es6$/, /\.jsx$/ ],
 				exclude: /node_modules/,
