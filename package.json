@@ -47,7 +47,10 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-three-renderer": "^3.2.4",
     "redux": "^3.7.2",
+    "three": "^0.95.0",
     "whatwg-fetch": "^2.0.3"
   }
 }
