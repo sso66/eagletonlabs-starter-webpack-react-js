@@ -6,7 +6,7 @@ console.info('Mounting app.js...');
 //require('./components/logger.es6');
 //require('./components/startup');
 
-import { Component } from "react";
+import React from "react";
 import { render } from "react-dom";
 /*
 import Hello from "./components/hello";
@@ -16,9 +16,10 @@ import Game from "./components/Game4.react";
 import Contacts from "./components/contacts"
 import ProductList from "./components/product-list";
 import Iterator from "./components/iterator";
-import NavBar from "./components/NavBar";
-*/
 import Canvas from "./components/Canvas";
+*/
+import NavBar from "./components/NavBar";
+
 
 class App extends React.Component {
   
@@ -40,9 +41,9 @@ class App extends React.Component {
           <ProductList />
 
           <Iterator />
-          <NavBar />
+          <Canvas />
           */}
-          <Canvas />     
+          <NavBar />     
         </div>
       )
    }
