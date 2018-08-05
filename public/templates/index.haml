@@ -1,23 +1,21 @@
-!!! 5
-/ index.html
+!!!
 %html
-  %head
-    %title React JS Template
-    %meta{charset:"utf-8"}
-    %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
-    %script{src:"https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"} 
-    %script{src:"https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"}  
-    %script{src:"https://unpkg.com/babel-standalone@6.15.0/babel.min.js"}      
-  %body
-    #root
-    %script{type:"text/babel"}
-      \ReactDOM.render(
-      %div
-        Virtual DOM
-        %h1 
-          header: React JS Template
-        %p 
-          content: NPM, React Library, Babel Transpiler, and Webpack Module Loader
-      ,document.getElementById('root')
-      \);
+  / template.haml
+  / design-in-browser
+  %header
+  %title Design Pattern: Decorator 
+  
+  %meta{charset:"utf-8"}
+  %meta{name:"viewport", content:"width=device-width, initial-scale=1"}   
+
+  %link{href:'wireframe.css', rel:'stylesheet'}
+  %script{src:"http://cdn.jsdelivr.net/vue/1.0.16/vue.js"} 
+%body
+  %h2 Decorator
+  .container 
+    %p I'm in the box: container
+    #component
+      %p I'm in the outer box: component
+      #pattern
+        %p I'm' in the inner box: pattern
 / eof
