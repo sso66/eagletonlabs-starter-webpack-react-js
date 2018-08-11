@@ -1,5 +1,5 @@
-// index.js
-console.info('Mounting index.js... <Root />');
+// root.js
+console.info('Mounting root.js... <Root />');
 
 import React from "react";
 import { render } from "react-dom";
