@@ -2,7 +2,7 @@
 console.info( 'Mounting webpack.config.js...' );
 
 module.exports = {
-	entry: __dirname + '/src/app.js',
+	entry: __dirname + '/src/index.js',
 	output: {
 		filename: 'bundle.js',
 		path: __dirname + '/build'

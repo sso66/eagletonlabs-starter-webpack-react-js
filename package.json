@@ -16,11 +16,14 @@
   "keywords": [
     "babel",
     "react",
+    "redux",
+    "flux",
     "jshint",
     "webpack",
     "node",
     "git",
-    "github"
+    "github",
+    "three"
   ],
   "author": "Sun Stephen Oo",
   "license": "ISC",
@@ -44,14 +47,14 @@
     "bulma": "^0.7.0",
     "flux": "^3.1.3",
     "npm": "^6.3.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.3.1",
     "react-three-renderer": "^3.2.4",
     "redux": "^3.7.2",
-    "three": "^0.95.0",
+    "three": "^0.86.0",
     "whatwg-fetch": "^2.0.3"
   }
 }
