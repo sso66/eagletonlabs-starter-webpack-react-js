@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter",
-  "version": "0.1.0",
-  "description": "webpack starter kit for react applications",
+  "version": "0.1.1",
+  "description": "webpack starter kit for 3d webgl applications",
   "main": "index.js",
   "scripts": {
     "build": "webpack -d",
