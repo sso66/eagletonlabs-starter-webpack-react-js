@@ -19,6 +19,7 @@
       	It provides certain Node libraries for browser usage.
       - **babel-preset-es2015** is a babel preset for all es2015 plugins
       - **babel-preset-react** is a babel preset for all React plugins
+      - **path** is an exact copy of the NodeJS ’path’ module published to the NPM registry.
 
     - *options*:
         - **test** -- a regular expression that tests what kind of files to run through this loader. 
