@@ -3,30 +3,30 @@ console.log( "Mounting NavBar.jsx..." );
 
 import React, { Component } from 'react';
 
-const css = {
+const CSSBoxModel = {
     mobile: {
+        backgroundColor: '#191970',        
+        border: '3px double #666',
         fontSize: '2.5em',
         color: 'rgba(255, 255, 225, 0.85)',
-        border: '3px double #666',
-        backgroundColor: 'violet',
-        textAlign: 'right'
+        textAlign: 'right',
     },
     desktop: {
+        background: 'radial-gradient(skyblue, teal)',
+        border: '3px double #666',
         fontSize: '5em',
         color: 'rgba(255, 255, 225, 0.85)',
-        border: '3px double #666',
-        backgroundColor: 'teal',
         textAlign: 'center',
-        background: 'radial-gradient(red, teal)'
     },
 };
 
 const navbar =
     <div>
-        <h3 style={css.desktop}>React Component: NavBar</h3>
-        <div style={css.mobile}>
-            Styled React Commponent
-        </div>
+        <h2 style={CSSBoxModel.desktop}>JS Style Prototype Object: React Component - NavBar</h2>
+        <h3 style={CSSBoxModel.mobile}>
+            React + Styled Commponent NPM with ES6 `backtick`
+        </h3>
+        <p style={CSSBoxModel.mobile}>https://www.styled-components.com/docs/</p>
     </div>;
 
 class NavBar extends Component {

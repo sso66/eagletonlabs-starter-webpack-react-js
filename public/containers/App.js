@@ -11,9 +11,8 @@ class App extends React.Component {
 
         return (
            <div>
-             <h2>Webpack Starter</h2>
-             <h3>React Application Model</h3>
-             <NavBar />
+             <h1>Eagle Web Designs</h1>
+             <h2>WebGL Progromming</h2>
            </div>
          )
     }
