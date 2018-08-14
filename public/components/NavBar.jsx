@@ -26,7 +26,7 @@ const navbar =
         <h3 style={CSSBoxModel.mobile}>
             React + Styled Commponent NPM with ES6 `backtick`
         </h3>
-        <p style={CSSBoxModel.mobile}>https://www.styled-components.com/docs/</p>
+        <p style={CSSBoxModel.mobile}>https://www.styled-components.com REMOVE</p>
     </div>;
 
 class NavBar extends Component {

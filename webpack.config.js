@@ -1,6 +1,8 @@
 // webpack.config.js
 console.info( 'Mounting webpack.config.js...' );
 
+const path = require('path');
+
 module.exports = {
 	entry: __dirname + '/public/root.js',
 	output: {

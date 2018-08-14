@@ -19,7 +19,7 @@ import Canvas from "../components/Canvas";
 */
 import NavBar from "../components/NavBar";
 
-class App extends React.Component {
+class DemoApp extends React.Component {
   
    render() {
  
@@ -46,5 +46,5 @@ class App extends React.Component {
       )
    }
 }
-export default App;
+export default DemoApp;
 // eof
