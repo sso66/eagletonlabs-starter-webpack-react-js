@@ -1,15 +1,14 @@
-// root.js
-console.info('Mounting root.js... <Root />');
+// index.js
+console.info('Mounting index.js... <Root />')
 
 import React from "react";
 import { render } from "react-dom";
-import App from './containers/App';
-import ThreeApp from './containers/ThreeApp'
 
-const Root = render(
+import App from './containers/App';
+
+render(
     <App />, 
     document.getElementById('root')
 );
 
-export default Root
 // eof

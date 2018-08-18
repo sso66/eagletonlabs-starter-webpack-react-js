@@ -1,20 +1,18 @@
 // App.js
 console.info( 'Mounting App.js... <App />' );
 
-import React from "react";
+import { Component } from "react";
 import { render } from "react-dom";
 
-import NavBar from "../components/NavBar";
-import Content from "../components/Content";
+import Home from "../components/Home";
 
-class App extends React.Component {
+class App extends Component {
 
     render() {
 
         return (
             <div>  
-                <NavBar />                             
-                <Content />
+                <Home />                             
            </div>
          )
     } 

@@ -4,7 +4,7 @@ console.info( 'Mounting webpack.config.js...' );
 const path = require('path');
 
 module.exports = {
-	entry: __dirname + '/public/root.js',
+	entry: __dirname + '/public/index.js',
 	output: {
 		filename: 'bundle.js',
 		path: __dirname + '/build'
@@ -13,13 +13,13 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				// test: /\.jshint$/,
-				// exclude: /node_modules/,
-				// loader: 'jshint-loader',
-				// query: {
-				// cacheDirectory: true,
-				// presets: ['react', 'es2015']
-				// }
+				test: /\.jshint$/,
+				exclude: /node_modules/,
+				loader: 'jshint-loader',
+				query: {
+				    cacheDirectory: true,
+				    presets: ['react', 'es2015']
+				}
 			},
 			{
 				test: [ /\.js$/, /\.es6$/, /\.jsx$/ ],
