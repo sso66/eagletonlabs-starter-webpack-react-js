@@ -1,19 +1,8 @@
-## SDLC Flow Guide
-- Planning
----
-- Scaffolding
-- Development
-- Testing
-- Integration
-- Optimization
-- Deployment
----
-- Production
-
 ## Sass (Syntactically Awesome Style Sheets) Guides and Patterns 
 *What topics to look for?*
 ### Basic characteristics and unit of measurements:
 ### Rules: Cascade | Specificity | Inheritance 
+### Flexbox Module Specifications
 
 **A. Layout:** 
   - Shape: rect | round-rect | circle
