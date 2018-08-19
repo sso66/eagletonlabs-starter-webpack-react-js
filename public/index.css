@@ -4,19 +4,19 @@ body { background-color: orange; }
 
 #root { 
 	background-color: black;
-	border: 1px dotted skyblue;
+	border: 3px double grey;
 	color: white;
 }
 
 .header, .footer {
-	background-color: silver;
+	background-color: lightskyblue;
 }
 
-.main, .aside {
+.content, .aside {
 	background-color: tomato;
 }
 
 
-.App { border: 5px solid white; }
+.App { border: 10px solid white; }
 
 /* eof */

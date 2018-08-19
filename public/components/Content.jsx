@@ -1,11 +1,11 @@
-// Main.jsx 
-console.log( "Mounting Main.jsx... <Main />" );
+// Content.jsx 
+console.log( "Mounting Content.jsx... <Content />" );
 
 import React from 'react';
 
-const main =
-    <div className='main'>
-        <h2>Main</h2>
+const content =
+    <div className='content'>
+        <h2>Content</h2>
         <p>
             The golden rule of knowing what you are doing is to 
             understand why you are doing it.
@@ -17,11 +17,11 @@ const main =
     </div>
 ;
 
-const Main = () => {
+const Content = () => {
 
-    return ( main );
+    return ( content );
 
 };
 
-export default Main;
+export default Content;
 

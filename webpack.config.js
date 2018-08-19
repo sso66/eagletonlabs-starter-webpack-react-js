@@ -7,7 +7,6 @@ module.exports = {
 	entry: path.resolve(__dirname + '/public/index.js'),
 	output: {
 		path: __dirname + '/build',
-		publicPath: '/',
         filename: 'bundle.js',
 	},
 	//watch: true,
@@ -35,9 +34,6 @@ module.exports = {
 	resolve: {
 		extensions: [ '.js', '.es6', '.jsx' ]
 	},
-	devServer: {
-	    contentBase: path.resolve(__dirname, 'public')
-	}
 };
 
 // eof

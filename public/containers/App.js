@@ -5,9 +5,11 @@ import React from "react";
 import { render } from "react-dom";
 
 import Header from "../components/Header";
-import Main from "../components/Main";
+import Content from "../components/Content";
 import Aside from "../components/Aside";
 import Footer from "../components/Footer";
+
+import Contact from "../components/Contact";
 
 class App extends React.Component {
 
@@ -16,7 +18,8 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Header />
-                <Main />
+                <Content />
+                <Contact />
                 <Aside />                
                 <Footer />                            
            </div>
