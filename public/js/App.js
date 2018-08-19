@@ -1,12 +1,12 @@
 // App.js
 console.info( 'Mounting App.js... <App />' );
 
-import { Component } from "react";
+import React from "react";
 import { render } from "react-dom";
 
 import Home from "../components/Home";
 
-class App extends Component {
+class App extends React.Component {
 
     render() {
 

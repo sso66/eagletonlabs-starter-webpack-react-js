@@ -4,10 +4,11 @@ console.info( 'Mounting webpack.config.js...' );
 const path = require('path');
 
 module.exports = {
-	entry: __dirname + '/public/index.js',
+	entry: path.resolve(__dirname + '/public/index.js'),
 	output: {
-		filename: 'bundle.js',
-		path: __dirname + '/build'
+		path: __dirname + '/build',
+		publicPath: '/',
+        filename: 'bundle.js',
 	},
 	//watch: true,
 	module: {
@@ -34,6 +35,9 @@ module.exports = {
 	resolve: {
 		extensions: [ '.js', '.es6', '.jsx' ]
 	},
+	devServer: {
+	    contentBase: path.resolve(__dirname, 'public')
+	}
 };
 
 // eof
