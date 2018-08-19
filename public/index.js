@@ -4,7 +4,7 @@ console.info('Mounting index.js... <Root />')
 import React from "react";
 import { render } from "react-dom";
 
-import App from './js/App';
+import App from './components/App';
 
 render(
     <App />, 

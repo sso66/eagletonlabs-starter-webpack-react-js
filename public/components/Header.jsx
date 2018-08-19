@@ -1,11 +1,11 @@
-// Home.jsx 
-console.log("Mounting Home.jsx... <Home />");
+// Header.jsx
+console.log( "Mounting Header.jsx <Header />...");
 
 import React from 'react';
 
-const homepage =
-    <div className='home'>
-        <h1>Eagleton Web Designs</h1>
+const header =
+    <div className='header'>
+        <h1>Header</h1>
         <p>
             The golden rule of knowing what you are doing is to 
             understand why you are doing it.
@@ -16,10 +16,10 @@ const homepage =
         </p>
     </div>
 ;
+const Header = () => {
 
-const Home = () => {
-    return (homepage);
-}
+    return ( header );
 
-export default Home;
-// eof
+};
+
+export default Header;

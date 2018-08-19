@@ -8,4 +8,15 @@ body { background-color: orange; }
 	color: white;
 }
 
+.header, .footer {
+	background-color: silver;
+}
+
+.main, .aside {
+	background-color: tomato;
+}
+
+
+.App { border: 5px solid white; }
+
 /* eof */
