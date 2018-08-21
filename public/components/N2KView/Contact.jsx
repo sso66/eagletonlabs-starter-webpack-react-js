@@ -21,8 +21,8 @@ class Contact extends React.Component {
   }
    render() {
      return (
-       <div>
-         <p>React Component Model</p>
+       <div className="contact">
+         <p>Web Component Model: OPMEESSL</p>
          <ul>
            <li>Object</li>
            <li>Property</li>
