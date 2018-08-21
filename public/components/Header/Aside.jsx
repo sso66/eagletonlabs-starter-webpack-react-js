@@ -1,5 +1,5 @@
 // Aside.jsx
-console.log( "Mounting Aside.jsx <Aside />...");
+console.log( "Mounting Aside.jsx <Aside />..." );
 
 import React from 'react';
 
@@ -23,3 +23,5 @@ const Aside= () => {
 };
 
 export default Aside;
+
+// eof

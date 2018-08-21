@@ -1,5 +1,5 @@
 // Footer.jsx
-console.log( "Mounting Footer.jsx <Footer />...");
+console.log( "Mounting Footer.jsx <Footer />..." );
 
 import React from 'react';
 
@@ -23,3 +23,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// eof

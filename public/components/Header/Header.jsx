@@ -1,5 +1,5 @@
 // Header.jsx
-console.log( "Mounting Header.jsx <Header />...");
+console.log( "Mounting Header.jsx <Header />..." );
 
 import React from 'react';
 
@@ -23,3 +23,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// eof
