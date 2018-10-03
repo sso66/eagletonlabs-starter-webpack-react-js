@@ -20,9 +20,9 @@ module.exports = {
                     loader: 'html-loader',
                     options: {
                         attrs: [ ':data-src' ],
-                        //minimize: true,
-                        //removeComments: true,
-                        //collapseWhitespace: true
+                        minimize: true,
+                        removeComments: true,
+                        collapseWhitespace: true
                     }
                 }
             },
@@ -58,29 +58,29 @@ module.exports = {
                 test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: "url-loader?limit=100000"   // the urlloader uses data urls.
            },
-           {
-                test: /\.(ttf|eot|svg|woff|woff2)(\?[\s\S]+)$/,
-                use: {
-                    loader: 'file-loader',  // the file loader emits files.
-                    options: {
-                        emitFile: false
-                    }
-                }
-            },
+           // {
+                // test: /\.(ttf|eot|svg|woff|woff2)(\?[\s\S]+)$/,
+                // use: {
+                    // loader: 'file-loader',  // the file loader emits files.
+                    // options: {
+                        // emitFile: false
+                    // }
+                // }
+            // },
             {
-                test: /\.(jpe?g|png|gif|ico)$/i,
+                test: /\.(jpe?g|png|gif|ico|svg)$/i,
                 loader: 'file-loader?name=[name].[ext]',
                 
            },
            {
                 test: /\.(gif|png|jpe|icon?g|svg|ico)$/i,
                 use: [
-                    {
-                        loader: 'file-loader',  
-                        options: {
-                            emitFile: true
-                        }
-                    },
+                    // {
+                        // loader: 'file-loader',  
+                        // options: {
+                            // emitFile: true
+                        // }
+                    // },
                     {
                         loader: 'image-webpack-loader',
                         options: {
