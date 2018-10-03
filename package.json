@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter",
-  "version": "0.1.3",
-  "description": "webpack starter kit for 3d webgl applications",
+  "version": "0.1.4",
+  "description": "Eagleton Designs IDE: Integrated Development Environment",
   "main": "index.js",
   "scripts": {
     "build": "webpack --inline --progress -d",
@@ -67,6 +67,7 @@
   },
   "dependencies": {
     "bulma": "^0.7.0",
+    "classnames": "^2.2.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.7",
