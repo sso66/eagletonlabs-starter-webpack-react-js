@@ -1,18 +1,41 @@
-/* index.css
-//@import 'bulma/bulma.sass'
+/* index.css 
+/* provider (3rd party) packages
 
+//@import '../styles/normalize.sass'
+//@import '../styles/font-awesome.sass'
+//@import '../styles/bulma/bulma.sass'
+
+body 
+  background-color: orange
+  
 #root
   display: flex
-  flex-direction: 
-  
-  min-height: 80vh
-  background-color: orange
-  border: 3px double gray
+  flex-direction: column  
+  // layout
+  // //min-height: 80vh
+  // style  
+  background-color: purple
   color: white
-
-header, footer
+  
+header
+  display: in-flex
   background-color: teal
 
-main
+nav
+  display: in-flex
+  background-color: teal
 
+main 
+  display: in-flex
+  background-color: aqua
+   
+aside
+  display: in-flex
+  background-color: aqua
+
+footer
+  display: in-flex
+  direction: column
+  background-color: teal  
+ 
 /* eof

@@ -8,7 +8,7 @@ class Product extends React.Component {
     return (
       <div className='item'>
         <div className='image'>
-          <img src='images/image-aqua.png' width="64" height="48" />
+          <img src='./images/image-aqua.png' width="64" height="48" />
         </div>
         <div className='middle aligned content'>
           <div className='description'>
@@ -17,7 +17,7 @@ class Product extends React.Component {
           </div>
           <div className='extra'>
             <span>Submitted by:</span>
-            <img className='ui avatar image' src='images/avaters/stephen.png' width="48" height="48" />
+            <img className='image' src='./images/octalhex_transparent.png' width="48" height="48" />
           </div> 
         </div>
       </div>

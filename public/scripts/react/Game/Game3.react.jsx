@@ -1,4 +1,4 @@
-/* Game2.react.js */
+/* Game3.react.js */
 // Lifting State Up
 
 import React from 'react';

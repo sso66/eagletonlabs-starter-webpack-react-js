@@ -6,8 +6,8 @@ import React, { Component } from 'react';
 class OpeningScreen extends Component {
   render() {
     return (
-      <div>
-        Hello, {this.props.name}! <hr /> Virtual DOM?
+        <div className='app-panel'>
+          Hello, {this.props.name}! <hr /> Virtual DOM?
       </div> 
     )
   }
