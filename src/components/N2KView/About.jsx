@@ -1,9 +1,9 @@
-// OpeningScreen.jsx
-console.log( 'Mounting OpeningScreen.jsx...' );
+// About.jsx
+console.log( 'Mounting About.jsx...' );
 
 import React, { Component } from 'react';
 
-class OpeningScreen extends Component {
+class About extends Component {
   render() {
     return (
         <div className='app-panel'>
@@ -12,6 +12,6 @@ class OpeningScreen extends Component {
     )
   }
 }
-export default OpeningScreen;
+export default About;
 
 // eof

@@ -3,11 +3,9 @@ console.info('Mounting index.js... <Root />')
 
 import React from "react";
 import { render } from "react-dom";
-
 import App from './components/App';
 
 import './styles/index.sass';
-import './styles/App.sass';
 
 const init = function () { 
     render(

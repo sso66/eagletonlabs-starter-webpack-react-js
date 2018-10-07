@@ -1,16 +1,37 @@
 /* App.sass
 /* consumer (architectural & feature) packages
 
-//@import '../styles/octoplex/n3kview'
+//@import '../styles/atm.sass';
+  
+header
+  //display: flex
+  //flex-direction: column-reverse
+  background-color: teal
 
-.app-frame
-  border: 3px solid white
-  .app-panel
-    margin: 3px
-    border: 3px solid black      
-    .header    
+nav
+  display: in-flex
+  background-color: teal
+
+main 
+  display: in-flex
+  background-color: aqua
+   
+aside
+  display: in-flex
+  background-color: aqua
+
+footer
+  display: in-flex
+  direction: column
+  background-color: teal  
   
-    .content
+@media (max-width: 1024px)
+  button
+    width: 256px
+
+@media (max-width: 769px)
+  button
+   width: 35px
+
     
-    .footer
-  
+/* eof
