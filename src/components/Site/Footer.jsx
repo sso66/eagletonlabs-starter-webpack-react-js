@@ -6,7 +6,7 @@ import React from 'react';
 const Footer = () => {
 
     return ( 
-        <footer>
+        <footer className="">
             <h3>Footer</h3>
             <p>
                 The golden rule of knowing what you are doing is to 

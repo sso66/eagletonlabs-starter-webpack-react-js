@@ -6,6 +6,10 @@
 //@import '../styles/bulma/bulma.sass'
 @import './App.sass'
 
+* 
+  box-sizing: border-box
+  //border: 1px dotted silver
+
 html
   height: 100%
   
@@ -13,17 +17,36 @@ body
   height: 100%
   margin: 0
   background-color: #e67e22
+  //background-color: black
   padding: 0
-  
-section#root
+ 
+#root
   display: flex
   flex-direction: column  
-  // layout
-  // //min-height: 80vh
-  // style  
-  background-color: purple
-  border: 3px double silver
+  //layout
+  //max-height: 25vh
+  //style  
+  background-color: white
+  border: 
+    width: 1%
+    style: double 
+    color: silver
   color: white
-
- 
+  //border-radius: 290486px
+  
+head
+  border:
+    top:
+      width: 60px 
+      style: double 
+      color: orange
+    bottom:
+      width: 30px 
+      style: double 
+      color: blue
+  position: absolute 
+  top: 20px
+  right: 60px  
+  z-index: -1
+    
 /* eof
