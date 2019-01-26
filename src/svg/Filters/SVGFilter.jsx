@@ -1,10 +1,15 @@
 import React from 'react'
 
 const SVGFilter = props => (
-  <svg width={250} height={250} viewBox="0 0 200 185" {...props}>
+  <svg
+    width={250}
+    height={250}
+    viewBox="0 0 200 185"
+    {...props}
+  >
     <defs>
       <filter
-        id="a"
+        id="MyFilter"
         filterUnits="userSpaceOnUse"
         x={0}
         y={0}
@@ -16,6 +21,7 @@ const SVGFilter = props => (
         <feSpecularLighting
           in="blur"
           surfaceScale={5}
+          specularConstant={1}
           specularExponent={10}
           lightingColor="#d90000"
           result="specOut"
@@ -32,8 +38,10 @@ const SVGFilter = props => (
           in="SourceGrapic"
           in2="specOut"
           operator="arithmetic"
+          k1={0}
           k2={1}
           k3={1}
+          k4={0}
           result="litPaint"
         />
         <feMerge>
@@ -42,25 +50,35 @@ const SVGFilter = props => (
         </feMerge>
       </filter>
     </defs>
-    <g filter="url(#a)">
+    <g filter="url(#MyFilter)">
       <path
         fill="none"
         stroke="#D90000"
         strokeWidth={10}
-        d="M50 66C0 66 0 6 50 6h100c50 0 50 60 0 60z"
+        d="    
+            M50,66    
+            c-50,0 -50,-60, 0,-60    
+            h100    
+            c50,0 50,60 0,60    
+            z
+        "
       />
-      <path fill="#D90000" d="M60 56c-30 0-30-40 0-40h80c30 0 30 40 0 40z" />
+      <path
+        fill="#D90000"
+        d="    
+            M60,56    
+            c-30,0 -30-40, 0,-40    
+            h80    
+            c30,0 30,40 0,40    
+            z    
+        "
+      />
     </g>
-    <text
-      x={56}
-      y={48}
-      fill="#fff"
-      stroke="#000"
-      fontSize={40}
-      fontFamily="sans-serif"
-    >
-      {'\n    SVG\n  '}
-    </text>
+    <g fill="white" stroke="black" fontSize={40} fontFamily="sans-serif">
+      <text x={56} y={48}>
+        SVG
+      </text>
+    </g>
   </svg>
 )
 
