@@ -18,8 +18,8 @@ import AwesomeComponent from '../components/N2KView/AwesomeComponent';
 
 //import SvgComponent from '../svg/Filters/DryDropShadowSvgComponent';
 //import SvgComponent from '../svg/Filters/WetDropShadowSvgComponent';
-//import SvgComponent from '../svg/Filters/FilteredSvgComponent';
-import SvgComponent from '../svg/Filters/SVGFilter';
+import SvgComponent from '../svg/Filters/FilteredSvgComponent';
+//import SvgComponent from '../svg/Filters/SVGFilter';
 
 class App extends React.Component {
 
