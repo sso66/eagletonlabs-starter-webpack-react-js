@@ -18,7 +18,6 @@
 			specularExponent="4"
 			result="specularOutput">
 			<feDistantLight elevation="25" azimuth="0"/>
-			<!--feSpotLight x="600" y="600" z="-400" limitingConeAngle="50" /-->
 		</feSpecularLighting>
 		<feComposite in="specularOutput" in2="SourceGraphic"
 			operator="in" result="specularOutput"/>

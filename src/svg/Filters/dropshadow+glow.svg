@@ -100,10 +100,10 @@
 
 	<use 
 		xlink:href="#flower" />
-	<!--
+	
 	<text x="85" y="45" stroke="darkgreen"
 		style="filter:url(#glow); fill:#003333; stroke:darkgreen font-size:58;">
 		Spring<tspan x="85" y="65">Flower</tspan>
 	</text>
-	-->
+	
 </svg>

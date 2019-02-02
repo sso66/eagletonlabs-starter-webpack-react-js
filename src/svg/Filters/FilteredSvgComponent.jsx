@@ -1,35 +1,52 @@
+// FilteredSvgComponent.jsx
+console.log("Mount FilteredSvgComponent.jsx... <FilteredSvgComponent />")
 import React from 'react'
 
 const FilteredSvgComponent = props => (
-  <svg
-    width={400}
-    height={400}
-  >
-    <g className="layer">
-      <filter id="blurMe">
-        <feGaussianBlur stdDeviation={10} />
-      </filter>
-      <circle
-        cx={50}
-        cy={150}
-        fill="#007f00"
-        id="svg_1"
-        r={50}
-        stroke="#000000"
-        strokeWidth={5}
-      />
-      <circle
-        cx={250}
-        cy={150}
-        fill="#007f00"
-        filter="url(#blurMe)"
-        id="svg_2"
-        r={50}
-        stroke="#000000"
-        strokeWidth={5}
-      />
-    </g>
-  </svg>
+    <svg
+        width={800}
+        height={600}
+    >
+        <defs>
+            <filter id="blurMe">
+                <feGaussianBlur 
+                    in="SourceAlpha"
+                    stdDeviation={4} 
+                    result="blur"/>
+           
+                <feOffset 
+                    in="blur"
+                    dx="4"
+                    dy="4"
+                    result="offsetBlur" />
+                    
+                <feMerge>
+                    <feMergeNode
+                        in="offsetBlur"/>
+                    <feMergeNode
+                        in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+         </defs>
+         
+         <g 
+            className="myCircles"
+            display=""
+            fill="#007f00"  
+         >         
+            <circle
+                cx={100}
+                cy={150}
+                r={50}
+            />
+            <circle
+                cx={210}
+                cy={150}
+                filter="url(#blurMe)"
+                r={50}
+            />
+        </g>
+    </svg>
 )
 
 export default FilteredSvgComponent

@@ -9,7 +9,9 @@ const WetDropShadowSvgComponent = props => (
   
         <defs>
           <filter id="drop-shadow">
-            <feGaussianBlur in="SourceAlpha" stdDeviation={2} />
+            <feGaussianBlur 
+                in="SourceAlpha" 
+                stdDeviation={2} />
           </filter>
         </defs>
        
@@ -68,8 +70,7 @@ const WetDropShadowSvgComponent = props => (
             transform="translate(4, 4)"
         />
         <use 
-            xlinkHref="#flower" />
-        
+            xlinkHref="#flowe" />       
     </svg>
 )
 
