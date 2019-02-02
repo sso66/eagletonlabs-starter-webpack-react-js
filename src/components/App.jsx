@@ -16,10 +16,11 @@ import Home from '../components/N2KView/Home';
 import About from '../components/N2KView/About';
 import AwesomeComponent from '../components/N2KView/AwesomeComponent';
 
-//import SvgComponent from '../svg/Filters/DryDropShadowSvgComponent';
+import SvgComponent from '../svg/Filters/DryDropShadowSvgComponent';
 //import SvgComponent from '../svg/Filters/WetDropShadowSvgComponent';
-import SvgComponent from '../svg/Filters/FilteredSvgComponent';
 //import SvgComponent from '../svg/Filters/SVGFilter';
+//import SvgComponent from '../svg/Filters/FilteredSvgComponent';
+
 
 class App extends React.Component {
 
@@ -33,8 +34,7 @@ class App extends React.Component {
                 <ShoppingList name="Stephen" />               
                 <ProductList />
                 */}    
-                <SvgComponent />
-                
+                <SvgComponent />   
                 <Footer />                            
            </div>
          )
