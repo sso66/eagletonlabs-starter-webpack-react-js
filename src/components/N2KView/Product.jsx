@@ -17,7 +17,7 @@ class Product extends React.Component {
           </div>
           <div className='extra'>
             <span>Submitted by:</span>
-            <img className='image' src='./images/octalhex_transparent.png' width="48" height="48" />
+            <img className='image' src='./images/speedometer.jpg' width="1024" height="724" />
           </div> 
         </div>
       </div>

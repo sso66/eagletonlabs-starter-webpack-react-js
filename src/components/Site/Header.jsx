@@ -14,7 +14,7 @@ const Header = () => {
         </p> 
         <p>
             Don't use a module until you understand 
-            the problem it's solving
+            the problem it's solving.
             </p>
         </header>
     );

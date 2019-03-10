@@ -24,3 +24,5 @@
 	4.2 Keys
 	4.3 Implementing Time Travel
 	4.4 Wrapping Up
+	
+npx @svgr/cli icons/clock-icon.svg

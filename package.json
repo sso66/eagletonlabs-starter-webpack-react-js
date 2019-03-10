@@ -66,6 +66,7 @@
     "webpack-dev-server": "^3.1.6"
   },
   "dependencies": {
+    "@svgr/cli": "^4.1.0",
     "babel-polyfill": "^6.26.0",
     "bulma": "^0.7.0",
     "classnames": "^2.2.6",
@@ -75,6 +76,7 @@
     "react-router-dom": "^4.3.1",
     "react-three-renderer": "^3.2.4",
     "redux": "^3.7.2",
+    "snapsvg-cjs": "0.0.6",
     "svgedit": "^4.1.0",
     "three": "^0.86.0",
     "whatwg-fetch": "^2.0.3"

@@ -34,7 +34,8 @@ const { timeout, isCache } = httpOptions;
 console.log("destructuring (same kvo): " + timeout + " : " + isCache);
 
 // nested objects
-const httpOptions2 = { timeout: 2000, cache: { age: 2 } };
+const httpOptions2 = { timeout: 2000, cache: { age: 2 }, status: 'todo' };
+
 // later
 const { cache: { age } } = httpOptions2;
 // you now have a variable named 'age' with 2
