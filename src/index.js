@@ -6,9 +6,6 @@ import { render } from "react-dom";
 import App from './components/App';
 import './styles/index.sass';
 
-//import $ from "jquery";
-//import "svgedit";
-
 const init = function () { 
     render(
         <App />, 

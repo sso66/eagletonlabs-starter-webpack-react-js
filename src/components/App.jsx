@@ -18,28 +18,26 @@ import AwesomeComponent from '../components/N2KView/AwesomeComponent';
 import ProductList from '../containers/N2KView/ProductList';
 
 // Feature Modules: SVG-DOM
-//import SvgComponent from '../svg/Filters/DryDropShadowSvgComponent';
-import SvgComponent from '../svg/Filters/WetDropShadowSvgComponent';
-//import SvgComponent from '../svg/Filters/SVGFilter';
-//import SvgComponent from '../svg/Filters/FilteredSvgComponent';
-import SnapSvgPrototype from '../components/N2KView/SnapSvgPrototype';
-import Heart from '../components/N2KView/Heart';
+import SvgComponent4 from '../svg/Filters/DryDropShadowSvgComponent';
+import SvgComponent3 from '../svg/Filters/WetDropShadowSvgComponent';
+import SvgComponent2 from '../svg/Filters/SVGFilter';
+import SvgComponent1 from '../svg/Filters/FilteredSvgComponent';
 
 class App extends React.Component {
 
     render() {
         return (
-            <div className="app-frame">               
+            <div className="app-frame">      
                 <Header />
-                <SnapSvgPrototype />
-                <Heart fill="gray" stroke="red" strokeWidth={1} strokeOpacity="0.5" />
-                {/*
-                <SvgComponent />                 
                 <About name="Stephen Oo" /> 
                 <AwesomeComponent />            
-                <ProductList name="Stephen" />
-                */}
-                 <Footer />                            
+
+                <SvgComponent1 />
+                <SvgComponent2 />
+                <SvgComponent3 /> 
+                <SvgComponent4 /> 
+                             
+                <Footer />                            
            </div>
          )
     } 
