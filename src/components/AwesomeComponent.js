@@ -17,32 +17,23 @@ class AwesomeComponent extends Component {
     return (
       <div className="header">
        <h2>Awesome Component</h2>
-        Likes: <span>{this.state.likesCount}</span>
+		Likes: 
+		<span>&nbsp;{this.state.likesCount}</span>
         <div>
-        	<button>
-        	<svg>     		
-        		<circle 
-        			cx="25" 
-        			cy="25" 
-        			r="25" 
-        			stroke="red" 
-        			strokeWidth="2"
-        			//fill="rgba(124,204,204,0.5"
-        			onClick={this.onLike}
-        			//onMouseOver={this.onLike}
-        			//onMouseOut={this.onLike}
-        			cursor="pointer"
-        		/>
-        		
-        		  <text 
-        		  	x="10" 
-        		  	y="28" 
-					fontSize="1.8em"
-					fontWeight="800"        		  	
-        		  	fill="black">
-        		  	Like Me
-        		  </text>
-        	</svg>
+        	<button onClick={this.onLike}>
+        		Like Me
+        		{/* 
+	        	<svg>     		
+					<text 
+	        		  	x="35" 
+	        		  	y="28" 
+						fontSize="1.2em"
+						fontWeight="800"        		  	
+	        		  	fill="black">
+	        		  	Like Me
+					</text>
+	        	</svg>
+	        	*/}
         	</button>
         </div>
       </div> 

@@ -12,7 +12,6 @@ const init = function () {
         document.getElementById('root')
     );
 }
-
 window.onload = init;
 
 // eof
