@@ -22,13 +22,13 @@ class Dashboard extends Component {
     }
     
     render() {
-            let opts = {
-        size: 200, 
-        dialColor: '#FFD700', 
-        dialWidth: 10, 
-        dialColor: 'lightblue', 
-        needleSharp: true 
-    };
+        let opts = {
+            size: 200, 
+            dialColor: '#FFD700', 
+            dialWidth: 15, 
+            dialColor: 'lightblue', 
+            needleSharp: true 
+        };
 
         return (
             <div className="app">
@@ -51,7 +51,10 @@ class Dashboard extends Component {
                 {/*<button onClick={this.handleClick.bind(this)}>Event</button>*/}
                 <button className="button is-dark" onClick={this.handleClick}>Dashboard</button>
                 
-                <Gauge {...opts} />      
+                <Gauge {...opts} />    
+                <Gauge {...opts} />   
+                <Gauge {...opts} />   
+                <Gauge {...opts} />     
             </div>
         );
    }

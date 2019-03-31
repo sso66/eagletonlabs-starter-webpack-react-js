@@ -4,8 +4,6 @@ console.info('Mounting index.js... <Index />')
 import React from "react";
 import { render } from "react-dom";
 import Root from './components/Root';
-import App from './components/App';
-
 import './styles/index.sass';
 
 const init = function () { 

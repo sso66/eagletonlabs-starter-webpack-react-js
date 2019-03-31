@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter",
-  "version": "0.2.0",
-  "description": "Eagleton Designs IDE: Integrated Development Environment",
+  "version": "0.3.0",
+  "description": "The End Project",
   "main": "index.js",
   "scripts": {
     "build": "webpack --inline --progress -d",
@@ -19,6 +19,7 @@
     "webgl",
     "three",
     "sass",
+    "svg",
     "react",
     "redux",
     "node",
