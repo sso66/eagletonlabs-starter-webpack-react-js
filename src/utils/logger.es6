@@ -1,8 +1,6 @@
 // logger.es6
 console.info('Mounting logger.es6...');
 
-'use strict';
-
 const FIRST_NAME = 'John';
 const LAST_NAME = 'Doe';
 
