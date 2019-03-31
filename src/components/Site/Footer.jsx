@@ -8,7 +8,7 @@ const Footer = () => {
     return ( 
         <footer className="">
             <h3>Footer</h3>
-            <p>
+            <p className="animated infinite bounce delay-3s">
                 The golden rule of knowing what you are doing is to 
                 understand why you are doing it.
             </p> 

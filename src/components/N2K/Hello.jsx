@@ -1,18 +1,18 @@
-// About.jsx
-console.log( 'Mounting About.jsx...' );
+// Hello.jsx
+console.log( 'Mounting Hello.jsx... <Hello />' );
 
 import React, { Component } from 'react';
 
-class About extends Component {
+class Hello extends Component {
   render() {
     return (
         <div className='app-panel'>
-          <h1>About</h1>
+          <h1>Hello</h1>
           Hello, {this.props.name}! <hr /> Virtual DOM?
       </div> 
     )
   }
 }
-export default About;
+export default Hello;
 
 // eof

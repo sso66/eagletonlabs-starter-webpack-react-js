@@ -6,7 +6,7 @@ import React from 'react';
 const Header = () => {
 
     return ( 
-        <header className='header'>
+        <header className='header '>
         <h1>Header</h1>
         <p>
             The golden rule of knowing what you are doing is to 
