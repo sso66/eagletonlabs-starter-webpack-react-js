@@ -5,9 +5,10 @@ import React from 'react';
 
 // Feature Modules: HTML-DOM
 import Dashboard from '../../views/Dashboard';
-import ProductList from '../../containers/User/ProductList';
-import ShoppingList from '../../containers/User/ShoppingList';
-import AwesomeComponent from '../../components/N2K/AwesomeComponent';
+import ProductList from '../../containers/Product/ProductList';
+import ShoppingList from '../../containers/Product/ShoppingList';
+import Hello from '../../components/User/Hello';
+import AwesomeComponent from '../../components/User/AwesomeComponent';
 
 // Feature Modules: SVG-DOM
 import SvgFlower from '../../svg/DryDropShadowSvgComponent';
@@ -18,7 +19,7 @@ import SvgBlur from '../../svg/FilteredSvgComponent';
 const Main = () => {
     return ( 
         <main className="main">
-     
+            <Hello name="Stephen"/>
             <Dashboard />
             <AwesomeComponent />
             <SvgFlower />   

@@ -2,7 +2,7 @@
 console.log( 'Mounting ProductList.jsx...' );
 
 import React from 'react';
-import Product from "../../components/User/Product";
+import Product from "../../components/Product/Product";
 
 class ProductList extends React.Component {
   render() {
