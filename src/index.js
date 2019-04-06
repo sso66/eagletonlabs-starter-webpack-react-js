@@ -1,5 +1,5 @@
 // index.js
-console.info('Mounting index.js... <Index />')
+console.info('Mounting ndex.js... <Index />')
 
 import React from "react";
 import { render } from "react-dom";

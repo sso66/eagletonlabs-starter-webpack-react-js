@@ -1,25 +1,27 @@
-// Header.jsx
-console.log( "Mounting Header.jsx <Header />..." );
-
-import React from 'react';
+import React from 'react'
 
 class Header extends React.Component {
-    render() {
-        return ( 
-            <div className='header'>
-                <div className="menuIcon">
-                    <div className="dashTop"></div>
-                    <div className="dashBottom"></div>
-                    <div className="circle"></div>
-                </div>
-                <span className="">Timeline</span>
-                <input type="text" className="searchInput" placeholder="Search ..." />
-                <div className="searchIcon"></div>
-            </div>
-        );
-    }
+  render() {
+    return (
+        <div className="timeline">
+      <div className="header">
+        <div className="menuIcon">
+          <div className="dashTop"></div>
+          <div className="dashBottom"></div>
+          <div className="circle"></div>
+        </div>
+        <span className="title">Timeline</span>
+
+        <input
+          type="text"
+          className="searchInput"
+          placeholder="Search ..." />
+
+        <div className="fa fa-search searchIcon"></div>
+      </div>
+      </div>
+    )
+  }
 }
 
-export default Header;
-
-// eof
+export default Header
