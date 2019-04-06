@@ -1,60 +1,59 @@
 .frame
   z-index: 2
-  width: 100%
   top: 20px
-  background: #fff
+  width: 100%
+  margin-bottom: 40px
   border-radius: 3px
   overflow: hidden
+  background: #fff
   font-family: 'Open Sans', Helvetica, sans-serif
-  margin-bottom: 40px
 
   &.show-menu
     transform: translate3d(150px, 0, 0)
 
   .panel
-    background-color: black
-  
+    background-color: lightgreen
     
   .searchInput
-    border: 10px solid red
-    box-sizing: border-box
+    opacity: 1
     position: absolute
     top: 13px
     right: 55px
     width: 200px
     height: 34px
+    box-sizing: border-box
+    border: 10px solid red
     border-radius: 17px
-    border: none
-    background: #fff
+    border: none    
     padding: 0 17px
-    font-size: 13px
+    background: #fff
     color: #666
+    font-size: 13px
+    pointer-events: none
     transition: all 0.3s ease-in-out
     transform: translateX(15px)
-    opacity: 0
-    pointer-events: none
 
     &:focus
       outline: none
 
     &.active
-      -webkit-transform: translateX(0)
-      transform: translateX(0)
-      opacity: 1
+      opacity: 1     
       pointer-events: all
+      transform: translateX(0)
+      -webkit-transform: translateX(0)
 
   .header
     position: relative
     height: 60px
-    background: #5f98cd
     padding-top: 0
+    background: #5f98cd
 
     .menuIcon
       position: absolute
-      width: 29px
-      height: 15px
       top: 23px
       left: 20px
+      width: 29px
+      height: 15px
       cursor: pointer
 
       &:hover
@@ -66,56 +65,56 @@
         width: 20px
         height: 3px
         top: 0
-        left: 0
-        background: #b2daff
+        left: 0        
         border-radius: 3px
-        -webkit-transition: all 0.2s ease-in-out
+        background: #b2daff
         transition: all 0.2s ease-in-out
+        -webkit-transition: all 0.2s ease-in-out
 
       .dashBottom
         position: absolute
-        width: 20px
-        height: 3px
         top: 0
         left: 0
-        background: #b2daff
+        width: 20px
+        height: 3px
         border-radius: 3px
-        -webkit-transition: all 0.2s ease-in-out
+        background: #b2daff
         transition: all 0.2s ease-in-out
-        width: 29px
+        -webkit-transition: all 0.2s ease-in-out
         top: auto
         bottom: 0
+        width: 29px
 
       .circle
         position: absolute
-        height: 7px
-        width: 7px
-        border-radius: 4px
         top: -2px
         right: 0
+        width: 7px
+        height: 7px
+        border-radius: 4px
         background: #b2daff
-        -webkit-transition: all 0.2s ease-in-out
         transition: all 0.2s ease-in-out
+        -webkit-transition: all 0.2s ease-in-out
 
     .title
       display: block
-      text-align: center
+      padding-top: 20px
       color: #fff
       font-weight: 600
       font-size: 15px
-      padding-top: 20px
+      text-align: center
 
     .searchIcon
-      position: absolute
       z-index: 3
-      font-size: 21px
-      color: #fff
+      position: absolute
       top: 18px
       right: 20px
-      -webkit-transition: all 0.3s ease
-      transition: all 0.3s ease
+      color: #fff
+      font-size: 21px
       cursor: pointer
-
+      transition: all 0.3s ease
+      -webkit-transition: all 0.3s ease
+  
       &:hover
         color: #fff
 
@@ -133,11 +132,10 @@
       background: #ebebeb
 
     .item
-      position: relative
-      z-index: 2
-      margin: 20px 30px 30px 70px
       display: block
-
+      z-index: 2
+      position: relative
+      margin: 20px 30px 30px 70px
       /*border-radius: 50%;
        *border: 5px solid #ecf0f1;
        *box-sizing: border-box;
@@ -153,98 +151,99 @@
         cursor: pointer
 
       .circle
-        box-sizing: border-box
         position: absolute
-        height: 11px
-        width: 11px
-        background: #fff
-        border: 2px solid #5f98cd
-        box-shadow: 0 0 0 3px #fff
-        border-radius: 6px
         top: 0
         left: -20px
+        width: 11px
+        height: 11px
+        box-sizing: border-box
+        border: 2px solid #5f98cd
+        border-radius: 6px
+        background: #fff
+        box-shadow: 0 0 0 3px #fff
 
       .avatar
-        position: absolute
-        height: 40px
-        width: 40px
         display: inline-block
+        position: absolute
+        left: -49px
+        width: 40px
+        height: 40px
         vertical-align: top
         overflow: hidden
-        left: -49px
 
         img
+          position: absolute
+          left: 0
+          top: 0
           width: 100%
+          border-radius: 50%
           -webkit-border-radius: 50%
           -moz-border-radius: 50%
           -ms-border-radius: 50%
           -o-border-radius: 50%
-          border-radius: 50%
-          position: absolute
-          left: 0
-          top: 0
 
-.demo .timeline .content .item .time
+
+.frame .content .item .time
   display: block
+  margin-bottom: 2px
   font-size: 11px
   line-height: 11px
-  margin-bottom: 2px
 
-.timeline
+.frame
   .content .item
     p
-      font-size: 15px
-      line-height: 20px
       margin: 0px 40px 0px 0px
+      font-size: 15px    
       font-family: 'Open Sans', Lora, Times, no-serif
+      line-height: 20px
 
       b
         font-weight: 600
 
     .right
       position: absolute
+      top: 11px
       right: 5px
       font-size: 11px
-      top: 11px
 
     .commentCount
       position: absolute
+      top: 11px
       right: 15px
       font-size: 12px
-      top: 11px
 
       &:after
-        content: "\f075"
-        font-family: FontAwesome
+        z-index: 3
         position: absolute
-        font-size: 20px
-        color: #ebebeb
         top: -50%
         left: 100%
         margin-left: 10px
-        z-index: 3
+        content: "\f075"        
+        color: #ebebeb
+        font-family: FontAwesome
+        font-size: 20px
 
       &:hover:after
         color: lightblue
 
   .footer
     position: relative
-    background: #fff
-    margin: auto
-    height: 30px
-    border-top: 1px solid #eee
     width: 100%
-    border-radius: 10px
+    height: 30px
+    margin: auto
+    border-top: 1px solid #eee
+    border-radius: 10px    
+    background: #fff
 
     button
-      background: #eee
       position: absolute
-      width: 100%
-      right: 0px
-      left: 0px
       top: 0px
+      left: 0px     
       bottom: 0px
+      right: 0px
+      width: 100%
       border: 0
+      background: #eee
 
       i
         margin: 0 10px
