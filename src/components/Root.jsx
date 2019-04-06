@@ -10,7 +10,7 @@ import '../utils/startup';
 
 const Root = () => {
     return ( 
-        <div className="root">
+        <div className="app">
             <App />
         </div>
     );

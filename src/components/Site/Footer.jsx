@@ -4,7 +4,6 @@ console.log( "Mounting Footer.jsx <Footer />..." );
 import React from 'react';
 
 const Footer = () => {
-
     return ( 
         <footer className="footer">
             <h3 className="nimated infinite bounce delay-3s  title is-3">The End</h3>
@@ -18,7 +17,7 @@ const Footer = () => {
             </p>
         </footer>
     )
-};
+}
 
 export default Footer;
 
