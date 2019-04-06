@@ -1,14 +1,15 @@
 import React from 'react';
 
-import './timeline.css';
+import './timeline.sass';
+//import './timeline.css';
 
 // Don't do it like this. This is for example only
 
 class Timeline extends React.Component {
   render() {
     return (
-      <div className="timeline">
-
+      <div className="frame">
+          <div className="panel">
           <div className="header">
             <div className="menuIcon">
               <div className="dashTop" />
@@ -28,6 +29,7 @@ class Timeline extends React.Component {
           </div>
           <div className="content">
             <div className="line" />
+                    {/* Timeline items */}
             <div className="item">
               <div className="avatar">
                 <img
@@ -83,7 +85,7 @@ class Timeline extends React.Component {
               </p>
             </div>
           </div>
-
+        </div>
       </div>
     );
   }

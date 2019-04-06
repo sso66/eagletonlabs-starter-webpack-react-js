@@ -3,17 +3,18 @@ import React from 'react'
 class Content extends React.Component {
   render() {
     return (
-           <div className="timeline">
+
 
       <div className="content">
         <div className="line"></div>
 
  		{/* Timeline item */}
         <div className="item">
+        <form>
           <div className="avatar">
             <img 
-            alt='Doug'
-            src="http://www.croop.cl/UI/twitter/images/doug.jpg" />
+                alt='Doug'
+                src="http://www.croop.cl/UI/twitter/images/doug.jpg" />
             Doug
           </div>
 
@@ -24,11 +25,13 @@ class Content extends React.Component {
           <div className="commentCount">
             2
           </div>
+                  </form>
         </div>
 
         {/* ... */}
+
       </div>
-      </div>
+      
     )
   }
 }

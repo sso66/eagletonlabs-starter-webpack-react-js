@@ -13,11 +13,13 @@ import Timeline from "../components/Timeline/Timeline";
 class App extends React.Component {
     render() {       
         return (
-            <div className="app">    
-                <Header />
-                <Content />
-                <Timeline />
-                <Footer />          
+            <div className="frame">  
+                <div className="panel">  
+                    <Header />
+                    <Content />
+                    <Timeline />
+                    <Footer />   
+                </div>       
             </div>
          )
     } 
