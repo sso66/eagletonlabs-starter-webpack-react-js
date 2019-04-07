@@ -1,5 +1,5 @@
-## React JSX Concepts: 
-### The End Project: Grammer and Vocabulary - Step by Step
+## React JSX Concepts: Step by Step
+### The End Project: ES6 Grammer and Vocabulary
 
   1. Hello, world!
   2. Itroduction to JSX
