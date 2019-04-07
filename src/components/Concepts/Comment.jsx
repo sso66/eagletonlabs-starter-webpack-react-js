@@ -1,3 +1,6 @@
+// Comment.jsx
+console.log("Mounting Comment.jsx <Comment />");
+
 import React from "react";
 
 function formatDate(date) {
@@ -61,3 +64,5 @@ function Comment(props) {
 }
 
 export default Comment;
+
+// eof

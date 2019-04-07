@@ -1,3 +1,6 @@
+// WhyJSX.es6
+console.log("Mounting WhyJSX.es6... <WhyJSX />");
+
 import React from "react";
 
 const name = 'Ocean Alexander';
@@ -28,3 +31,5 @@ const OA = () => (
 );
 
 export default OA;
+
+// eof
