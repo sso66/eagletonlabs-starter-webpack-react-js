@@ -9,10 +9,14 @@ import Content from "../components/Site/Content";
 import Footer from "../components/Site/Footer";
 
 import Timeline from "../components/Timeline/Timeline";
-import Clock from "../components/Timer/Clock";
+import Timer from "../components/Timer/Clock";
+
 import HelloWorld from "../components/Concepts/HelloWorld";
 import OA from "../components/Concepts/WhyJSX";
 import Comment from "../components/Concepts/Comment";
+import Clock from "../components/Concepts/Clock";
+import ActionLink from "../components/Concepts/ActionLink";
+import Toggle from "../components/Concepts/Toggle";
 
 // hardcoded data model
 const comment = {
@@ -29,17 +33,30 @@ class App extends React.Component {
         return (
             <div className="frame">  
                 <div className="panel">  
-                    <HelloWorld />
                     <Header />
+                    
+                    <HelloWorld />
+                    <hr />
                     <OA />
+                     <hr />
                     <Comment
                         date={comment.date}
                         text={comment.text}
                         author={comment.author} />
-                    <Content />
-                    <Timeline />
+                    <hr />
                     <Clock />
+                    <hr />
+                    <ActionLink />
+                    <hr />
+                    <Toggle />
+                    
+                    <Content />
+                    
+                    <Timeline />
+                    <Timer />
+                    
                     <Footer />   
+
                 </div>       
             </div>
          )

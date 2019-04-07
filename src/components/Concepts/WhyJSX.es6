@@ -23,8 +23,8 @@ function getGreeting(user) {
 
 //const element = <h1>Hello, {name}</h1>;
 //const element = <h1>Bon voyage, {formatName(user)}!</h1>;
-//const element = getGreeting(user);
-const element = getGreeting();
+const element = getGreeting(user);
+//const element = getGreeting();
 
 const OA = () => (
 	element
