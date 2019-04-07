@@ -1,4 +1,5 @@
 import React from 'react';
+import './clock.sass';
 
 class Clock extends React.Component {
 

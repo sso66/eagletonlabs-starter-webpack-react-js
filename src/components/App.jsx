@@ -9,6 +9,7 @@ import Content from "../components/Site/Content";
 import Footer from "../components/Site/Footer";
 
 import Timeline from "../components/Timeline/Timeline";
+import Clock from "../components/Timer/Clock";
 
 class App extends React.Component {
     render() {       
@@ -18,6 +19,7 @@ class App extends React.Component {
                     <Header />
                     <Content />
                     <Timeline />
+                    <Clock />
                     <Footer />   
                 </div>       
             </div>

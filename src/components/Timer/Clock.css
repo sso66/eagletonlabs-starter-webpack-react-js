@@ -15,14 +15,14 @@
   line-height: 2.0em;
   background: #eee;
 
-    /* Old browsers */
+    /* old browsers */
   background: var(--firstColor);
-  /* W3C */
-
-  .title {
-    font-size: 0.2em;
-  }
 }
+
+.title {
+    font-size: 0.2em;
+}
+
 
 @media only screen and (min-width: 700px) and (max-width: 1000px){
   .clock{
@@ -41,3 +41,5 @@
     font-size: 40px;
   }
 }
+
+/* eof */
