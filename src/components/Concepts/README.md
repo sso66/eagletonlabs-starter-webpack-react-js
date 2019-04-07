@@ -2,7 +2,7 @@
 ### The End Project: ES6 Grammer and Vocabulary
 
   1. Hello, world!
-  2. Itroduction to JSX
+  2. Introduction to JSX
   3. Rendering Elements
   4. Components and Props
   5. State and Lifecycle
