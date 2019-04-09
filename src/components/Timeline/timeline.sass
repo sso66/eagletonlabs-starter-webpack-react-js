@@ -15,7 +15,6 @@
     background-color: lightgreen
     
   .searchInput
-    opacity: 1
     position: absolute
     top: 13px
     right: 55px
@@ -28,11 +27,12 @@
     padding: 0 17px
     background: #fff
     color: #666
+    opacity: 0
     font-size: 13px
     pointer-events: none
     transition: all 0.3s ease-in-out
     transform: translateX(15px)
-
+  
     &:focus
       outline: none
 
@@ -41,7 +41,7 @@
       pointer-events: all
       transform: translateX(0)
       -webkit-transform: translateX(0)
-
+  // <Header />
   .header
     position: relative
     height: 60px
@@ -117,7 +117,7 @@
   
       &:hover
         color: #fff
-
+  // <Content />
   .content
     position: relative
     height: 100%

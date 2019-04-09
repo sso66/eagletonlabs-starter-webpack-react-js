@@ -17,6 +17,10 @@ import Comment from "../components/Concepts/Comment";
 import Clock from "../components/Concepts/Clock";
 import ActionLink from "../components/Concepts/ActionLink";
 import Toggle from "../components/Concepts/Toggle";
+import Greeting from "../components/Concepts/Greeting";
+import LoginControl from "../components/Concepts/LoginControl";
+import Mailbox from "../components/Concepts/Mailbox";
+import Page from "../components/Concepts/Page";
 
 // hardcoded data model
 const comment = {
@@ -27,14 +31,15 @@ const comment = {
     avatarUrl: 'https://placekitten.com/g/64/64',
   }, 
 };
+const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 class App extends React.Component {
     render() {       
         return (
             <div className="frame">  
                 <div className="panel">  
-                    <Header />
-                    
+                    <Header title="Ocean Alexander"/>
+                    <Content />
                     <HelloWorld />
                     <hr />
                     <OA />
@@ -49,9 +54,18 @@ class App extends React.Component {
                     <ActionLink />
                     <hr />
                     <Toggle />
-                    
-                    <Content />
-                    
+                    <hr />
+                    {/* Try changing to isLoggedIn={true} */}
+                    <Greeting isLoggedIn={true} />
+                    <hr />
+                    <LoginControl />
+                    <hr />
+                    <Mailbox unreadMessages={messages} />
+                    <hr />
+                    <Page />
+                    <hr />
+
+                                       
                     <Timeline />
                     <Timer />
                     
