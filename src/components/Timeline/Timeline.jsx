@@ -2,7 +2,7 @@
 console.log("Mounting Timeline.jsx... <Timeline />");
 
 import React from 'react';
-import './timeline.sass';
+
 //import './timeline.css';
 
 // Don't do it like this. This is for example only

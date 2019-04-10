@@ -8,8 +8,8 @@ import Header from "../components/Site/Header";
 import Content from "../components/Site/Content";
 import Footer from "../components/Site/Footer";
 
-import Timeline from "../components/Timeline/Timeline";
-import Timer from "../components/Timer/Clock";
+//import Timeline from "../components/Timeline/Timeline";
+//import Timer from "../components/Timer/Clock";
 
 import HelloWorld from "../components/Concepts/HelloWorld";
 import OA from "../components/Concepts/WhyJSX";
@@ -63,14 +63,8 @@ class App extends React.Component {
                     <Mailbox unreadMessages={messages} />
                     <hr />
                     <Page />
-                    <hr />
-
-                                       
-                    <Timeline />
-                    <Timer />
                     
                     <Footer />   
-
                 </div>       
             </div>
          )
