@@ -1,12 +1,15 @@
 // App.jsx
-console.info( 'Mounting App.js... <App />' );
+console.info( 'Mounting App.jsx... <App />' );
 
 import React from "react";
 import { render } from "react-dom";
 
-import Header from "../components/Site/Header";
+import Header from "../components/Site/Header/Header";
 import Content from "../components/Site/Content";
 import Footer from "../components/Site/Footer";
+
+import Like from "../components/User/Like";
+import Facebook from "../components/User/Facebook";
 
 //import Timeline from "../components/Timeline/Timeline";
 //import Timer from "../components/Timer/Clock";
@@ -22,7 +25,7 @@ import LoginControl from "../components/Concepts/LoginControl";
 import Mailbox from "../components/Concepts/Mailbox";
 import Page from "../components/Concepts/Page";
 
-// hardcoded data model
+// hardcoded conceptual data model
 const comment = {
   date: new Date(),
   text: 'I hope you enjoy learning React!',
@@ -38,8 +41,12 @@ class App extends React.Component {
         return (
             <div className="frame">  
                 <div className="panel">  
-                    <Header title="Ocean Alexander"/>
-                    <Content />
+                    <Header title="Eagleton Designs Dashboard"/>
+                    <Content name="Stephen" />
+                    <Like />
+                    <hr />
+                    <Facebook name="OctoPlex" />
+                    <hr />
                     <HelloWorld />
                     <hr />
                     <OA />

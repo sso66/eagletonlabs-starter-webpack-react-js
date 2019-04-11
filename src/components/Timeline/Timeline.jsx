@@ -2,8 +2,8 @@
 console.log("Mounting Timeline.jsx... <Timeline />");
 
 import React from 'react';
+import MenuButton from './MenuButton';
 
-//import './timeline.css';
 
 // Don't do it like this. This is for example only
 class Timeline extends React.Component {
@@ -12,12 +12,8 @@ class Timeline extends React.Component {
             <div className="frame">
                 <div className="panel">
                     <div className="header">
-                        <div className="menuIcon">
-                            <div className="dashTop" />
-                            <div className="dashBottom" />
-                            <div className="circle" />
-                        </div>
-
+                        <MenuButton />
+                        
                         <span className="title">Timeline</span>
 
                         <input

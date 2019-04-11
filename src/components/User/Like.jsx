@@ -1,9 +1,9 @@
-// CreativeInteractive.jsx
-console.log("Mounting CreativeInteractive.jsx... <CreativeInteractive />");
+// Like.jsx
+console.log("Mounting Like.jsx... <Like />");
 
 import React, { Component } from 'react';
 
-class CreativeInteractive extends Component {
+class Like extends Component {
     constructor(props) {
         super(props);
         this.state = { likesCount: 0 };
@@ -18,7 +18,7 @@ class CreativeInteractive extends Component {
     render() {
         return (
             <div className="header">
-                <h2>Awesome Component</h2>
+                <h2>Stateful Component</h2>
                     Likes: 
                 <span>&nbsp;{this.state.likesCount}</span>
             	<div>
@@ -31,6 +31,6 @@ class CreativeInteractive extends Component {
     }
 }
 
-export default CreativeInteractive;
+export default Like;
 
 // eof
