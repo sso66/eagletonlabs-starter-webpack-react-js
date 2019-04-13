@@ -10,7 +10,7 @@ class Content extends React.Component {
                 <div className="line"></div>
                 {/* Timeline item */}
                 <div className="item card">
-                    <span>Timeline component: The End Item</span>
+                    <span>Timeline container: The End Item</span>
                 </div>
             </div>
         );
