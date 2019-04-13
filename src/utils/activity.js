@@ -1,7 +1,7 @@
 // activity.js
 console.log("Mounting activity.js... ");
 
-const activity = {
+let activity = {
 	timestamp: new Date().getTime(),
 	text: "Ate lunch",
 	user: {

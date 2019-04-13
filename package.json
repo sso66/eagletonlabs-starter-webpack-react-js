@@ -1,6 +1,6 @@
 {
   "name": "webpack-starter",
-  "version": "1.0.4",
+  "version": "1.0.1",
   "description": "The End Project",
   "main": "index.js",
   "scripts": {

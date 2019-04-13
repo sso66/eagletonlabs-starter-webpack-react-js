@@ -4,7 +4,6 @@ console.log("Mounting Timeline.jsx... <Timeline />");
 import React from 'react';
 import MenuButton from './MenuButton';
 
-
 // Don't do it like this. This is for example only
 class Timeline extends React.Component {
     render() {

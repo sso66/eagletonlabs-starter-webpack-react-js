@@ -15,8 +15,7 @@
       - **babel-loader** is the babel module loader for Webpack
       - **jshint** is a tool that helps to detect errors and potential problems in your JavaScript
       - **jshint-loader** is the jshint loader module for Webpack
-      - **node-libs-browser** is a peer dependency of Webpack. 
-      	It provides certain Node libraries for browser usage.
+      - **node-libs-browser** is a peer dependency of Webpack. It provides certain Node libraries for browser usage.
       - **babel-preset-es2015** is a babel preset for all es2015 plugins
       - **babel-preset-react** is a babel preset for all React plugins
       - **path** is an exact copy of the NodeJS ’path’ module published to the NPM registry.

@@ -6,8 +6,8 @@ import { render } from "react-dom";
 import Root from './components/Root';
 import './styles/index.sass';
 
-const init = function () { 
-    render(
+const init = function () {  
+    render (
         <Root />, 
         document.getElementById('root')
     );

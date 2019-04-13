@@ -27,7 +27,7 @@ class Header extends React.Component {
 
     	// Update the class array if the state is visible
     	if (this.state.searchVisible) {
-      		searchInputClasses.push("active");
+      		searchInputClasses.push("active animated rotateIn");
    		}
 
     	return (
@@ -38,15 +38,17 @@ class Header extends React.Component {
           			{this.props.title}
         		</span>
 
-        	<input
-          		type="text"
-          		className={searchInputClasses.join(' ')}
-          		placeholder="Search ..." />
-
-        		{/* Adding an onClick handler to call the showSearch button */}
-        	<div
-          		onClick={this.handleSearch}
-          		className="fa fa-search searchIcon"></div>
+            	<input
+              		type="text"
+              		className={searchInputClasses.join(' ')}
+              		placeholder="Search ..." 
+              	/>
+    
+            	{/* Add an onClick handler to call the handle icon button */}
+            	<div
+              		onClick={this.handleSearch}
+              		className="fa fa-search searchIcon ">
+              	</div>
       		</div>
     	)
   	}

@@ -5,14 +5,17 @@ import React from "react";
 import { render } from "react-dom";
 
 import Header from "../components/Site/Header/Header";
-import Content from "../components/Site/Content";
-import Footer from "../components/Site/Footer";
+import Footer from "../components/Site/Footer/Footer";
+
+import Content from "../components/Timeline/Content";
+//import Timeline from "../components/Timeline/Timeline";
+import activity from '../utils/activity.js';
+
+//import Timer from "../components/Timer/Clock";
 
 import Like from "../components/User/Like";
 import Facebook from "../components/User/Facebook";
-
-//import Timeline from "../components/Timeline/Timeline";
-//import Timer from "../components/Timer/Clock";
+import Gauge from "../components/User/Gauge";
 
 import HelloWorld from "../components/Concepts/HelloWorld";
 import OA from "../components/Concepts/WhyJSX";
@@ -34,6 +37,7 @@ const comment = {
     avatarUrl: 'https://placekitten.com/g/64/64',
   }, 
 };
+
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 class App extends React.Component {
@@ -41,12 +45,15 @@ class App extends React.Component {
         return (
             <div className="frame">  
                 <div className="panel">  
-                    <Header title="Eagleton Designs Dashboard"/>
-                    <Content name="Stephen" />
+                    <Header title="The End Project"/>
+                    
+                    <Content />
+                    {/*
                     <Like />
                     <hr />
                     <Facebook name="OctoPlex" />
                     <hr />
+                    <Gauge />
                     <HelloWorld />
                     <hr />
                     <OA />
@@ -62,7 +69,7 @@ class App extends React.Component {
                     <hr />
                     <Toggle />
                     <hr />
-                    {/* Try changing to isLoggedIn={true} */}
+                    {/* Try changing to isLoggedIn={true}
                     <Greeting isLoggedIn={true} />
                     <hr />
                     <LoginControl />
@@ -70,7 +77,7 @@ class App extends React.Component {
                     <Mailbox unreadMessages={messages} />
                     <hr />
                     <Page />
-                    
+                     */}
                     <Footer />   
                 </div>       
             </div>
