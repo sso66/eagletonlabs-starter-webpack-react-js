@@ -2,15 +2,12 @@
 console.info( 'Mounting App.jsx... <App />' );
 
 import React from "react";
-import { render } from "react-dom";
-
+import Home from "../views/TheEnd/Home";
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
 
-import Content from "../components/Timeline/Content";
 //import Timeline from "../components/Timeline/Timeline";
-import activity from '../utils/activity.js';
-
+//import activity from '../utils/activity.js';
 //import Timer from "../components/Timer/Clock";
 
 import Like from "../components/User/Like";
@@ -45,9 +42,8 @@ class App extends React.Component {
         return (
             <div className="frame">  
                 <div className="panel">  
-                    <Header title="The End Project"/>
-                    
-                    <Content />
+                    <Header title="The End Project"/>                                       
+                    <Home />
                     {/*
                     <Like />
                     <hr />
