@@ -2,8 +2,8 @@
 console.log("Mounting Home.jsx ... <Home />");
 
 import React from "react";
-import Timer from '../../containers/TheEnd/Timer/Content';
-import Timeline from '../../containers/TheEnd/Timeline/Content';
+import Timer from '../../containers/EagletonEnd/Timer/Content';
+import Timeline from '../../containers/EagletonEnd/Timeline/Content';
 import Content from '../../components/Timeline/Content';
 
 const Home = (props) => {

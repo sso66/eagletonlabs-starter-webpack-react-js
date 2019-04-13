@@ -1,6 +1,9 @@
+// GaugePrototype.jsx
+console.log('Mounting GaugePrototype.jsx... <GaugePrototype />');
+
 import React from 'react'
 
-const SvgComponent = props => (
+const GaugePrototype = props => (
   <svg
     className="gauge"
     height={200}
@@ -108,4 +111,4 @@ const SvgComponent = props => (
   </svg>
 )
 
-export default SvgComponent
+export default GaugePrototype

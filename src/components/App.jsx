@@ -2,8 +2,8 @@
 console.info( 'Mounting App.jsx... <App />' );
 
 import React from "react";
-import Hero from "../containers/TheEnd/Timeline/Hero";
-import Home from "../views/TheEnd/Home";
+
+import Home from "../views/EagletonEnd/Home";
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
 
@@ -13,7 +13,8 @@ import Footer from "../components/Site/Footer/Footer";
 
 import Like from "../components/User/Like";
 import Facebook from "../components/User/Facebook";
-import Gauge from "../components/User/Gauge";
+
+import RadialGauge from "../components/Gauge/RadialGauge";
 
 import HelloWorld from "../components/Concepts/HelloWorld";
 import OA from "../components/Concepts/WhyJSX";
@@ -43,15 +44,14 @@ class App extends React.Component {
         return (
             <div className="frame">  
                 <div className="panel">  
-                    <Header title="The End Project"/>    
+                    <Header title="Eagleton End"/>    
                     <Home />                                   
-                    <Hero />
                     {/*
                     <Like />
                     <hr />
                     <Facebook name="OctoPlex" />
                     <hr />
-                    <Gauge />
+                    <RadialGauge />
                     <HelloWorld />
                     <hr />
                     <OA />

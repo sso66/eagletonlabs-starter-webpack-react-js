@@ -1,11 +1,11 @@
-// Dashboard.jsx
-console.log('Mounting Dashboard.js... <Dashboard />');
+// RadialGauge.jsx
+console.log('Mounting RadialGauge.jsx... <RadialGauge />');
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Gauge from 'react-radial-gauge';
+import GaugeTemplate from 'react-radial-gauge';
 
-class Dashboard extends Component {
+class RadialGauge extends Component {
     constructor(props) {
         super(props);  
         this.state = {
@@ -49,22 +49,22 @@ class Dashboard extends Component {
                 </ul>
                 */}
                 {/*<button onClick={this.handleClick.bind(this)}>Event</button>*/}
-                <button className="button is-dark" onClick={this.handleClick}>Dashboard</button>
+                <button className="button is-dark" onClick={this.handleClick}>RadialGauge</button>
                 
-                <Gauge {...opts} />    
-                <Gauge {...opts} />   
-                <Gauge {...opts} />   
-                <Gauge {...opts} />     
+                <GaugeTemplate {...opts} />    
+                <GaugeTemplate {...opts} />   
+                <GaugeTemplate {...opts} />   
+                <GaugeTemplate {...opts} />     
             </div>
         );
    }
 }
-Dashboard.PropTypes = {
+RadialGauge.PropTypes = {
   // todo
 }
-Dashboard.defaultProps = {
+RadialGauge.defaultProps = {
   // todo
 }
-export default Dashboard;
+export default RadialGauge;
 
 // eof 
