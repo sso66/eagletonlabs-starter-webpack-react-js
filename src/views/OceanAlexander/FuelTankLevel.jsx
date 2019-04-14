@@ -1,29 +1,28 @@
-// Home.jsx
-console.log("Mounting Home.jsx ... <Home />");
+// FuelTankLevel.jsx
+console.log("Mounting FuelTankLevel.jsx ... <FuelTankLevel />");
 
 import React from "react";
-import Heading from '../../containers/EagletonEnd/Home/Heading';
-import Content from '../../containers/EagletonEnd/Home/Content';
+import Heading from '../../containers/OceanAlexander/FuelTankLevel/Heading';
+import Content from '../../containers/OceanAlexander/FuelTankLevel/Content';
 
-const Home = (props) => {
+const FuelTankLevel = (props) => {
     return (
         <div>
             <Heading />
             <div className="tile is-ancestor">
-                <div className="tile is-3 is-parent">
-                    <div className="tile is-child green post">
+                <div className="tile is-3 is-vertical is-parent">
+                    <div className="tile is-child">
                         <Content />
                     </div>
                 </div>
              
                 <div className="tile is-6 is-vertical is-parent">
                     <div className="tile is-child pink post">
-                        <Content />
+                        <Heading />
                     </div>
                     <div className="tile is-child gold post">
-                         <Content />
-                    </div>
-                    
+                         <Heading />
+                    </div>                   
                 </div> 
              
                 <div className="tile is-3 is-parent">
@@ -36,7 +35,7 @@ const Home = (props) => {
     );
 }
 
-export default Home;
+export default FuelTankLevel;
 
 // eof
 
