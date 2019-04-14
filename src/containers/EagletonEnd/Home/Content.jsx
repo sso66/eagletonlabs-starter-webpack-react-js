@@ -8,9 +8,9 @@ class Content extends React.Component {
         return (
             <div className="content">
                 <div className="line"></div>
-                {/* Timeline item */}
+                {/* Home item */}
                 <div className="item card">
-                    <span>Timeline component: The End Item</span>
+                    <span>Eagleton End container: The End Item</span>
                 </div>
             </div>
         );

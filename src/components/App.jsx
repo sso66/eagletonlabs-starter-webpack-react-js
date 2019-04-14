@@ -4,6 +4,10 @@ console.info( 'Mounting App.jsx... <App />' );
 import React from "react";
 
 import Home from "../views/EagletonEnd/Home";
+//import About from "../views/EagletonEnd/About";
+import Timeline from "../views/EagletonEnd/Timeline";
+import Timer from "../views/EagletonEnd/Timer";
+
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
 
@@ -45,8 +49,11 @@ class App extends React.Component {
             <div className="frame">  
                 <div className="panel">  
                     <Header title="Eagleton End"/>    
-                    <Home />                                   
+                    <Home /> 
                     {/*
+                    <Timeline />
+                    <Timer />                                  
+
                     <Like />
                     <hr />
                     <Facebook name="OctoPlex" />

@@ -2,17 +2,21 @@
 console.log("Mounting Home.jsx ... <Home />");
 
 import React from "react";
-import Timer from '../../containers/EagletonEnd/Timer/Content';
-import Timeline from '../../containers/EagletonEnd/Timeline/Content';
-import Content from '../../components/Timeline/Content';
+import Heading from '../../containers/EagletonEnd/Home/Heading';
+import Content from '../../containers/EagletonEnd/Home/Content';
 
 const Home = (props) => {
     return (
       <div>
-        <h1 className="title is-5">Welcome Home!</h1>
-        <Content />
-        <Timeline />
-        <Timer />
+         <Heading>
+            <h1 className="title is-5">Welcome Home!</h1>
+        </Heading>
+        <section className="section">
+            <div className="container">
+                <Content />
+            </div>
+        </section>
+
       </div>  
     );
 }
