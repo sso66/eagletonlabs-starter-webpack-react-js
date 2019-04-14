@@ -49,7 +49,7 @@ class App extends React.Component {
             <div className="frame">  
                 <div className="panel">  
                     <Header title="Eagleton End"/>    
-                    <Home /> 
+                    <Home />
                     {/*
                     <Timeline />
                     <Timer />                                  
