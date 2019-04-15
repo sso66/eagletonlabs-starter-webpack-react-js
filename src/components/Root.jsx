@@ -2,8 +2,8 @@
 console.log( "Mounting Root.jsx..." );
 
 import React from 'react';
-//import App from './App'
-import App from './OA-App'
+import App from './App'
+//import App from './OA-App'
 
 // Utility Modules
 import '../utils/logger.es6';

@@ -2,24 +2,15 @@
 console.info( 'Mounting App.jsx... <App />' );
 
 import React from "react";
-
 import Home from "../views/EagletonEnd/Home";
-//import About from "../views/EagletonEnd/About";
-import Timeline from "../views/EagletonEnd/Timeline";
-import Timer from "../views/EagletonEnd/Timer";
-
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
 
 //import Timeline from "../components/Timeline/Timeline";
 //import activity from '../utils/activity.js';
 //import Timer from "../components/Timer/Clock";
-
 import Like from "../components/User/Like";
 import Facebook from "../components/User/Facebook";
-
-import RadialGauge from "../components/Gauge/RadialGauge";
-
 import HelloWorld from "../components/Concepts/HelloWorld";
 import OA from "../components/Concepts/WhyJSX";
 import Comment from "../components/Concepts/Comment";
@@ -58,7 +49,6 @@ class App extends React.Component {
                     <hr />
                     <Facebook name="OctoPlex" />
                     <hr />
-                    <RadialGauge />
                     <HelloWorld />
                     <hr />
                     <OA />

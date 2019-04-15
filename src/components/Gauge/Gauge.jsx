@@ -20,11 +20,16 @@ class RadialGauge extends Component {
     
     render() {
         let opts = {
-            size: 200, 
+            size: 300, 
             dialColor: '#FFD700', 
             dialWidth: 10  , 
-            dialColor: 'lightblue', 
+            dialColor: 'darkorange', 
+            needleColor: 'red',
+            needleBaseColor: 'red',
             needleSharp: true, 
+            progressWidth: 12,
+            progressColor: 'skyblue',
+            className: 'frame'
         };
 
         return (

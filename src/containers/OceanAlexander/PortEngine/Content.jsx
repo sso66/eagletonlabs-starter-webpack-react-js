@@ -8,8 +8,9 @@ class Content extends React.Component {
     render() {               
         return (
             <div className="content">
-              <div className="line"></div>
-                              <div className="item">
+                <div className="line"></div>
+                 <div className="item">
+                    {/*
                     <div className="card"><div className="button is-primary is-small">SHOW TABS</div></div>  
                     <div className="card">AC PWR SELECT /AC MAIN BREAKERS</div>
                     <div className="card">AIR CONDITIONING</div>
@@ -18,6 +19,7 @@ class Content extends React.Component {
                     <div className="card">OUTLETS AV</div>   
                     <div className="card">LIGHTING</div>
                     <div className="card">NAVIGATION</div>
+                    */}
                     <Gauge />
                 </div>
             </div>
