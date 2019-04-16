@@ -10,7 +10,7 @@ const Home = (props) => {
         <div>
             <Heading />
             <div className="tile is-ancestor">
-                <div className="tile is-3 is-vertical is-parent">
+                <div className="tile is-vertical is-parent">
                     <div className="tile is-child">
                         <Content />
                     </div>
@@ -25,7 +25,7 @@ const Home = (props) => {
                     </div>                   
                 </div> 
              
-                <div className="tile is-3 is-parent">
+                <div className="tile is-parent">
                     <div className="tile is-child blue post">
                          <Content />
                     </div>

@@ -3,6 +3,7 @@ console.log("Mounting Content.jsx... <Content />");
 
 import React from 'react'
 
+
 class Content extends React.Component {
     render() {               
         return (
@@ -11,6 +12,7 @@ class Content extends React.Component {
                 {/* Home item */}
                 <div className="item card">
                     <span>Eagleton End container: The End Item</span>
+
                 </div>
             </div>
         );

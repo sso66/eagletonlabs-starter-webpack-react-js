@@ -16,25 +16,28 @@ class RadialGauge extends Component {
     
     handleClick() {
         console.log(this); // React.Component instance
+        alert("Hello Gauge!");
     }
     
     render() {
         let opts = {
-            size: 300, 
+            size: 150, 
             dialColor: '#FFD700', 
-            dialWidth: 10  , 
+            dialWidth: 5,  
             dialColor: 'darkorange', 
             needleColor: 'red',
             needleBaseColor: 'red',
             needleSharp: true, 
-            progressWidth: 12,
-            progressColor: 'skyblue',
-            className: 'frame'
+            progressWidth: 5,
+            progressColor: 'lightgreen',
+            className: ''
         };
 
         return (
-            <div className="pane">                        
-                <GaugeTemplate {...opts} />                   
+            <div className="frame">                        
+
+                <button onClick={this.handleClick} className="button is-primary">Gauge</button>  
+                                <GaugeTemplate {...opts} />                 
             </div>
         );
    }

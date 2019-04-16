@@ -2,6 +2,7 @@
 console.info( 'Mounting App.jsx... <App />' );
 
 import React from "react";
+
 import Home from "../views/EagletonEnd/Home";
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
@@ -21,6 +22,8 @@ import Greeting from "../components/Concepts/Greeting";
 import LoginControl from "../components/Concepts/LoginControl";
 import Mailbox from "../components/Concepts/Mailbox";
 import Page from "../components/Concepts/Page";
+
+
 
 // hardcoded conceptual data model
 const comment = {
