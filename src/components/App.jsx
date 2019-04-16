@@ -4,26 +4,25 @@ console.info( 'Mounting App.jsx... <App />' );
 import React from "react";
 
 import Home from "../views/EagletonEnd/Home";
+
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
 
-//import Timeline from "../components/Timeline/Timeline";
+
 //import activity from '../utils/activity.js';
 //import Timer from "../components/Timer/Clock";
-import Like from "../components/User/Like";
-import Facebook from "../components/User/Facebook";
-import HelloWorld from "../components/Concepts/HelloWorld";
-import OA from "../components/Concepts/WhyJSX";
-import Comment from "../components/Concepts/Comment";
-import Clock from "../components/Concepts/Clock";
-import ActionLink from "../components/Concepts/ActionLink";
-import Toggle from "../components/Concepts/Toggle";
-import Greeting from "../components/Concepts/Greeting";
-import LoginControl from "../components/Concepts/LoginControl";
-import Mailbox from "../components/Concepts/Mailbox";
-import Page from "../components/Concepts/Page";
-
-
+// import Like from "../components/User/Like";
+// import Facebook from "../components/User/Facebook";
+// import HelloWorld from "../components/Concepts/HelloWorld";
+// import OA from "../components/Concepts/WhyJSX";
+// import Comment from "../components/Concepts/Comment";
+// import Clock from "../components/Concepts/Clock";
+// import ActionLink from "../components/Concepts/ActionLink";
+// import Toggle from "../components/Concepts/Toggle";
+// import Greeting from "../components/Concepts/Greeting";
+// import LoginControl from "../components/Concepts/LoginControl";
+// import Mailbox from "../components/Concepts/Mailbox";
+// import Page from "../components/Concepts/Page";
 
 // hardcoded conceptual data model
 const comment = {
@@ -44,8 +43,8 @@ class App extends React.Component {
                 <div className="panel">  
                     <Header title="Eagleton End"/>    
                     <Home />
-                    {/*
-                    <Timeline />
+
+                    {/*          
                     <Timer />                                  
 
                     <Like />

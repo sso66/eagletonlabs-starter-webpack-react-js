@@ -2,7 +2,11 @@
 console.log("Mounting Timeline.jsx... <Timeline />");
 
 import React from 'react';
-import MenuButton from './MenuButton';
+//import MenuButton from './MenuButton';
+//import Title from './Title';
+//import SearchForm from './SearchForm';
+
+import MenuButton from '../Site/Header/MenuButton'
 
 // Don't do it like this. This is for example only
 class Timeline extends React.Component {
@@ -13,17 +17,20 @@ class Timeline extends React.Component {
                     <div className="header">
                         <MenuButton />
                         
+                        { /* <Title /> */}                       
                         <span className="title">Timeline</span>
-
+                        
+                        {/* <SearchForm /> */ }
                         <input
                             type="text"
                             className="searchInput"
                             placeholder="Search ..."
                         />
-
                         <div className="fa fa-search searchIcon" />
+                        
                     </div>
-          
+                    
+                    {/* <Content /> */}
                     <div className="content">
                         <div className="line" />
                             {/* Timeline items */}

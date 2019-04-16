@@ -3,7 +3,7 @@ console.log('Mounting RadialGauge.jsx... <RadialGauge />');
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import GaugeTemplate from 'react-radial-gauge';
+import Gauge from 'react-radial-gauge';
 
 class RadialGauge extends Component {
     constructor(props) {
@@ -30,14 +30,14 @@ class RadialGauge extends Component {
             needleSharp: true, 
             progressWidth: 5,
             progressColor: 'lightgreen',
-            className: ''
+            className: '',
+            styles: {backgroundColor: 'black' },
         };
 
         return (
             <div className="frame">                        
-
-                <button onClick={this.handleClick} className="button is-primary">Gauge</button>  
-                                <GaugeTemplate {...opts} />                 
+                <Gauge {...opts}   />   
+                <button onClick={this.handleClick} className="button is-primary">Gauge</button>                 
             </div>
         );
    }
