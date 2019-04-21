@@ -33,11 +33,13 @@ class Header extends React.Component {
     	return (
       		<div className="header">
         		<MenuButton />
-
+             
+          
         		<span className="title">
           			{this.props.title}
         		</span>
-
+           
+                {/* <SearchForm /> */}
             	<input
               		type="text"
               		className={searchInputClasses.join(' ')}
