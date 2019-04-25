@@ -1,8 +1,7 @@
 // RadialGauge.jsx
 console.log("Mounting RadialGauge.jsx ... <RadialGauge />");
-
 import React from "react";
-import { PI, circumference, offset } from './circle.es6'
+import { PI, circumference, r } from './circle.es6'
 import './radial-gauge.sass'
 
 class RadialGauge extends React.Component {
@@ -22,9 +21,12 @@ class RadialGauge extends React.Component {
         let radius = 54; // half of the diameter
         let progress = 59; // 0 - 100
         let range = 200; // positive/negative
-        alert("radius: " + radius + "\ndiameter: " + (radius*2) 
-                + "\nprogress: " + progress + "\nrange: " + range +
-                "\nstroke-dasharray:" + circumference(radius)
+        alert("r: " + r() + 
+                + "\nradius: " + radius 
+                + "\ndiameter: " + (radius * 2) 
+                + "\nprogress: " + progress 
+                + "\nrange: " + range 
+                + "\nstroke-dasharray:" + circumference(radius)
                 + "\nstroke-dashoffset: " + circumference(radius) * (1- (progress/range)));        
     }
     

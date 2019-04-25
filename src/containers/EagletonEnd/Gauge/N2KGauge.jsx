@@ -2,7 +2,7 @@
 console.log('Mounting N2KGauge.jsx... <N2KGauge />');
 
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import Gauge from 'react-radial-gauge';
 
 class N2KGauge extends Component {
@@ -48,8 +48,9 @@ class N2KGauge extends Component {
         return (
             <div className="frame">                        
                 <Gauge {...opts}   />   
+                <button onClick={this.handleNegativeClick} className="button is-primary">Gauge-</button>   
                 <button onClick={this.handlePositiveClick} className="button is-primary">Gauge+</button>   
-                <button onClick={this.handleNegativeClick} className="button is-primary">Gauge-</button>               
+            
             </div>
         );
    }

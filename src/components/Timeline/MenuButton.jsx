@@ -11,4 +11,6 @@ const MenuButton = (props) => (
   </div>
 )
 
-export default MenuButton
+export default MenuButton;
+
+// eof

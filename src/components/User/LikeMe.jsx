@@ -19,11 +19,11 @@ class LikeMe extends Component {
         return (
             <div className="LikeMe-me">
                 <h2 className="subtitle is-5">Stateful Component</h2>
-                    LikeMes: 
+                    Likes Me: 
                 <span>&nbsp;{this.state.LikeMeCount}</span>
             	<div>
             		<button onClick={this.handleLikeMe}>
-                        LikeMe Me
+                        Likes Me
             		</button>
             	</div>
             </div> 

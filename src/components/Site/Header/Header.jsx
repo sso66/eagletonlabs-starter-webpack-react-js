@@ -31,6 +31,8 @@ class Header extends React.Component {
    		}
 
     	return (
+    	    <div className="frame">
+                <div className="pane">
       		<div className="header">
         		<MenuButton />
              
@@ -51,6 +53,8 @@ class Header extends React.Component {
               		onClick={this.handleSearch}
               		className="fa fa-search searchIcon ">
               	</div>
+      		</div>
+      		</div>
       		</div>
     	)
   	}

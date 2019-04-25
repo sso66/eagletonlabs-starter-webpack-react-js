@@ -6,12 +6,14 @@ import Heading from '../../containers/EagletonEnd/Home/Heading';
 import Content from '../../containers/EagletonEnd/Home/Content';
 import N2KGauge from "../../containers/EagletonEnd/Gauge/N2KGauge";
 import RadialGauge from "../../components/Gauge/RadialGauge";
+//import Animation from "../../components/Animation/Animation";
+import Timeline from "../../components/Timeline/Timeline";
 
 const Home = (props) => {
      return (
         <div>
             <Heading />
-            <section className="section">
+               <section className="section">
                 <div className="container">
                 
                     <div className="tile is-ancestor">
@@ -26,14 +28,13 @@ const Home = (props) => {
                                 <h3>SVG and React: Part 2</h3>
                                 <N2KGauge />
                             </div>
-                            <div className="tile is-child gold post">
-                                <h3>SVG and React: Part 2</h3>
-                                <N2KGauge />
+                            <div className="tile is-child gold ">
+                           
                             </div>
                         </div> 
                      
                         <div className="tile is-parent">
-                            <div className="tile is-child post">
+                            <div className="tile is-child post green">
                                 <h3>SVG and React: Part 1</h3>
                                 <RadialGauge />
                             </div>
@@ -41,6 +42,7 @@ const Home = (props) => {
                     </div>     
                 </div>
             </section>    
+            <Timeline />
         </div> 
     );
 }
