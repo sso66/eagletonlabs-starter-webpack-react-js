@@ -2,17 +2,25 @@
 console.log("Mounting Home.jsx ... <Home />");
 
 import React from "react";
+
 import Heading from '../../containers/EagletonEnd/Home/Heading';
 import Content from '../../containers/EagletonEnd/Home/Content';
 import N2KGauge from "../../containers/EagletonEnd/Gauge/N2KGauge";
+
 import RadialGauge from "../../components/Gauge/RadialGauge";
+
 //import Animation from "../../components/Animation/Animation";
+
 import Timeline from "../../components/Timeline/Timeline";
+
+import HelloWorld from "../../components/User/HelloWorld";
+import ListItem from "../../components/User/ListItem";
+import Notification from "../../components/User/Notification";
 
 const Home = (props) => {
      return (
-        <div>
-            <Heading />
+            <div>
+                   <Heading />
                <section className="section">
                 <div className="container">
                 
@@ -29,7 +37,13 @@ const Home = (props) => {
                                 <N2KGauge />
                             </div>
                             <div className="tile is-child gold ">
-                           
+                                <HelloWorld name="Stephen" />
+                                <hr />
+                                <ListItem>
+                                    <HelloWorld name="Stephen" />
+                                </ListItem>
+                                <hr />
+                                <Notification message="Notify Me" level="3"/>
                             </div>
                         </div> 
                      
@@ -43,7 +57,7 @@ const Home = (props) => {
                 </div>
             </section>    
             <Timeline />
-        </div> 
+        </div>
     );
 }
 

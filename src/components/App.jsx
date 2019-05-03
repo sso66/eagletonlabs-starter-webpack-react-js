@@ -10,7 +10,7 @@ import Footer from "../components/Site/Footer/Footer";
 
 
 //import activity from '../utils/activity.js';
-//import Timer from "../components/Timer/Clock";
+import Timer from "../components/Timer/Clock";
 // import Like from "../components/User/Like";
 // import Facebook from "../components/User/Facebook";
 // import HelloWorld from "../components/Concepts/HelloWorld";
@@ -24,6 +24,7 @@ import Footer from "../components/Site/Footer/Footer";
 // import Mailbox from "../components/Concepts/Mailbox";
 // import Page from "../components/Concepts/Page";
 
+ 
 // hardcoded conceptual data model
 const comment = {
   date: new Date(),
@@ -39,14 +40,11 @@ const messages = ['React', 'Re: React', 'Re:Re: React'];
 class App extends React.Component {
     render() {       
         return (
-            <div className="frame">  
-                <div className="panel">  
+            <div>  
                     <Header title="Eagleton End"/>    
-                    <Home />
-
-                    {/*          
+                                            
                     <Timer />                                  
-
+                    {/*
                     <Like />
                     <hr />
                     <Facebook name="OctoPlex" />
@@ -77,7 +75,7 @@ class App extends React.Component {
                      */}
                     <Footer />   
                 </div>       
-            </div>
+
          )
     } 
 }
