@@ -8,11 +8,9 @@ import Content from '../../containers/EagletonEnd/Home/Content';
 import N2KGauge from "../../containers/EagletonEnd/Gauge/N2KGauge";
 
 import RadialGauge from "../../components/Gauge/RadialGauge";
-
+import AbstractGauge from "../../components/Gauge/AbstractGauge";
 //import Animation from "../../components/Animation/Animation";
-
 import Timeline from "../../components/Timeline/Timeline";
-
 import HelloWorld from "../../components/User/HelloWorld";
 import ListItem from "../../components/User/ListItem";
 import Notification from "../../components/User/Notification";
@@ -44,6 +42,8 @@ const Home = (props) => {
                                 </ListItem>
                                 <hr />
                                 <Notification message="Notify Me" level="3"/>
+                                <hr />
+                                <AbstractGauge />
                             </div>
                         </div> 
                      
