@@ -9,6 +9,8 @@ const PortEngine = (props) => {
     return (
         <div>
             <Heading />
+            <div className="section">
+            <div className="container">
             <div className="tile is-ancestor">
                 <div className="tile is-3 is-vertical is-parent">
                     <div className="tile is-child">
@@ -30,7 +32,9 @@ const PortEngine = (props) => {
                          <Content />
                     </div>
                 </div>
-            </div>        
+            </div>   
+            </div>
+            </div>  
         </div>  
     );
 }

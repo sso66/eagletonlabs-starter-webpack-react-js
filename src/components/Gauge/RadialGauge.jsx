@@ -17,17 +17,18 @@ class RadialGauge extends React.Component {
         needleMove.beginElement() 
     }
     
-    handleClickFormulate() {
+    handleClickFormulate(e) {
         let radius = 54; // half of the diameter
         let progress = 59; // 0 - 100
-        let range = 200; // positive/negative
+        let range = 100; // positive/negative
         alert("r: " + r() + 
                 + "\nradius: " + radius 
                 + "\ndiameter: " + (radius * 2) 
                 + "\nprogress: " + progress 
                 + "\nrange: " + range 
-                + "\nstroke-dasharray:" + circumference(radius)
-                + "\nstroke-dashoffset: " + circumference(radius) * (1- (progress/range)));        
+                + "\nstroke-dasharray: " + circumference(radius)
+                + "\nstroke-dashoffset: " + circumference(radius) * (1- (progress/range))); 
+        e.preventDefault();       
     }
     
     render () {

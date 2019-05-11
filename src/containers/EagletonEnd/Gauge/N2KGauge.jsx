@@ -1,9 +1,11 @@
-// N2KGauge.jsx
+// containers/EagletonEnd/N2KGauge.jsx
 console.log('Mounting N2KGauge.jsx... <N2KGauge />');
 
 import React, { Component } from 'react';
 //import PropTypes from 'prop-types';
-import Gauge from 'react-radial-gauge';
+//import Gauge from 'react-radial-gauge';
+
+import Gauge from '../../../components/Gauge/N2KGauge';
 
 class N2KGauge extends Component {
     constructor(props) {
@@ -27,29 +29,43 @@ class N2KGauge extends Component {
     
     render() {
         let opts = {
-            size: 200, 
+            //size: 100, 
             
-            dialColor: '#FFD700', 
-            dialWidth: 15,  
+            //dialColor: '#FFD700', 
+            //dialWidth: 15,  
             
-            needleColor: 'red',
-            needleBaseColor: 'red',
-            needleSharp: true, 
+            //needleColor: 'red',
+            //needleBaseColor: 'red',
+            //needleSharp: true, 
             
-            progressWidth: 10,
-            progressColor: 'lightgreen',
+            //progressWidth: 10,
+           //progressColor: 'lightgreen',
             
             currentValue: this.state.currentValue,
-            className: '',
+            //className: '',
+            
+            //tickInterval: 10,
+            //tickWidth: 1,
+            //tickColor: '#cacaca',
+            //tickLength: 3,
             
             styles: {backgroundColor: 'black' },
         };
 
         return (
             <div className="frame">                        
-                <Gauge {...opts}   />   
-                <button onClick={this.handleNegativeClick} className="button is-primary">Gauge-</button>   
-                <button onClick={this.handlePositiveClick} className="button is-primary">Gauge+</button>   
+            <Gauge {...opts}   />   
+
+                <button 
+                    onClick={this.handleNegativeClick} 
+                    className="button is-primary">Gauge-
+                </button> 
+                  
+                <button 
+                    onClick={this.handlePositiveClick} 
+                    className="button is-primary">
+                    Gauge+
+                </button>   
             
             </div>
         );

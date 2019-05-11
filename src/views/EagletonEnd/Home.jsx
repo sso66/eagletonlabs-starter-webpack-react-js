@@ -31,7 +31,7 @@ const Home = (props) => {
                             </div>
                         </div>
                      
-                        <div className="tile is-6 is-vertical is-parent">
+                        <div className="tile is-3 is-vertical is-parent">
                             <div className="tile is-child pink post">
                                 <h3>SVG and React: Part 2</h3>
                                 <N2KGauge />

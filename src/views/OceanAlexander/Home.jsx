@@ -9,15 +9,17 @@ const Home = (props) => {
     return (
         <div>
             <Heading />
+            <div className="section">
+            <div className="container">
             <div className="tile is-ancestor">
-                <div className="tile is-vertical is-parent">
+                <div className="tile is-parent">
                     <div className="tile is-child">
                         <Content />
                     </div>
                 </div>
              
-                <div className="tile is-6 is-vertical is-parent">
-                    <div className="tile is-child pink post">
+                <div className="tile is-parent">
+                    <div className="tile is-child is-6 pink post">
                         <Heading />
                     </div>
                     <div className="tile is-child gold post">
@@ -25,12 +27,14 @@ const Home = (props) => {
                     </div>                   
                 </div> 
              
-                <div className="tile is-parent">
-                    <div className="tile is-child blue post">
+                <div className="tile is-parent gold post">
+                    
                          <Content />
-                    </div>
+                    
                 </div>
-            </div>        
+            </div>   
+            </div>
+            </div>     
         </div>  
     );
 }

@@ -8,7 +8,6 @@ import Home from "../views/EagletonEnd/Home";
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
 
-
 //import activity from '../utils/activity.js';
 import Timer from "../components/Timer/Clock";
 // import Like from "../components/User/Like";
@@ -23,7 +22,6 @@ import Timer from "../components/Timer/Clock";
 // import LoginControl from "../components/Concepts/LoginControl";
 // import Mailbox from "../components/Concepts/Mailbox";
 // import Page from "../components/Concepts/Page";
-
  
 // hardcoded conceptual data model
 const comment = {
@@ -41,9 +39,10 @@ class App extends React.Component {
     render() {       
         return (
             <div>  
-                    <Header title="Eagleton End"/>    
-                                            
-                    <Timer />                                  
+                    <Header title="Eagleton End"/>                                              
+                    <Timer />                  
+                    <hr />  
+                    <Home />                   
                     {/*
                     <Like />
                     <hr />

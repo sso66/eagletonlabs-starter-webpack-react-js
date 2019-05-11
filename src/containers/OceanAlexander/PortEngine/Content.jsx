@@ -2,7 +2,7 @@
 console.log("Mounting Content.jsx... <Content />");
 
 import React from 'react'
-import Gauge from "../../../components/Gauge/Gauge";
+import Gauge from "../../../components/Gauge/N2KGauge";
 
 class Content extends React.Component {
     render() {               

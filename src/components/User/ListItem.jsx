@@ -12,7 +12,7 @@ const ListItem = (props) => {
     }
     
     return (
-        <div className="list">
+        <div className="list box">
             <a 
                 href="#"
                 onClick={handleClick}>
