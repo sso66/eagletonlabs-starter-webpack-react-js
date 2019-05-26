@@ -1,0 +1,26 @@
+/* box.sass */
+@-webkit-keyframes move-it {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes move-it {
+  to {
+    left: 100%;
+  }
+}
+
+.box {
+    position: absolute;
+}
+
+:hover .box {
+  -webkit-animation-name: move-it;
+          animation-name: move-it;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/* eof */
+

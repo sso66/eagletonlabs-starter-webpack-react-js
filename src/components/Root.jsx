@@ -1,5 +1,5 @@
 // Root.jsx
-console.log( "Mounting Root.jsx..." );
+console.log( "Mounting Root.jsx... <Root />" );
 
 import React from 'react';
 import App from './App'

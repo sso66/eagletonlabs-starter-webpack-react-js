@@ -54,7 +54,7 @@ class N2KGauge extends Component {
 
         return (
             <div className="frame">                        
-            <Gauge {...opts}   />   
+                <Gauge {...opts}   />   
 
                 <button 
                     onClick={this.handleNegativeClick} 

@@ -24,7 +24,7 @@ const renderDial = (opts) => {
 const defineTick = (opts) => {   
     let tX1 = opts.cX + opts.radius -(Math.max(opts.dialWidth, opts.progressWidth) / 2);
     let tX2 = tX1 - opts.tickLength;
-
+    
     return (
         <line
             id={TICK_ID}
@@ -49,11 +49,13 @@ const renderTicks = (opts) => {
         <g className='ticks'>  
             {
                 tickAngles.map((tickAngle, idx) => {
-                    return <use
+                    return ( 
+                        <use
                             href={`#${TICK_ID}`}
                             key={`tick-${idx}`}
                             transform={`rotate(${tickAngle} ${opts.cX} ${opts.cY})`}
                         />
+                    )
                 })
             }
         </g>      
@@ -61,8 +63,8 @@ const renderTicks = (opts) => {
 }
 
 const renderProgress = (opts) => {   
-    let offset = (opts.circumference * (1 - (opts.currentValue / 100)));  
-    
+    let offset = (opts.circumference * (1 - (opts.currentValue / 100))); 
+   
     return (
         <circle
             cx={opts.cX}
@@ -87,7 +89,7 @@ const renderNeedle = (opts) => {
         x3 = opts.diameter,
         y3 = opts.cY,
         needleAngle = (360 * opts.currentValue) / 100;
-               
+   
     let needleElm = null;
  
     if (opts.needleSharp) {
@@ -155,24 +157,26 @@ class N2KGauge extends Component {
         
         let cX = size / 2;
         let cY = size / 2;
-        let radius = (size - (2 * dialWidth)) / 2;
+        let radius = (size - (2 * dialWidth)) / 2;       
         let diameter = 2 * radius;
         let circumference = 2 * Math.PI * radius;
-        
+               
         opts = Object.assign(opts, {
             cX,
             cY,
             radius,
             diameter,
             circumference
-        });
+        });   
         
         return (
             <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className={opts.className}
+                //height="100%" 
+                width="100%"
                 height={size}
-                width={size}
+                //width={size}
                 viewBox={`0 0 ${size} ${size}`}              
             >   
                <defs>
@@ -197,28 +201,28 @@ N2KGauge.defaultProps = {
     dialWidth: 10,
     dialColor: '#eee',
     
-    maximumValue: 100,
+    //maximumValue: 100,
     currentValue: 25,
-    progressWidth: 5,
+    
+    progressWidth: 8,
     progressColor: '#3d3d3d',
     progressRoundedEdge: true,
-    downProgressColor: 'red',
+    //downProgressColor: 'red',
     progressFont: 'sans-serif',
-    progressFontSize: '40',
+    progressFontSize: '30',
     
     tickLength: 3,
     tickWidth: 1,
-    tickColor: '#cacaca',
+    tickColor: '#000',
     tickInterval: 10,    
     
     needle: true,
     needleBaseSize: 5,  
     needleBaseColor: '#9d9d9d',
-    needleWidth: 2,
+    needleWidth: 3,
     needleColor: '#8a8a8a',
     needleSharp: false,
 }   
-
 
 export default N2KGauge;
 //module.exports = N2KGauge;

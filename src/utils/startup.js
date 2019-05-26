@@ -1,4 +1,4 @@
-console.log('Mount startup.js')
+console.log('Mounting startup.js')
 window.addEventListener('mousedown', function(e) {
   document.body.classList.add('mouse-navigation');
   document.body.classList.remove('kbd-navigation');

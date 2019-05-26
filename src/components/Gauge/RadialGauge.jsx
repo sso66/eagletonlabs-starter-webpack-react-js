@@ -1,7 +1,8 @@
 // RadialGauge.jsx
 console.log("Mounting RadialGauge.jsx ... <RadialGauge />");
+
 import React from "react";
-import { PI, circumference, r } from './circle.es6'
+import { PI, circumference } from './circle.es6'
 import './radial-gauge.sass'
 
 class RadialGauge extends React.Component {
@@ -19,11 +20,12 @@ class RadialGauge extends React.Component {
     
     handleClickFormulate(e) {
         let radius = 54; // half of the diameter
-        let progress = 59; // 0 - 100
-        let range = 100; // positive/negative
-        alert("r: " + r() + 
-                + "\nradius: " + radius 
-                + "\ndiameter: " + (radius * 2) 
+        let diameter = 2 * radius;
+        let progress = 15; // 0 - 100
+        let range = 200; // positive: [0...100 ]/ negative: [-100...0]
+        alert(
+                "\nradius: " + radius 
+                + "\ndiameter: " + diameter
                 + "\nprogress: " + progress 
                 + "\nrange: " + range 
                 + "\nstroke-dasharray: " + circumference(radius)
@@ -42,9 +44,9 @@ class RadialGauge extends React.Component {
               </ol>
               <svg
                 className="radial-progress"
-                width="200"
-                height="200"
-                viewBox="0 0 200 200"
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
                 //{...props}
               >
                 <defs>
@@ -129,14 +131,13 @@ class RadialGauge extends React.Component {
                 </g>
                 <circle className="radial-track" cx={60} cy={60} r={54} fill="none" />
                 <circle
-                    className="radial-progress-bar up"
+                    className="radial-progress-bar down"
                     cx={60}
                     cy={60}
                     r={54}
                     fill="none"
                     strokeDasharray={339.292}
-                    strokeDashoffset={239.20086}     
-                               
+                    strokeDashoffset={239.20086}                                   
                 />
                 <g className="needle">
                     <polygon
@@ -157,8 +158,10 @@ class RadialGauge extends React.Component {
                     <circle className="center" cx={60} cy={60} r={23} />
                 </g>
             </svg>
-            <button className="button is-info" id="animate" onClick={this.handleClickAnimate}>Animate</button>
-            <button className="button is-danger" onClick={this.handleClickFormulate}>Formulate</button>
+            <div>
+                <button className="button is-info" id="animate" onClick={this.handleClickAnimate}>Animate</button>
+                <button className="button is-danger" onClick={this.handleClickFormulate}>Formulate</button>
+            </div>
           </div>
         )
     }

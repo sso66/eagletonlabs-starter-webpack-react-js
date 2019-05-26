@@ -10,7 +10,6 @@ const PI = 3.141592;
 const circumference = radius => 2 * PI * radius; 
 
 const C = 100;
-const r = () => C / (2 * PI)
 
-export { PI, circumference, r };
+export { PI, circumference };
 // eof
