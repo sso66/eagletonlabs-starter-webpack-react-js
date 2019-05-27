@@ -21,7 +21,7 @@ class RadialGauge extends React.Component {
     handleClickFormulate(e) {
         let radius = 54; // half of the diameter
         let diameter = 2 * radius;
-        let progress = 15; // 0 - 100
+        let progress = 59; // 0 - 100
         let range = 200; // positive: [0...100 ]/ negative: [-100...0]
         alert(
                 "\nradius: " + radius 
@@ -43,26 +43,26 @@ class RadialGauge extends React.Component {
                 <li>Style</li>
               </ol>
               <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
                 className="radial-progress"
                 width="120"
                 height="120"
                 viewBox="0 0 120 120"
-                //{...props}
+                {...this.props}
               >
                 <defs>
-                    <line id="tick" x1={104} y1={60} x2={110} y2={60} strokeLinecap="round" />
+                    <line id="tick" x1="104" y1="60" x2="110" y2="60" strokeLinecap="round" />
+                    
                     <radialGradient id="radialCenter" cx="50%" cy="50%" r="50%">
-                        <stop stopColor="#dc3a79" offset={0} />
-                            <stop stopColor="#241d3b" offset={1} />
+                        <stop stopColor="#dc3a79" offset="0" />
+                        <stop stopColor="#241d3b" offset="1" />
                     </radialGradient>
-                </defs>
+                </defs>                
                 <g id="ticks">
-                <use
-                    className="tick quarterTick"
-                    href="#tick"
-                    transform="rotate(0 60 60)"
-                />
-                <use className="tick" href="#tick" transform="rotate(10 60 60)" />
+                    <use className="tick quarterTick" href="#tick" transform="rotate(0 60 60)" />
+                    <use className="tick" href="#tick" transform="rotate(10 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(20 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(30 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(40 60 60)" />
@@ -70,11 +70,7 @@ class RadialGauge extends React.Component {
                     <use className="tick" href="#tick" transform="rotate(60 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(70 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(80 60 60)" />
-                    <use
-                        className="tick quarterTick"
-                        href="#tick"
-                        transform="rotate(90 60 60)"
-                    />
+                    <use className="tick quarterTick" href="#tick" transform="rotate(90 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(100 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(110 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(120 60 60)" />
@@ -83,11 +79,7 @@ class RadialGauge extends React.Component {
                     <use className="tick" href="#tick" transform="rotate(150 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(160 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(170 60 60)" />
-                    <use
-                        className="tick quarterTick"
-                        href="#tick"
-                        transform="rotate(180 60 60)"
-                    />
+                    <use className="tick quarterTick" href="#tick" transform="rotate(180 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(190 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(200 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(210 60 60)" />
@@ -96,11 +88,7 @@ class RadialGauge extends React.Component {
                     <use className="tick" href="#tick" transform="rotate(240 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(250 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(260 60 60)" />
-                    <use
-                        className="tick quarterTick"
-                        href="#tick"
-                        transform="rotate(270 60 60)"
-                    />
+                    <use className="tick quarterTick" href="#tick" transform="rotate(270 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(280 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(290 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(300 60 60)" />
@@ -109,11 +97,7 @@ class RadialGauge extends React.Component {
                     <use className="tick" href="#tick" transform="rotate(330 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(340 60 60)" />
                     <use className="tick" href="#tick" transform="rotate(350 60 60)" />
-                    <use
-                        className="tick quarterTick"
-                        href="#tick"
-                        transform="rotate(360 60 60)"
-                    />
+                    <use className="tick quarterTick" href="#tick" transform="rotate(360 60 60)" />
                 </g>
                 <g id="tickLabels" className="tick-labels">
                     <text x={85} y={65} textAnchor="middle" transform="rotate(90 90,65)">
@@ -128,16 +112,16 @@ class RadialGauge extends React.Component {
                     <text x={50} y={93} textAnchor="middle" transform="rotate(90 53,95)">
                         {'50'}
                     </text>
-                </g>
-                <circle className="radial-track" cx={60} cy={60} r={54} fill="none" />
+                </g>                
+                <circle className="radial-track" cx={60} cy={60} r={54} fill="none"/>
                 <circle
-                    className="radial-progress-bar down"
+                    className="radial-progress-bar up"
                     cx={60}
                     cy={60}
                     r={54}
                     fill="none"
                     strokeDasharray={339.292}
-                    strokeDashoffset={239.20086}                                   
+                    strokeDashoffset={239.20081}                                 
                 />
                 <g className="needle">
                     <polygon
@@ -155,7 +139,7 @@ class RadialGauge extends React.Component {
                             fill="freeze"
                         />
                     </polygon>
-                    <circle className="center" cx={60} cy={60} r={23} />
+                    <circle className="center" cx={60} cy={60} r={20} fill="url(#radialCenter)" />
                 </g>
             </svg>
             <div>

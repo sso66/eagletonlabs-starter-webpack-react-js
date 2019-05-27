@@ -1,6 +1,6 @@
 // AbstractGauge.jsx
 console.log("Mounting AbstractGauge.jsx ... <AbstractGauge />");
-//SVG donut chart with 3 segments (40%, 30% and 20% respectively) with 10% unused.
+// SVG donut chart with 3 segments (40%, 30% and 20% respectively) with 10% unused.
 
 import React from 'react';
 import './abstract-gauge.sass';
@@ -26,8 +26,7 @@ const renderDial = (opts) => {
             r={opts.radius}
             stroke={opts.dialColor}
             strokeWidth={opts.dialWidth}
-            fill='transparent'
-            className={opts.className}      
+            fill='transparent'   
         />
     );
 }
@@ -151,9 +150,9 @@ AbstractGauge.defaultProps = {
     
     // Progress
     progressWidth: 3,
-    //progressColor: ['#ce4b99', '#b1c94e', '#377bbc'],   
-    progressColor: ['red', 'green', 'blue'], 
-    progressRoundEdge: false,
+    progressColor: ['#ce4b99', '#b1c94e', '#377bbc'],   
+    //progressColor: ['red', 'green', 'blue'], 
+    progressRoundEdge: true,
     
     //dash: [85, 15, 30],
     //gap: [15, 85, 70],

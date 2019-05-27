@@ -25,12 +25,17 @@ const Home = (props) => {
             
             <section className="section">
                 <div className="container">               
-                <div className="tile is-ancestor">                   
-                    <div className="tile is-parent is-vertical is-6">
+                <div className="tile is-ancestor">   
+                                
+                    <div className="tile is-parent">
                         <div className="tile is-child gold post">
+                            <h3>SVG and React: Part 1</h3>
+                            <RadialGauge />
+                             {/*
                             <N2KBarGraph width="100" />
                             <N2KProduct width="150" /> 
                             <N2KBarGraph width="100" />
+                            */}
                             <Content />                 
                         </div>
                     </div>
@@ -57,12 +62,9 @@ const Home = (props) => {
                         </div>
                     </div> 
                  
-                    <div className="tile is-parent is-vertical">                       
+                    <div className="tile is-parent is-4">                       
                         <div className="tile is-child post green">
-                            <h3>SVG and React: Part 1</h3>
-                            <AbstractGauge /> 
-                            <hr />
-                            <RadialGauge />
+                           <AbstractGauge />
                        </div>
                     </div>
                 </div>     

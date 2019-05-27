@@ -26,7 +26,7 @@ class N2KProduct extends React.Component {
                  height='100%'
                  viewBox='0 0 400 400'
                  xmlns='http://www.w3.org/2000/svg'
-                 xmlnsXlink='http//www.w3.org/1999/xlink'
+                 xmlnsXlink='http://www.w3.org/1999/xlink'
                  className=''
                  {...this.props}
             >
