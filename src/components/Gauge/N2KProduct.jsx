@@ -18,7 +18,7 @@ class N2KProduct extends React.Component {
     }
     
     render() {
-        let {fill = '#000', stroke = '#999'} = this.props;
+        let {fill = 'black', stroke = 'white'} = this.props;
         
         return (
             <svg
@@ -67,17 +67,17 @@ class N2KProduct extends React.Component {
                 <rect
                     display=''
                     x='1%'
-                    y='15%'
+                    y='16%'
                     width='98%'
-                    height='70%'
+                    height='68%'
                     stroke={stroke}
                     fill={fill}
                 />
                 <svg
                     x='1%'
-                    y='15%'
+                    y='16%'
                     width='98%'
-                    height='70%'
+                    height='68%'
                     viewBox='0 0 100 100'
                     preserveAspectRatio='xMidYMid meet'
                 >   
@@ -100,27 +100,27 @@ class N2KProduct extends React.Component {
                 <rect
                     display=''
                     x='1%'
-                    y='85%'
+                    y='84%'
                     width='98%'
-                    height='13%'
+                    height='15%'
                     stroke={stroke}
                     fill={fill}
                 />
                 <svg
                     x='1%'
-                    y='85%'
+                    y='84%'
                     width='98%'
-                    height='13%'
+                    height='15%'
                     viewBox='0 0 100 100'
                     preserveAspectRatio='xMaxYMid meet'
                 >  
                     <text
                         x='50%'
-                        y='50%'
+                        y='55%'
                         stroke='none'
                         fill='#fff'   
                         textAnchor='end'                    
-                        fontSize='40'
+                        fontSize='32'
                         fontFamily='sans-serif'
                         //fontFamily='Brush Script MT, Brush Script, Segoe Script, cursive'
                     >
@@ -132,10 +132,10 @@ class N2KProduct extends React.Component {
                 <g display='none'>
                     <rect
                         x='3%'
-                        y='16%'
+                        y='17%'
                         rx={3}
                         width='94%'
-                        height='68%'
+                        height='66%'
                         stroke='white'
                         strokeWidth={2}
                         strokeOpacity='0.5'
@@ -155,11 +155,11 @@ class N2KProduct extends React.Component {
                         fillOpacity='0.5'
                     />                    
                 </g>
-                <g display=''>
+                <g display='none'>
                     <circle
                         cx='50%'
                         cy='50%'
-                        r='150'
+                        r='130'
                         stroke='white'
                         strokeWidth={3}
                         strokeOpacity='1'
@@ -170,7 +170,7 @@ class N2KProduct extends React.Component {
                      <circle
                         cx='50%'
                         cy='50%'
-                        r='130'
+                        r='110'
                         stroke='silver'
                         strokeWidth={3}
                         strokeOpacity='1'
@@ -183,8 +183,7 @@ class N2KProduct extends React.Component {
     }
 }
 
-N2KProduct.defaultProps = {
-    
+N2KProduct.defaultProps = {  
 }
 
 export default N2KProduct;

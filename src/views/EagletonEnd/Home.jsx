@@ -8,6 +8,7 @@ import Content from '../../containers/EagletonEnd/Home/Content';
 import Tachometer from "../../containers/EagletonEnd/Home/Tachometer";
 
 import RadialGauge from "../../components/Gauge/RadialGauge";
+
 import AbstractGauge from "../../components/Gauge/AbstractGauge";
 import N2KProduct from "../../components/Gauge/N2KProduct";
 import N2KBarGraph from "../../components/Gauge/N2KBarGraph";
@@ -30,8 +31,9 @@ const Home = (props) => {
                     <div className="tile is-parent">
                         <div className="tile is-child gold post">
                             <h3>SVG and React: Part 1</h3>
-                            <RadialGauge />
-                             {/*
+                           
+                               <RadialGauge />
+                           {/*
                             <N2KBarGraph width="100" />
                             <N2KProduct width="150" /> 
                             <N2KBarGraph width="100" />
@@ -48,7 +50,7 @@ const Home = (props) => {
                         
                         <div className="tile is-child blue">
                             <h3>N2K Product</h3>
-                            <N2KProduct width="250" />
+                            <N2KProduct width="400" />
                         </div>
                         
                         <div className="tile is-child gold ">

@@ -45,8 +45,9 @@ class N2KGauge extends Component {
             //className: '',
             
             //tickInterval: 10,
-            //tickWidth: 1,
+            //tickWidth: 30,
             //tickColor: '#cacaca',
+            //tickColor: "red"
             //tickLength: 3,
             
             styles: {backgroundColor: 'black' },

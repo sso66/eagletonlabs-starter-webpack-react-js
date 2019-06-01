@@ -174,9 +174,9 @@ class N2KGauge extends Component {
                 xmlns='http://www.w3.org/2000/svg'
                 className={opts.className}
                 //height="100%" 
-                width="100%"
+                //width="100%"
                 height={size}
-                //width={size}
+                width={size}
                 viewBox={`0 0 ${size} ${size}`}              
             >   
                <defs>
