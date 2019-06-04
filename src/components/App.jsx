@@ -2,9 +2,9 @@
 console.info( 'Mounting App.jsx... <App />' );
 
 import React from "react";
+import SvgResponsive from "../components/Gauge/SvgResponsive";
 
 import Home from "../views/EagletonEnd/Home";
-
 import Header from "../components/Site/Header/Header";
 import Footer from "../components/Site/Footer/Footer";
 
@@ -39,11 +39,15 @@ class App extends React.Component {
     render() {       
         return (
             <div>  
-                    <Header title="Eagleton End"/>                                              
+                    <Header title="Eagleton End"/>    
+                    <SvgResponsive />  
+                    <Home  />     
+            
+                    {/*                                        
                     <Timer />                  
                     <hr />  
                     <Home />                   
-                    {/*
+
                     <Like />
                     <hr />
                     <Facebook name="OctoPlex" />

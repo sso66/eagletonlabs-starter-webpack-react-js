@@ -10,8 +10,6 @@ import Tachometer from "../../containers/EagletonEnd/Home/Tachometer";
 import RadialGauge from "../../components/Gauge/RadialGauge";
 
 import AbstractGauge from "../../components/Gauge/AbstractGauge";
-import N2KProduct from "../../components/Gauge/N2KProduct";
-import N2KBarGraph from "../../components/Gauge/N2KBarGraph";
 
 //import Animation from "../../components/Animation/Animation";
 import Timeline from "../../components/Timeline/Timeline";
@@ -33,11 +31,7 @@ const Home = (props) => {
                             <h3>SVG and React: Part 1</h3>
                            
                                <RadialGauge />
-                           {/*
-                            <N2KBarGraph width="100" />
-                            <N2KProduct width="150" /> 
-                            <N2KBarGraph width="100" />
-                            */}
+                        
                             <Content />                 
                         </div>
                     </div>
@@ -46,11 +40,13 @@ const Home = (props) => {
                         <div className="tile is-child pink post">
                             <h3>SVG and React: Part 2</h3>
                             <Tachometer />
+                                                     
+
                         </div>
                         
                         <div className="tile is-child blue">
-                            <h3>N2K Product</h3>
-                            <N2KProduct width="400" />
+                                                 
+                         
                         </div>
                         
                         <div className="tile is-child gold ">
@@ -64,10 +60,11 @@ const Home = (props) => {
                         </div>
                     </div> 
                  
-                    <div className="tile is-parent is-4">                       
+                    <div className="tile is-parent">                       
                         <div className="tile is-child post green">
                            <AbstractGauge />
-                       </div>
+                               
+                        </div>
                     </div>
                 </div>     
             </div>

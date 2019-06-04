@@ -141,7 +141,7 @@ class AbstractGauge extends React.Component {
 
 AbstractGauge.defaultProps = {   
     // Gauge 
-    size: 36,
+    size: 42,
     className: 'circle',
     
     // Dial
