@@ -1,29 +1,33 @@
 // SvgResponsive.jsx
 console.log("Mounting SvgResponsive.jsx ... <SvgResponsive />");
+
 import React from 'react';
 import './svg-responsive.sass';
 
-const SvgResponsive = (props) => (
+const SvgResponsive = (
+    { 
+        fill="#f7941e", 
+        stroke="#231f20", 
+        opacity="0.6", 
+        radius="200"
+}) => (
     <div className="svg-container">
-       
         <svg 
             viewBox="0 0 500 500"
-            preserveAspectRatio="xMinYMin slice"
-            className="svg-conttainer">
+            preserveAspectRatio="xMinYMin meet"
+            className="svg-content"
+        >
             <circle 
-                fill="#fff"
-                stroke="#000"
-                strokeWidth="10"
-                strokeMiterlimit="10"
                 cx="250"
                 cy="250"
-                r="200"
-                opacity="0.6"
-               // className="svg-content"   
+                r={radius}
+                stroke={stroke}
+                strokeWidth="10"
+                strokeMiterlimit="10"
+                fill={fill}
+                opacity={opacity}
             />
-           
-        </svg>
-          
+        </svg>  
     </div>
 );
 
