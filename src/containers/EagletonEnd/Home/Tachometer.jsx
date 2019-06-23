@@ -1,5 +1,5 @@
-// containers/EagletonEnd/N2KGauge.jsx
-console.log('Mounting N2KGauge.jsx... <N2KGauge />');
+// containers/EagletonEnd/Tachometer.jsx
+console.log('Mounting Tachometer.jsx... <Tachometer />');
 
 import React, { Component } from 'react';
 //import PropTypes from 'prop-types';
@@ -7,11 +7,11 @@ import React, { Component } from 'react';
 
 import Gauge from '../../../components/Gauge/N2KGauge';
 
-class N2KGauge extends Component {
+class Tachometer extends Component {
     constructor(props) {
         super(props);  
         this.state = {
-            currentValue: 0
+            currentValue: 10
         } 
         this.handlePositiveClick = this.handlePositiveClick.bind(this);
         this.handleNegativeClick = this.handleNegativeClick.bind(this);
@@ -73,6 +73,6 @@ class N2KGauge extends Component {
    }
 }
 
-export default N2KGauge;
+export default Tachometer;
 
 // eof 

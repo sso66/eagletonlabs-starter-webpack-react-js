@@ -129,7 +129,7 @@ const renderNeedle = (opts) => {
     )
 }
 
-const renderText = (opts) => {
+const renderLabel = (opts) => {
     return (
         <text
             x={opts.cX}
@@ -187,7 +187,7 @@ class N2KGauge extends Component {
                     {renderTicks(opts)}
                     {renderProgress(opts)}
                     {renderNeedle(opts)}
-                    {renderText(opts)}
+                    {renderLabel(opts)}
                 </g>
             </svg>
         )
@@ -196,13 +196,13 @@ class N2KGauge extends Component {
 
 N2KGauge.defaultProps = {
     size: 200,
-    className: 'gauge',     
+    //className: 'gauge',     
     
-    dialWidth: 10,
-    dialColor: '#eee',
+    dialWidth: 15,
+    dialColor: '#f00',
     
-    //maximumValue: 100,
-    currentValue: 25,
+    maximumValue: 100,
+    currentValue: 45,
     
     progressWidth: 8,
     progressColor: '#3d3d3d',
@@ -216,7 +216,7 @@ N2KGauge.defaultProps = {
     tickColor: '#000',
     tickInterval: 10,    
     
-    needle: true,
+    needle: false,
     needleBaseSize: 5,  
     needleBaseColor: '#9d9d9d',
     needleWidth: 3,
@@ -224,8 +224,8 @@ N2KGauge.defaultProps = {
     needleSharp: false,
 }   
 
-export default N2KGauge;
-//module.exports = N2KGauge;
+//export default N2KGauge;
+module.exports = N2KGauge;
 
 // eof
 
