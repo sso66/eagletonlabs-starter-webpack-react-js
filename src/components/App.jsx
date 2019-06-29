@@ -7,7 +7,7 @@ import Header from "../components/Site/Header/Header";
 import Home from "../views/EagletonEnd/Home";
 import Footer from "../components/Site/Footer/Footer";
 
-//import activity from '../utils/activity.js';
+import '../utils/logger.es6';
 
 class App extends React.Component {
     render() {       

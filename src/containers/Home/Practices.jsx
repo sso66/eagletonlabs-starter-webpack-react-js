@@ -5,7 +5,6 @@ import React from 'react'
 
 import HelloWorld from "../../components/Practices/HelloWorld";
 import LikeMe from "../../components/Practices/LikeMe";
-import ListItem from "../../components/Practices/ListItem";
 import Listing from "../../components/Practices/Listing";
 import Notification from "../../components/Practices/Notification";
 
