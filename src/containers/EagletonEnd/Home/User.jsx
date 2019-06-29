@@ -1,18 +1,17 @@
-// Content.jsx
-console.log("Mounting Content.jsx... <Content />");
+// User.jsx
+console.log("Mounting User.jsx... <User />");
 
 import React from 'react'
 
 import HelloWorld from "../../../components/User/HelloWorld";
 import Listing from "../../../components/User/Listing";
 import LikeMe from "../../../components/User/LikeMe";
-import { element } from "../../../components/Concepts/ReactElement";
 
-class Content extends React.Component {
+class User extends React.Component {
     render() {               
         return (
             <div className="pane">
-            <div className="content">
+            <div className="User">
                 <div className="line"></div>
                 {/* Home items */}
                 <div className="item card">
@@ -22,8 +21,7 @@ class Content extends React.Component {
                     <LikeMe />
                     <hr />
                     <Listing />
-                    <hr />
-                    <div className="">ES6 Module:<br /> {element}</div>
+             
 
                 </div>
             </div>
@@ -32,6 +30,6 @@ class Content extends React.Component {
     }
 }
 
-export default Content
+export default User
 
 // eof

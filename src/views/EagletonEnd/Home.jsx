@@ -4,11 +4,7 @@ console.log("Mounting Home.jsx ... <Home />");
 import React from "react";
 
 import Heading from '../../containers/EagletonEnd/Home/Heading';
-import Content from '../../containers/EagletonEnd/Home/Content';
-
-import Tachometer from "../../containers/EagletonEnd/Home/Tachometer";
-import RadialGauge from "../../components/Gauge/RadialGauge";
-import AbstractGauge from "../../components/Gauge/AbstractGauge";
+import User from '../../containers/EagletonEnd/Home/User';
 
 //import Animation from "../../components/Animation/Animation";
 
@@ -29,15 +25,15 @@ const Home = (props) => {
                         <div className="tile is-parent">
                             <div className="tile is-child gold post">
                                 <h3>SVG and React: Part 1</h3>
-                                   <RadialGauge />
-                                <Content />                 
+                                  
+                                <User />                 
                             </div>
                         </div>
                      
                         <div className="tile is-parent is-vertical">
                             <div className="tile is-child pink post">
                                 <h3>SVG and React: Part 2</h3>
-                                <Tachometer />
+                                
                             </div>
                             
                             <div className="tile is-child blue">
@@ -55,7 +51,7 @@ const Home = (props) => {
                      
                         <div className="tile is-parent">                       
                             <div className="tile is-child post green">
-                               <AbstractGauge />
+                              
                             </div>
                         </div>
                     </div>     
