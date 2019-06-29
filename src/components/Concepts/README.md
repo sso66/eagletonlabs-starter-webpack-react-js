@@ -1,9 +1,9 @@
 ### React JSX Concepts: Step by Step
 
   1. Hello, world!
-  	- How to Read This Guide
-  	- Knowledge Level Assumptions
-  	- Let's Get Started!
+    - How to Read This Guide
+    - Knowledge Level Assumptions
+    - Let's Get Started!
   	
   2. Introduction to JSX
   	- Why JSX?
