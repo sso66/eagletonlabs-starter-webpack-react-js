@@ -19,8 +19,6 @@ class Practices extends React.Component {
                 <hr />
                 <Listing />
                 <hr />
-                <ListItem />
-                <hr />
                 <Notification level={3} message="danger" />
             </div>
         );
