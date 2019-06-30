@@ -24,6 +24,11 @@ const Home = (props) => {
                             <h2 className="title is-4">Practices</h2>
                             <Practices />
                         </div>
+                        
+                         <div className="column">
+                            <h2 className="title is-4">Concepts Reuse</h2>
+                            <Concepts />            
+                        </div>
                     </div>     
                 </div>
             </section>    

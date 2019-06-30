@@ -2,6 +2,7 @@
 console.log("Mounting Page.jsx... <Page />");
 
 import React from "react";
+import './css-animation.sass';
 
 function WarningBanner(props) {
   if (!props.warn) {
@@ -32,6 +33,7 @@ class Page extends React.Component {
     return (
       <div>
         <WarningBanner warn={this.state.showWarning} />
+        <br />
         <button onClick={this.handleToggleClick}>
           {this.state.showWarning ? 'Hide' : 'Show'}
         </button>

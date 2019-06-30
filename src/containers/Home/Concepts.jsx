@@ -7,7 +7,7 @@ import ActionLink from "../../components/Concepts/ActionLink";
 import Clock from "../../components/Concepts/Clock";
 import Comment from "../../components/Concepts/Comment";
 import Greeting from "../../components/Concepts/Greeting";
-import HelloWorld from "../../components/Concepts/HelloWorld";
+import WhyJSX from "../../components/Concepts/WhyJSX";
 import LoginControl from "../../components/Concepts/LoginControl";
 import Mailbox from "../../components/Concepts/Mailbox";
 import Page from "../../components/Concepts/Page";
@@ -28,27 +28,51 @@ class Concepts extends React.Component {
     render() {               
         return (
             <div className="Concepts">
-                <ActionLink />
+                {/* Hello World, WhyJSX? & Rendering Elements */}
+                <p>1. Hello World, 2. WhyJSX? & 3. Rendering Elements</p>
+                <WhyJSX />
                 <hr />
-                <Clock />
-                <hr />
+                {/* React Components & Props */}
+                <p>4. React Component & Props</p>
                 <Comment 
                     date= {comment.date}
                     text={comment.text} 
                     author={comment.author}
                 />
+                  <hr />
+                {/* State & Lifecycle */}
+                <p>5. State & Lifecycle</p>
+                <Clock />
                 <hr />
-                <Greeting />
+                 {/* Handling Events */}
+                <p>6. Handling Events</p>
+                <ActionLink />
+                <br />
+                <Toggle />
                 <hr />
-                <HelloWorld />
-                <hr />
+                {/* Conditional Rendering */}
+                <p>7. Conditional Rendering</p>
+                {/* Try changing isLoggedIn={true} */}
+                <Greeting isLoggedIn={true} />
                 <LoginControl />
-                <hr />
                 <Mailbox unreadMessages={messages} />
-                <hr />
                 <Page />
                 <hr />
-                <Toggle />
+                {/*List & Keys*/}
+                <p>8. List & Keys</p>
+                <hr />
+                {/* Forms */}
+                <p>9. Forms</p>
+                <hr />
+                {/* Lifting State Up */}
+                <p>10. Lifting State Up</p>
+                <hr />
+                {/* Composition vs Inheritance */}
+                <p>11. Composition vs Interitance</p>
+                <hr />              
+                {/* Thinking in React */}
+                <p>12. Thinking in React</p>
+                <hr />
             </div>
         );
     }

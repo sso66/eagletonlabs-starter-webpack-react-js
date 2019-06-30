@@ -1,7 +1,8 @@
 // Comment.jsx
 console.log("Mounting Comment.jsx <Comment />");
 
-import React from "react";
+import React from "react";;
+import './comment.sass'
 
 function formatDate(date) {
     return date.toLocaleDateString();
@@ -31,7 +32,7 @@ function formatDate(date) {
 function Avatar(props) {
     return (
         <img 
-            className="Avatar"
+            className="avatar"
             src={props.user.avatarUrl}
             alt={props.user.name}
         />
@@ -40,9 +41,9 @@ function Avatar(props) {
 
 function UserInfo(props) {
     return (
-        <div className="UserInfo">
+        <div className="user-info">
             <Avatar user={props.user} />
-            <div className="UserInfo-name">
+            <div className="user-info-name">
                 {props.user.name}
             </div>
         </div>
@@ -51,12 +52,12 @@ function UserInfo(props) {
 
 function Comment(props) {
     return (
-        <div className="Comment">
+        <div className="comment">
             <UserInfo user={props.author} />
-            <div className="Comment-text">
+            <div className="comment-text">
                 {props.text}
             </div>
-            <div className="Comment-date">
+            <div className="comment-date">
                 {formatDate(props.date)}
             </div>
         </div>
