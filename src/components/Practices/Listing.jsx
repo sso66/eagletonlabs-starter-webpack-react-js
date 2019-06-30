@@ -5,8 +5,8 @@ import React from 'react';
 
 const Listing = (props) => {
     return (
-        <div className="Listing">
-            <h2>Listing for {props.name}</h2>
+        <div className="listings">
+            <h2>Listing for {props.whatsoever}</h2>
             <ul>
                 <li>Instragram</li>
                 <li>What's App</li>

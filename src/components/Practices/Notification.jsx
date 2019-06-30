@@ -11,7 +11,7 @@ const Notification = (props) => {
  
     return (
         <div className="alert alert-3">
-            {message} {level}
+            Alert: {message} Level: {level}
         </div>
     );
 }

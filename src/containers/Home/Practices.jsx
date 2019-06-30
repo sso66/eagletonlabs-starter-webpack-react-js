@@ -16,7 +16,7 @@ class Practices extends React.Component {
                 <hr />
                 <LikeMe />
                 <hr />
-                <Listing />
+                <Listing whatsoever="Eagleton Endpoint" />
                 <hr />
                 <Notification level={3} message="danger" />
             </div>
