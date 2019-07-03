@@ -12,10 +12,11 @@ import LoginControl from "../../components/Concepts/LoginControl";
 import Mailbox from "../../components/Concepts/Mailbox";
 import Page from "../../components/Concepts/Page";
 import Toggle from "../../components/Concepts/Toggle";
+import NumberList from "../../components/Concepts/NumberList";
+import Blog from "../../components/Concepts/Blog";
+import NameForm from "../../components/Concepts/NameForm";
 
-const messages = ['React', 'Re: React', 'Re:Re: React'];
-
-// hardcoded conceptual data model
+// hardcoded data models
 const comment = {
     date: new Date(),
     text: 'I hope you enjoy learning React!',
@@ -24,6 +25,13 @@ const comment = {
         avatarUrl: 'https://placekitten.com/g/64/64',
     }, 
 }
+const messages = ['React', 'Re: React', 'Re:Re: React'];
+const numbers = [1, 2, 3, 4, 5];
+const posts = [
+    {id: 1, title: 'Hello World!', content: 'Welcome to learning React!'},
+    {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+];
+
 class Concepts extends React.Component {
     render() {               
         return (
@@ -60,9 +68,12 @@ class Concepts extends React.Component {
                 <hr />
                 {/*List & Keys*/}
                 <p>8. List & Keys</p>
+                <NumberList numbers={numbers} />
+                <Blog posts={posts} />
                 <hr />
                 {/* Forms */}
                 <p>9. Forms</p>
+                <NameForm />
                 <hr />
                 {/* Lifting State Up */}
                 <p>10. Lifting State Up</p>
