@@ -1,11 +1,10 @@
 // Index.jsx
-console.info('Mounting Index.jsx ... <Index />')
+console.info('Mounting Index.jsx ... <Index />');
 
 import React from "react";
 import { render } from "react-dom";
-import Root from './components/Root';
+import Root from './containers/Root';
 import './styles/index.sass';
-import startup from './utils/startup';
 
 const init = function () {  
     render (
@@ -13,6 +12,13 @@ const init = function () {
         document.getElementById('root')
     );
 }
-window.onload = init;
+try {
+    window.onload = init;
+} catch(e) {
+    alert("Engleton End");
+    e.preventDefault();
+} finally {
+    console.log("Application mounted successfully!");
+} 
 
 // eof

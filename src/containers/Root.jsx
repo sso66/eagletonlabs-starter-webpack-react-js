@@ -3,9 +3,6 @@ console.log( "Mounting Root.jsx... <Root />" );
 
 import React from 'react';
 import App from './App'
-
-// Utility Modules
-import '../utils/logger.es6';
 import '../utils/startup';
 
 const Root = () => {

@@ -2,21 +2,22 @@
 console.info( 'Mounting App.jsx... <App />' );
 
 import React from "react";
-
 import Header from "../components/Site/Header/Header";
-import Home from "../views/EagletonEnd/Home";
-import Footer from "../components/Site/Footer/Footer";
+import NavBar from "../components/Site/Nav/Navbar";
 
+import Main from "../components/Site//Main";
+import Footer from "../components/Site/Footer/Footer";
 import '../utils/logger.es6';
 
 class App extends React.Component {
     render() {       
         return (
-            <div>  
+            <section className="app">  
                 <Header title="Eagleton End"/> 
-                <Home />
+                <NavBar />
+                <Main />
                 <Footer />   
-            </div>       
+            </section>       
          )
     } 
 }
