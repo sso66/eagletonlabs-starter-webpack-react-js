@@ -6,7 +6,7 @@ import React from 'react';
 const Footer = () => {
     return ( 
         <footer className="footer">
-            <h3 className="title is-6 animate infinite bounce delay-3s">The End of My Story: Lessons Learned!</h3>
+            <h3 className="title is-6 animate infinite bounce delay-3s">End of My Story: Lessons Learned!</h3>
             <p>
                 The golden rule of knowing what you are doing is to 
                 understand why you are doing it.

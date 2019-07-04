@@ -1,10 +1,10 @@
 // views/EagletonEnd/Schedule.jsx
-console.info( 'Mounting NavBar.jsx... <NavBar />' );
+console.info( 'Mounting Schedule.jsx... <Schedule />' );
 
 import React from "react";
 
 const Schedule = () => (
-    <div>
+    <div className="schedule">
         <ul>
             <li>6/5 @ Evergreens</li>
             <li>6/8 vs Kickers</li>

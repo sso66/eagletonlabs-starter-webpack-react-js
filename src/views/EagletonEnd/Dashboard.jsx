@@ -7,9 +7,7 @@ import Practices from '../../containers/Dashboard/Practices';
 
 const Dashboard = (props) => {
     return (
-        <div>   
-
-                  
+        <div className="dashboard">   
             <section className="section">
                 <div className="container">               
                     <div className="columns">  

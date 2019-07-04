@@ -1,4 +1,6 @@
-// api.js
+// PlayerAPI.js
+console.log("Mounting PlayerAPI.js ...");
+
 // A simple data API that will be used to get the data for components. 
 const PlayerAPI = {
     players: [

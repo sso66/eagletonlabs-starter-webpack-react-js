@@ -1,9 +1,9 @@
 // views/EagletonEnd/Player.jsx
-console.info( 'Mounting NavBar.jsx... <NavBar />' );
+console.info( 'Mounting Player.jsx... <Player />' );
 
 import React from 'react'
-import PlayerAPI from './api'
 import { Link } from 'react-router-dom'
+import PlayerAPI from './PlayerAPI'
 
 // The Player looks up the player using the number parsed from
 // the URL's pathname. If no player is found with the given
@@ -18,7 +18,7 @@ const Player = (props) => {
     }
     
     return (
-        <div>
+        <div className="player">
             <h1>{player.name} (#{player.number})</h1>
             <h2>Position: {player.position}</h2>
             <Link to='/roster'><button>Back</button></Link>
