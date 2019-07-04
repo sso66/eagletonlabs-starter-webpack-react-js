@@ -1,4 +1,4 @@
-// Header.jsx
+// Site/Header/Header.jsx
 console.info( 'Mounting Header.jsx... <Header />' );
 
 import React from 'react';
