@@ -8,6 +8,7 @@ import Home from "../../views/EagletonEnd/Home";
 import Roster from "../../views/EagletonEnd/Roster";
 import Schedule from "../../views/EagletonEnd/Schedule";
 import Dashboard from "../../views/EagletonEnd/Dashboard";
+import Trafficlight from "../../views/EagletonEnd/Trafficlight";
 
 const Main = () => {
     return (
@@ -17,6 +18,7 @@ const Main = () => {
                 <Route path='/roster' component={Roster} />
                 <Route path='/schedule' component={Schedule} />
                 <Route path='/dashboard' component={Dashboard} />
+                <Route path='/traffic-light' component={Trafficlight} />               
             </Switch>  
         </main>
     )
