@@ -7,17 +7,16 @@ const createStore = Redux.createStore;
 
 const reducer = ( state = "GO", action ) => {
 	switch ( action.type ) {
-		
-		case "GO":
-			state = "GO";
-			break;
-	
 		case "STOP":
 			state = "STOP";
 			break;
 			
 		case "CAUTION":
 			state = "CAUTION";
+			break;
+			
+		case "GO":
+			state = "GO";
 			break;
 			
 		default:

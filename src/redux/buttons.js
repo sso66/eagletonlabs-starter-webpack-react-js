@@ -18,30 +18,28 @@ export const Buttons = ({
     return (
         <div style={{textAlign: 'center'}}>
  			<button	
- 				onClick={() => {store.dispatch(stopAction)}}
-           		disabled={state == "STOP" || state == "GO"}
+ 				onClick={() => {store.dispatch(stopAction);  alert("Stop")}}
+           		//disabled={state == "STOP" || state == "GO"}
            		style={{cursor: "pointer"}}
            	>
- 					Stop
+				Stop
  			</button>		
  			
  			<button		
- 				onClick={() => {store.dispatch(cautionAction)}}
-           		disabled={state == "CAUTION" || state == "STOP"}
+ 				onClick={() => {store.dispatch(cautionAction);  alert("Caution")}}
+           		//disabled={state == "CAUTION" || state == "STOP"}
            		style={{cursor: "pointer"}}
            	>
  				Caution
  			</button>	
         
 			<button 
-				onClick={() => {store.dispatch(goAction); alert("Hello")}}
-           		disabled={state == "GO" || state == "CAUTION"}
+				onClick={() => {store.dispatch(goAction); alert("Go")}}
+           		//disabled={state == "GO" || state == "CAUTION"}
            		style={{cursor: "pointer"}}
            	>
  				Go
- 			</button>	
- 			
- 			
+ 			</button>							
         </div>
    ) 
 }
