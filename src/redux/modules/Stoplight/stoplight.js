@@ -5,7 +5,7 @@ console.info( 'Mounting stoplight.jsx...' );
 import React, { Component } from 'react';
 import Redux, { createStore } from 'redux';
 
-import { reducer } from '../redux/reducer'; 
+import { reducer } from './reducer'; 
 import { stopAction, cautionAction, goAction } from './actions';
 
 const stopColor = (state) => {

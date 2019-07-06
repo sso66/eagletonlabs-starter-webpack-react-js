@@ -4,7 +4,7 @@ console.info( 'Mounting App.jsx... <App />' );
 import React, { Component } from 'react';
 
 import Header from "../components/Site/Header/Header";
-import NavBar from "../components/Site/Nav/Navbar";
+import Navbar from "../components/Site/Nav/Navbar";
 import Main from "../components/Site//Main";
 import Footer from "../components/Site/Footer/Footer";
 import '../styles/App.sass';
@@ -16,7 +16,7 @@ class App extends Component {
         return (
             <section className="app">  
                 <Header title="Eagleton End"/> 
-                <NavBar />
+                <Navbar />
                 <Main />
                 <Footer />   
             </section>       

@@ -5,7 +5,8 @@ console.log( "Mounting buttons.js" );
 import React, { Component } from 'react';
 import Redux, { createStore } from 'redux';
 
-import { reducer } from '../redux/reducer'; 
+import { reducer } from './reducer'; 
+
 import { goAction, cautionAction, stopAction } from './actions';
 
 

@@ -20,7 +20,7 @@ const reducer = ( state = "GO", action ) => {
 			break;
 			
 		default:
-			console.log( "Traffic Light is functioning!" );
+			console.log( "How Redux Works!" );
 			break;
 	}
 

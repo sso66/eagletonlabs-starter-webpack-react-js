@@ -1,30 +1,21 @@
-// NavBar.jsx
-console.info( 'Mounting NavBar.jsx... <NavBar />' );
+// Navbar.jsx
+console.info( 'Mounting Navbar.jsx... <Navbar />' );
 
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const Navbar = () => {
      return (
         <nav>
-            <Link 
-                to='/'
-                className="link"
-            >   &nbsp; Home | 
-            </Link>
-            <Link 
-                to='/about'
-                className="active"
-            >
-                &nbsp; About | 
-            </Link>
-            <Link to='/roster'>&nbsp; Roster | </Link>
-            <Link to='/schedule'>&nbsp; Schedule | </Link>
-            <Link to='/dashboard'>&nbsp; Dashboard | </Link>
-            <Link to='/traffic-light'>&nbsp; Traffic Light</Link>
+            <Link to='/' className="link"> Home | </Link>
+            <Link to='/about' className="active"> About | </Link>
+            <Link to='/roster'> Roster | </Link>
+            <Link to='/schedule'> Schedule | </Link>
+            <Link to='/dashboard'> Dashboard | </Link>
+            <Link to='/traffic-light'> Traffic Light</Link>
         </nav>
     )
 }  
-export default NavBar;
+export default Navbar;
   
 // eof

@@ -6,7 +6,7 @@ import ReactDOM, { render } from 'react-dom';
 import Redux, { createStore } from 'redux';
 
 import Root from './containers/Root';
-import { reducer } from './redux/reducer'; 
+import { reducer } from './redux/modules/Stoplight/reducer'; 
 import './styles/index.sass';
 
 const store = createStore(reducer); 
