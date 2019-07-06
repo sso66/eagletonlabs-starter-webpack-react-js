@@ -1,5 +1,9 @@
-// actions.jsx
+// actions.js
 console.log("Mounting actions.js...");
+
+export const stopAction = {
+    type: "STOP",
+};
 
 export const cautionAction = {
     type: "CAUTION",
@@ -7,10 +11,6 @@ export const cautionAction = {
 
 export const goAction = {
     type: "GO",
-};
-
-export const stopAction = {
-    type: "STOP",
 };
 
 // eof 

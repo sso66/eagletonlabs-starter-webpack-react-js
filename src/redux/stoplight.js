@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import Redux, { createStore } from 'redux';
 
 import { reducer } from '../redux/reducer'; 
-import { goAction, cautionAction, stopAction } from './actions';
+import { stopAction, cautionAction, goAction } from './actions';
 
 const stopColor = (state) => {
     return state == "STOP" ? "red" : "white";
@@ -25,7 +25,6 @@ export const Stoplight = ({
 }) => {
 	store = createStore(reducer);
 	const state = store.getState();
-   	//alert(state)
    	
     return (
         <div style={{textAlign: 'center'}}>
@@ -54,4 +53,3 @@ export const Stoplight = ({
 }
 
 // eof
-

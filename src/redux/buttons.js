@@ -14,26 +14,9 @@ export const Buttons = ({
 }) => {
 	store = createStore(reducer);
 	const state = store.getState();
-   	//alert(state)
    
     return (
         <div style={{textAlign: 'center'}}>
-			<button 
-				onClick={() => {store.dispatch(goAction); alert("Hello")}}
-           		disabled={state == "GO" || state == "CAUTION"}
-           		style={{cursor: "pointer"}}
-           	>
- 					Go
- 			</button>	
- 			
- 			<button		
- 				onClick={() => {store.dispatch(cautionAction)}}
-           		disabled={state == "CAUTION" || state == "STOP"}
-           		style={{cursor: "pointer"}}
-           	>
- 					Caution
- 			</button>	
- 			
  			<button	
  				onClick={() => {store.dispatch(stopAction)}}
            		disabled={state == "STOP" || state == "GO"}
@@ -41,6 +24,23 @@ export const Buttons = ({
            	>
  					Stop
  			</button>		
+ 			
+ 			<button		
+ 				onClick={() => {store.dispatch(cautionAction)}}
+           		disabled={state == "CAUTION" || state == "STOP"}
+           		style={{cursor: "pointer"}}
+           	>
+ 				Caution
+ 			</button>	
+        
+			<button 
+				onClick={() => {store.dispatch(goAction); alert("Hello")}}
+           		disabled={state == "GO" || state == "CAUTION"}
+           		style={{cursor: "pointer"}}
+           	>
+ 				Go
+ 			</button>	
+ 			
  			
         </div>
    ) 
