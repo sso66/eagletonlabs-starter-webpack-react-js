@@ -9,7 +9,7 @@ import Player from './Player';
 
 const Roster = () => (
     <div className="roster">
-        <h2>This is roster page</h2>
+        <h2>Roster</h2>
         <Switch>
             <Route exact path='/roster' component={FullRoster} />
             <Route path='/roster/:number' component={Player} />

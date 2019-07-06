@@ -1,6 +1,6 @@
 {
   "name": "webpack-starter",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Eagleton End - IDE: Integrated Development Environment ",
   "main": "index.js",
   "scripts": {
