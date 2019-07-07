@@ -11,16 +11,15 @@ import './styles/index.sass';
 
 const store = createStore(reducer); 
 
-
 //const init = function () {  
 const init = () => {
     render (
-        <Root store={store} />,
+        <Root />,
         document.getElementById('root')
     );
 }
 
-store.subscribe(init);
+//store.subscribe(init);
 
 try {
     window.onload = init;

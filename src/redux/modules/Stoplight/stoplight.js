@@ -1,5 +1,4 @@
-// redux/stoplight.jsx
-// < UIViewDelegate >
+// redux/stoplight.jsx: < UIViewDelegate >
 console.info( 'Mounting stoplight.jsx...' );
 
 import React, { Component } from 'react';

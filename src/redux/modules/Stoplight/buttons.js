@@ -1,5 +1,4 @@
-// buttons.js
-// < UIViewDelegate >
+// buttons.js: < UIViewControl >
 console.log( "Mounting buttons.js" );
 
 import React, { Component } from 'react';
@@ -9,34 +8,39 @@ import { reducer } from './reducer';
 
 import { goAction, cautionAction, stopAction } from './actions';
 
+const hello = () => {
+	alert("Hello");
+}
 
 export const Buttons = ({
     store
 }) => {
 	store = createStore(reducer);
+	store.subscribe(hello);
+	
 	const state = store.getState();
    
     return (
         <div style={{textAlign: 'center'}}>
  			<button	
- 				onClick={() => {store.dispatch(stopAction);  alert("Stop")}}
-           		//disabled={state == "STOP" || state == "GO"}
+ 				onClick={() => {store.dispatch(stopAction)}}
+           		disabled={state == "STOP" || state == "GO"}
            		style={{cursor: "pointer"}}
            	>
 				Stop
  			</button>		
  			
  			<button		
- 				onClick={() => {store.dispatch(cautionAction);  alert("Caution")}}
-           		//disabled={state == "CAUTION" || state == "STOP"}
+ 				onClick={() => {store.dispatch(cautionAction)}}
+           		disabled={state == "CAUTION" || state == "STOP"}
            		style={{cursor: "pointer"}}
            	>
  				Caution
  			</button>	
         
 			<button 
-				onClick={() => {store.dispatch(goAction); alert("Go")}}
-           		//disabled={state == "GO" || state == "CAUTION"}
+				onClick={() => {store.dispatch(goAction)}}
+           		disabled={state == "GO" || state == "CAUTION"}
            		style={{cursor: "pointer"}}
            	>
  				Go

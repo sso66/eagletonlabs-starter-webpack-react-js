@@ -1,4 +1,4 @@
-// views/EagletonEnd/Trafficlight.jsx
+// views/EagletonEnd/Trafficlight.jsx: < UIViewController >
 console.info( 'Mounting Trafficlight.jsx... <Trafficlight />' );
 
 import React from 'react';
