@@ -1,7 +1,7 @@
 // reducer.js
 console.log( "Mounting reducer.js" );
 
-export const reducer = ( state = "CAUTION", action ) => {
+export const reducer = ( state = "GO", action ) => {
     switch ( action.type ) {
    
         case "STOP":

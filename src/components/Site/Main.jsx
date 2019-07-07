@@ -1,7 +1,7 @@
 // Main.jsx
 console.info( 'Mounting Main.jsx... <Main />' );
 
-import React from 'react';
+import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from "../../views/EagletonEnd/Home";
@@ -14,9 +14,15 @@ import Dashboard from "../../views/EagletonEnd/Dashboard";
 import Trafficlight from "../../views/EagletonEnd/Trafficlight";
 
 const Main = () => {
+    const createElement = (Component, props) => {
+        return <Component
+                    actions={this.props.actions}
+                    {...props}
+                />
+    }
     return (
         <main>
-            <Switch>
+            <Switch createElement={createElement}>
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
                 <Route path='/login' component={Login} />

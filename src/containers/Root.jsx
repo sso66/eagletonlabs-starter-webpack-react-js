@@ -10,7 +10,7 @@ const Root = () => {
     return ( 
         <div className="root">
             <BrowserRouter>
-                <App />
+                <App className="root" />
             </BrowserRouter>
         </div>
     );
