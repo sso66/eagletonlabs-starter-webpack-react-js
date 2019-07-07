@@ -3,6 +3,7 @@ console.log( "Mounting Root.jsx... <Root />" );
 
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+//import {Provider } from 'react-redux';
 
 import App from './App'
 
@@ -15,6 +16,10 @@ const Root = () => {
         </div>
     );
 }
+// 
+// App.propTypes = {
+    // store: PropTypes.object.isRequired
+// }
 
 export default Root;
 

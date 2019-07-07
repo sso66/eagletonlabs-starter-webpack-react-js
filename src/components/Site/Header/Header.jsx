@@ -30,31 +30,28 @@ class Header extends React.Component {
       		searchInputClasses.push("active animated rotateIn");
    		}
 
-    	return (
+        return (
     	    <div className="frame">
                 <div className="pane">
-      		<div className="header">
-        		<MenuButton />
-             
-          
-        		<span className="title">
-          			{this.props.title}
-        		</span>
-           
-                {/* <SearchForm /> */}
-            	<input
-              		type="text"
-              		className={searchInputClasses.join(' ')}
-              		placeholder="Search ..." 
-              	/>
-    
-            	{/* Add an onClick handler to call the handle icon button */}
-            	<div
-              		onClick={this.handleSearch}
-              		className="fa fa-search searchIcon ">
-              	</div>
-      		</div>
-      		</div>
+      		        <div className="header">
+                        <MenuButton />
+                        <span className="title">
+          			       {this.props.title}
+                        </span>
+                        {/* <SearchForm /> */}
+                	   <input
+                  		    type="text"
+                  		    className={searchInputClasses.join(' ')}
+                  		    placeholder="Search ..." 
+                        />
+        
+                	   {/* Add an onClick handler to call the handle icon button */}
+                	   <div
+                  		    onClick={this.handleSearch}
+                  		    className="fa fa-search searchIcon ">
+                        </div>
+          		    </div>
+          		</div>
       		</div>
     	)
   	}

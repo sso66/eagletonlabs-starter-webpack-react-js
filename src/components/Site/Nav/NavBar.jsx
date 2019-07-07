@@ -11,7 +11,7 @@ const Navbar = () => {
             <Link to='/about' className="link"> About | </Link>
             {/* If we have a logged in user, show the login */}
             {/* currentUser.loggedIn ? 
-                <Link to='/logout'> Login | </Link> : */}
+                <Link to='/logout'> Logout | </Link> : */}
                 <Link to='/login'> Login | </Link>
                 
             <Link to='/roster'> Roster | </Link>
