@@ -18,7 +18,7 @@ class App extends Component {
         return (
             <section className="app">  
                 <Header title="Eagleton End" /> 
-                <Index />
+                <Index  />
                 <Main />
                 <Footer />                 
             </section>       

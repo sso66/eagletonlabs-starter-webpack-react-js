@@ -13,6 +13,7 @@ export default class Index extends React.Component {
         return (
             <div className="app">
                 <Navbar currentUser={currentUser} /> 
+                
                 <div className="page">
                     Provision for redux module: currentUser props for Login/Logout multi-user scenarios
                     {this.props.children}
