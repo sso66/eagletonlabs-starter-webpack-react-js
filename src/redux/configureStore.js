@@ -4,7 +4,9 @@ console.log("Mounting configStore.js ... ");
 import { createStore } from 'redux';
 
 export const configureStore = () => {
-	// Return the store
+	const store = createStore;
+	
+	return store;
 }
 
 export default configureStore;
