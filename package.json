@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter",
   "version": "1.4.6",
-  "description": "Eagleton Web Designs - IDE: Integrated Development Environment ",
+  "description": "Eagleton Web Designs - IDE: Integrated Development Environment",
   "main": "index.js",
   "scripts": {
     "build": "webpack --inline --progress -d",

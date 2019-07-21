@@ -55,8 +55,7 @@
   - Separating production and development builds as well as creating a **npm deploy** script
 
 - *Implementing `React` with Webpack for Property Management.*
-- *Implementing `Three` with Webpack for 3D Property Management.*
-- *Implementing `Flux` with Webpack for Event Management.*
 - *Implementing `Redux` with Webpack for State Management.*
+- *Implementing `SVG` with Webpack for 2D Property Management.*
 
 	
