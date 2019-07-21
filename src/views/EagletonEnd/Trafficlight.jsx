@@ -2,6 +2,7 @@
 console.info( 'Mounting Trafficlight.jsx... <Trafficlight />' );
 
 import React from 'react';
+
 import { Stoplight } from '../../redux/modules/Stoplight/stoplight';
 import { Buttons } from '../../redux/modules/Stoplight/buttons';
 

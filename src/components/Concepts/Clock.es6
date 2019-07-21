@@ -1,12 +1,13 @@
 // Clock.es6
 console.log("Mounting Clock.es6... <Clock />");
 
-import React from "react";
+import React, { Component } from 'react';
 
 class Clock extends React.Component {
 	constructor(props) {
     	super(props);
     	this.state = {date: new Date()};
+    	this.handleStopClock = this.handleStopClock.bind(this); 	
   	}
 
   	componentDidMount() {
@@ -26,11 +27,16 @@ class Clock extends React.Component {
    		 });
   	}
 
+	handleStopClock() {
+		clearInterval(this.timerID);
+	}
+	
   	render() {
     	return (
-      	<div>
+      	<div className="clock">
         	<h1>Hello, world!</h1>
         	<h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        	<button onClick={this.handleStopClock}>Stop Clock</button>
       	</div>
 
     );

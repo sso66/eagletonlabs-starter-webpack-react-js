@@ -3,17 +3,15 @@ console.log("Mounting Practices.jsx... <Practices />");
 
 import React from 'react'
 import  Heading from './Heading';
-
 import HelloWorld from "../../components/Practices/HelloWorld";
-import LikeMe from "../../components/Practices/LikeMe";
 import Listing from "../../components/Practices/Listing";
-import Notification from "../../components/Practices/Notification";
+import LikeMe from "../../components/Practices/LikeMe";
+import Alert from "../../components/Practices/Alert";
 
 class Practices extends React.Component {
     render() {               
         return (
-            <div className="">
-            <div className=""> 
+            <div className="practices"> 
                 <Heading title="Practices" />
                 <HelloWorld name="Stephen Oo" />
                 <hr />
@@ -21,8 +19,7 @@ class Practices extends React.Component {
                 <hr />
                 <Listing whatsoever="Eagleton Endpoint" />
                 <hr />
-                <Notification level={3} message="danger" />
-            </div>
+                <Alert level={3} message="warning" />
             </div>
         );
     }

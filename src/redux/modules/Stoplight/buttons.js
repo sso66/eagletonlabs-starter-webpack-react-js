@@ -1,11 +1,10 @@
-// buttons.js: < UIViewControl >
+// buttons.js: < UIControlDelegate >
 console.log( "Mounting buttons.js" );
 
 import React, { Component } from 'react';
 import Redux, { createStore } from 'redux';
 
 import { reducer } from './reducer'; 
-
 import { goAction, cautionAction, stopAction } from './actions';
 
 const hello = () => {
@@ -16,8 +15,6 @@ export const Buttons = ({
     store
 }) => {
 	store = createStore(reducer);
-	store.subscribe(hello);
-	
 	const state = store.getState();
    
     return (

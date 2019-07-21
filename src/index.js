@@ -3,25 +3,25 @@ console.info('Mounting index.js ... ');
 
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
-//import { createStore } from 'redux';
+
+import './utils/logger.es6';
+import './redux/traffic-light';
+
 import Root from './containers/Root';
-//import { reducer } from './redux/modules/Stoplight/reducer'; 
 import configureStore from './redux/configureStore';
 
 import './styles/index.sass';
 
 const {store, actions} = configureStore();
-
-//const store = createStore(reducer); 
-//store.subscribe(init);
-//const init = function () {  
-
+   
 const init = () => {
     render (
         <Root store={store} actions={actions} />,
         document.getElementById('root')
     );
 }
+
+store.subscribe(init);
 
 try {
     window.onload = init;

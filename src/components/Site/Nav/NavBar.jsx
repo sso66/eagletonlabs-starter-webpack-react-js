@@ -1,4 +1,4 @@
-// Navbar.jsx
+// src/components/Nav/Navbar.jsx
 console.info( 'Mounting Navbar.jsx... <Navbar />' );
 
 import React from 'react';
@@ -13,14 +13,14 @@ const Navbar = () => {
             {/* If we have a logged in user, show the login */}
             {/* 
                 currentUser.loggedIn ? 
-                <Link to='/logout'> Logout | </Link> : 
+                <Link to='/logout'> Logout | </Link> :     */} 
                 <Link to='/login'> Login | </Link>
-             */}   
-             {/*
+                <Link to='/dashboard'> Dashboard | </Link>
+            {/*
             <Link to='/roster'> Roster | </Link>
             <Link to='/schedule'> Schedule | </Link>
-            <Link to='/dashboard'> Dashboard | </Link>
-            <Link to='/traffic-light'> Traffic Light</Link>
+
+            <Link to='/traffic-light'> Traffic Light</Link>             
             */}
         </nav>
     )

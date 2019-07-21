@@ -1,15 +1,15 @@
-// src/redux/modules/currentTime.js
-console.log("Mounting currentTime.js ... ");
+// src/redux/modules/currentLight.js
+console.log("Mounting currentLight.js ... ");
 
 export const types = {
-    FETCH_NEW_TIME: 'FETCH_NEW_TIME',
+    STOP: 'STOP',
 }
 
 // Set the intial state for the first time the reducer is 
 // called (which redux expects us to return an initial state. 
 //..............................................................
 const initialState = {
-	currentTime: new Date(),
+	currentLight: new Date(),
 }
 
 // The reducer function receive two arguments when it's called:
@@ -30,7 +30,7 @@ export const actions = {
     // to return an action (type and payload, as well as 
     // meta data - if any).
 	updateTime: () => ({ 
-		type: types.FETCH_NEW_TIME
+		type: types.STOP
 	}),
 }
 

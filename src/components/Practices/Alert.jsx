@@ -1,11 +1,11 @@
-// Notification.jsx
-console.log( 'Mounting Notification.jsx... <Notification />' );
+// Alert.jsx
+console.log( 'Mounting Alert.jsx... <Alert />' );
 
 import React from 'react';
-import './wireframe.sass';
+import './alert.sass';
 
 // Pure Function Comppnent: The simplest one
-const Notification = (props) => {
+const Alert = (props) => {
     
     const {level, message} = props;   
  
@@ -16,6 +16,6 @@ const Notification = (props) => {
     );
 }
 
-export default Notification;
+export default Alert;
 
 // eof
