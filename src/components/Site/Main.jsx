@@ -4,13 +4,13 @@ console.info( 'Mounting Main.jsx... <Main />' );
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from "../../views/EagletonEnd/Home";
-import About from "../../views/EagletonEnd/About";
-import Login from "../../views/EagletonEnd/Login";
-import Roster from "../../views/EagletonEnd/Roster";
-import Schedule from "../../views/EagletonEnd/Schedule";
-import Dashboard from "../../views/EagletonEnd/Dashboard";
-import Trafficlight from "../../views/EagletonEnd/Trafficlight";
+import Home from "../../views/EagletonWebDesigns/Home";
+import About from "../../views/EagletonWebDesigns/About";
+import Login from "../../views/EagletonWebDesigns/Login";
+import Roster from "../../views/EagletonWebDesigns/Roster";
+import Schedule from "../../views/EagletonWebDesigns/Schedule";
+import Dashboard from "../../views/EagletonWebDesigns/Dashboard";
+import Trafficlight from "../../views/EagletonWebDesigns/Trafficlight";
 
 const Main = (props) => {
     const createElement = (Component, props) => {        
