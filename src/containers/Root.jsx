@@ -3,10 +3,9 @@ console.log( "Mounting Root.jsx... <Root />" );
 
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import {Provider } from 'react-redux';
 import App from './App'
 
-const Root = ({store, actions}) => {
+const Root = (props) => {
     // The Provider compnent makes the store available to all
     // the container components in our application without 
     // needing for us to pass it in manully every time.
@@ -28,12 +27,10 @@ const Root = ({store, actions}) => {
     // element creates components so that we can add the 
     // actions to it's child element's props.
     return ( 
-        <div className="root">
-           <Provider store={store}>
-                <BrowserRouter>
-                    <App actions={actions} />
-                </BrowserRouter>
-            </Provider>
+        <div className="root">        
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
         </div>
     );
 }

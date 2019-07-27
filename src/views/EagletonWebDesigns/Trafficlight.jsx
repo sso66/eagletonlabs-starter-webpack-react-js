@@ -3,8 +3,8 @@ console.info( 'Mounting Trafficlight.jsx... <Trafficlight />' );
 
 import React from 'react';
 
-import { Stoplight } from '../../redux/modules/Stoplight/stoplight';
-import { Buttons } from '../../redux/modules/Stoplight/buttons';
+import { Stoplight } from '../../redux/modules/CurrentLight/stoplight';
+import { Buttons } from '../../redux/modules/CurrentLight/buttons';
 
 // < UIViewDatasource >
 class Trafficlight extends React.Component {

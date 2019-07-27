@@ -8,11 +8,10 @@ import Navbar from "../components/Site/Nav/Navbar";
 
 class Index extends React.Component {
      render() {
-        const {currentUser} = this.props;
 
         return (
             <div className="app">
-                <Navbar currentUser={currentUser} /> 
+                <Navbar /> 
                 
                 <div className="page">
                     Provision for redux module
@@ -25,7 +24,7 @@ class Index extends React.Component {
 }
 
 export default connect(state => ({
-    currentUser: state.currentUser
+    
 }))(Index);
 
 // eof

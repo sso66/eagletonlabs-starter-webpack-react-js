@@ -1,4 +1,4 @@
-// views/EagletonEnd/Player.jsx
+// src/views/EagletonEnd/Player.jsx
 console.info( 'Mounting Player.jsx... <Player />' );
 
 import React from 'react'

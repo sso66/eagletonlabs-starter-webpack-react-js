@@ -1,4 +1,4 @@
-// Site/Header/Header.jsx
+// src/components/Site/Header/Header.jsx
 console.info( 'Mounting Header.jsx... <Header />' );
 
 import React from 'react';
@@ -48,7 +48,7 @@ class Header extends React.Component {
                 	   {/* Add an onClick handler to call the handle icon button */}
                 	   <div
                   		    onClick={this.handleSearch}
-                  		    className="fa fa-search searchIcon ">
+                  		    className="fa fa-search searchIcon">
                         </div>
           		    </div>
           		</div>

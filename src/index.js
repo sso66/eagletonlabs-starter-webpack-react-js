@@ -4,21 +4,17 @@ console.info('Mounting index.js ... ');
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
 import './utils/logger.es6';
-import './redux/traffic-light';
 import Root from './containers/Root';
-import configureStore from './redux/configureStore';
 import './styles/index.sass';
 
-const {store, actions} = configureStore();
-   
+  
 const init = () => {
     render (
-        <Root store={store} actions={actions} />,
+        <Root />,
         document.getElementById('root')
     );
 }
 
-store.subscribe(init);
 
 try {
     window.onload = init;

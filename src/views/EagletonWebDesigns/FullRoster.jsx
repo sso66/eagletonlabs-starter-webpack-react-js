@@ -1,4 +1,4 @@
-// views/EagletonEnd/FullRoster.jsx
+// src/views/EagletonEnd/FullRoster.jsx
 console.info( 'Mounting FullRoster.jsx... <FullRoster />' );
 
 import React from 'react'

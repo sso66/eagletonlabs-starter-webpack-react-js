@@ -1,4 +1,4 @@
-// views/EagletonEnd/Roster.jsx
+// src/views/EagletonEnd/Roster.jsx
 console.info( 'Mounting Roster.jsx... <Roster />' );
 
 import React from "react";

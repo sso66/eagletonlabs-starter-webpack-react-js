@@ -15,8 +15,8 @@ class App extends Component {
     render() {       
         return (
             <div className="app">  
-                <Index />
-                <Header title="The End Point" /> 
+                <Navbar /> 
+                <Header title="Eagleton Web Designs" /> 
                 <Main />
                 <Footer />                 
             </div>       
