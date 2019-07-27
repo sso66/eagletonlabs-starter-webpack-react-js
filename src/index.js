@@ -1,4 +1,4 @@
-// index.jsx
+// src/index.jsx
 console.info('Mounting index.js ... ');
 
 import React from 'react';
@@ -6,12 +6,14 @@ import ReactDOM, { render } from 'react-dom';
 import './utils/logger.es6';
 import Root from './containers/Root';
 import './styles/index.sass';
+import configureStore from './redux/configureStore';
 
+const store  = configureStore();
   
 const init = () => {
     render (
-        <Root />,
-        document.getElementById('root')
+        <Root store={ store } />,
+        document.getElementById( 'root' )
     );
 }
 

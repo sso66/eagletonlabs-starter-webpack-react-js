@@ -1,26 +1,36 @@
 // src/views/EagletonEnd/Home.jsx
 console.info( 'Mounting Home.jsx... <Home />' );
 
-import React from "react";
+// "customer": CLIENT
+//........................................
+import React from 'react';
+import { connect } from 'react-redux';
+import { actionCreators } from  '../../redux/actionCreators';
 
-export const Home = (props) => (
+export const Home = ( props ) => (
     <div className="home">
         <h1>Welcome Home</h1>
+        <p>Now: &nbsp; { props.currentTime.toString() }</p>
+        <p>Now: &nbsp; { props.currentTime.toLocaleString() }</p>
+        <button onClick={ props.updateTime }>Update Time</button>
     </div>
 );
 
-const mapStateToProps = state => {
+const mapStateToProps = ( state ) => {
+    
+    return {
+        currentTime: state.currentTime
+    }
 }
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = ( dispatch ) => ({
+    updateTime: () => dispatch( actionCreators.fetchNewTime() )
 })
 
-//export default connect(
-    //mapStateToProps,  
-    //mapDispatchToProps  
-//)(Home);
-
-export default Home;
+export default connect(
+    mapStateToProps,  
+    mapDispatchToProps  
+)(Home);
 
 // eof
 

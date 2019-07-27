@@ -13,12 +13,14 @@ import '../styles/App.sass';
 
 class App extends Component {
     render() {       
+        const { store } = this.props;
+        
         return (
             <div className="app">  
-                <Navbar /> 
+                <Index store={ store } />
                 <Header title="Eagleton Web Designs" /> 
                 <Main />
-                <Footer />                 
+                <Footer />               
             </div>       
          )
     } 

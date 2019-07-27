@@ -4,7 +4,7 @@ console.info( 'Mounting Navbar.jsx... <Navbar />' );
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ( { store } ) => {
      return (
         <nav>
             <Link to='/' className="link"> Home | </Link>

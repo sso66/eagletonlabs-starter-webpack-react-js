@@ -13,9 +13,7 @@ class Index extends React.Component {
             <div className="app">
                 <Navbar /> 
                 
-                <div className="page">
-                    Provision for redux module
-                    currentUser props for Login/Logout multi-user scenarios
+                <div className="children">
                     {this.props.children}
                 </div>
             </div>
