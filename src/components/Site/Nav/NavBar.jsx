@@ -11,7 +11,7 @@ const Navbar = ( { store } ) => {
             <Link to='/about' className="link"> About | </Link>
             <Link to='/schedule'> Schedule | </Link>            
             <Link to='/roster'> Roster | </Link>
-            <Link to='/dashboard'> Dashboard </Link>
+            <Link to='/dashboard'> Dashboard | </Link>
             <Link to='/login'> Login | </Link>     
         </nav>
     )

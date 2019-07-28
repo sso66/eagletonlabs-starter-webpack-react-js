@@ -7,10 +7,10 @@ import Root from './containers/Root';
 import configureStore from './redux/configureStore';
 import './utils/logger.es6';
 import './styles/index.sass';
-
+import './redux/modules/traffic-light';
 
 const store  = configureStore();
-  
+ 
 const init = () => {
     render (
         <Root store={ store } />,
