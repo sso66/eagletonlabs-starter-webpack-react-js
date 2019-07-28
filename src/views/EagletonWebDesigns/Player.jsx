@@ -3,7 +3,8 @@ console.info( 'Mounting Player.jsx... <Player />' );
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PlayerAPI from './PlayerAPI'
+//import PlayerAPI from './PlayerAPI'
+import PlayerAPI from '../../utils/PlayerAPI'
 
 
 // The Player looks up the player using the number parsed from

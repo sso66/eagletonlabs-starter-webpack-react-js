@@ -16,12 +16,12 @@ const Main = (props) => {
     return (
         <main>
             <Switch>
-                <Route exact path='/' component={Home} />
-                <Route path='/login' component={Login} />                
+                <Route exact path='/' component={Home} />           
                 <Route path='/about' component={About} />
                 <Route path='/schedule' component={Schedule} />     
                 <Route path='/roster' component={Roster} />    
                 <Route path='/dashboard' component={Dashboard} />    
+                <Route path='/login' component={Login} />   
             </Switch>  
         </main>
     )

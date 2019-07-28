@@ -1,5 +1,5 @@
 // src/containers/Index.jsx
-// Apply to build complex layout with multiple children
+// Apply to build complex layout and routing with multiple children
 console.log("Mounting Index.jsx... <Index />");
 
 import React, { Component } from 'react';

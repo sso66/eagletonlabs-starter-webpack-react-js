@@ -18,7 +18,7 @@ class App extends Component {
         return (
             <div className="app">  
                 <Index store={ store } />
-                <Header title="Ocean Alexander" /> 
+                <Header title="Eagleton Web Designs" /> 
                 <Main />
                 <Footer />               
             </div>       

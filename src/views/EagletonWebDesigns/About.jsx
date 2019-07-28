@@ -6,7 +6,7 @@ import React from "react";
 const About = () => (
     <div className="about">
         <h2>About</h2>
-        <h3>Understanding React + Redux Principles</h3>      
+        <h3>Understanding React + Redux + SVG + SASS + Node Design Principles, Participants & Patterns</h3>      
     </div>
 );
 export default About;
