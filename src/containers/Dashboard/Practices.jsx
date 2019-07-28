@@ -2,7 +2,7 @@
 console.log("Mounting Practices.jsx... <Practices />");
 
 import React from 'react'
-import  Heading from './Heading';
+import Heading from './Heading';
 import HelloWorld from "../../components/Practices/HelloWorld";
 import Listing from "../../components/Practices/Listing";
 import LikeMe from "../../components/Practices/LikeMe";

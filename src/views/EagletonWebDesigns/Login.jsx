@@ -1,4 +1,4 @@
-// views/EagletonEnd/Login.jsx
+// src/views/EagletonWebDesigns/Login.jsx
 console.info( 'Mounting Login.jsx... <Login />' );
 
 import React from "react";

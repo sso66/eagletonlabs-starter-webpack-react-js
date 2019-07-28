@@ -1,4 +1,4 @@
-// views/EagletonEnd/Schedule.jsx
+// src/views/EagletonWebDesigns/Schedule.jsx
 console.info( 'Mounting Schedule.jsx... <Schedule />' );
 
 import React from "react";

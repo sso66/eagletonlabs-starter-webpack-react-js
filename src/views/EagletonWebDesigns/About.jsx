@@ -1,4 +1,4 @@
-// views/EagletonEnd/About.jsx
+// src/views/EagletonWebDesigns/About.jsx
 console.info( 'Mounting About.jsx... <About />' );
 
 import React from "react";

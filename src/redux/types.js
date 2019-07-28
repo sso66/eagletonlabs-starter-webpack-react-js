@@ -5,7 +5,10 @@ console.log( "Mounting types.js..." );
 //........................................
 export default {
     
-	FETCH_NEW_TIME: 'fetch new time'
+	FETCH_NEW_TIME: 'fetch new time',
+	
+	LOGIN: 'user login',
+	LOGOUT: 'user logout'
 	
 }
 

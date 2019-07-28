@@ -1,4 +1,4 @@
-// Dashboard.jsx
+// src/views/EagletonWebDesigns/Dashboard.jsx
 console.log("Mounting Dashboard.jsx ... <Dashboard />");
 
 import React from "react";

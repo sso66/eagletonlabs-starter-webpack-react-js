@@ -1,4 +1,4 @@
-// src/views/EagletonEnd/Home.jsx
+// src/views/EagletonWebDesigns/Home.jsx
 console.info( 'Mounting Home.jsx... <Home />' );
 
 // "customer": CLIENT
@@ -17,7 +17,7 @@ export const Home = ( props ) => (
 );
 
 const mapStateToProps = ( state ) => {
-    
+       
     return {
         currentTime: state.currentTime
     }

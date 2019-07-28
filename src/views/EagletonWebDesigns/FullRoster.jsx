@@ -1,15 +1,16 @@
-// src/views/EagletonEnd/FullRoster.jsx
+// src/views/EagletonWebDesigns/FullRoster.jsx
 console.info( 'Mounting FullRoster.jsx... <FullRoster />' );
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 import PlayerAPI from './PlayerAPI.js'
 
-// Iterates over all of the players and creates 
-// a link to their profile page.
+
+// Iterates over all of the players and creates a link to their profile page.
+//............................................................................
 const FullRoster = () => (
-    <div className="full-roster">
+    <div className="fullroster">
+        <h2>FullRoster</h2>
         <ul>
             {
                 PlayerAPI.all().map(p => (

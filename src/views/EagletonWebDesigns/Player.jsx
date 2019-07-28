@@ -1,19 +1,21 @@
-// src/views/EagletonEnd/Player.jsx
+// src/views/EagletonWebDesigns/Player.jsx
 console.info( 'Mounting Player.jsx... <Player />' );
 
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PlayerAPI from './PlayerAPI'
 
+
 // The Player looks up the player using the number parsed from
 // the URL's pathname. If no player is found with the given
 // number, then a "player not found" message is displayed.
-const Player = (props) => {
+//...............................................................
+const Player = ( props ) => {
     const player = PlayerAPI.get(
-        parseInt(props.match.params.number, 10)
+        parseInt( props.match.params.number, 10 )
     )
   
-    if (!player) {
+    if ( !player ) {
         return <div>Sorry, but the player was not found</div>
     }
     
