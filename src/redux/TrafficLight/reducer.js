@@ -1,5 +1,5 @@
-// src/redux/reducer.js
-console.log( "Mounting reducer.js..." );
+// src/redux/TrafficLight/reducer.js
+console.log( "Mounting TrafficLight/reducer.js..." );
 
 // "short-order-cook": RECEIVER
 //........................................

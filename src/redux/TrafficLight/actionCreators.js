@@ -1,5 +1,5 @@
 // src/redux/actionCreators.js
-console.log( "Mounting actionCreators.js..." );
+console.log( "Mounting TrafficLight/actionCreators.js..." );
 
 // "waitress": INVOKER
 //........................................
@@ -21,6 +21,5 @@ export const actionCreators = {
         type: types.LOGOUT
     })	
 }
-
 
 // eof

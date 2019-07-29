@@ -1,5 +1,5 @@
-// src/redux/types.js 
-console.log( "Mounting types.js..." );
+// src/redux/TrafficLight/types.js 
+console.log( "Mounting TrafficLight/types.js..." );
 
 // "order-slip": COMMAND
 //........................................

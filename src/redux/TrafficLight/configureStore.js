@@ -1,7 +1,7 @@
 // src/redux/configureStore.js
-console.log( "Mounting configureStore.js..." );
+console.log( "Mounting TrafficLight/configureStore.js..." );
 
-// "diner": STATE
+// "order": STATE
 //........................................
 import { createStore } from 'redux';
 import reducer from './reducer';
