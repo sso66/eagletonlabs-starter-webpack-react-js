@@ -4,6 +4,7 @@ console.log("Mounting Dashboard.jsx ... <Dashboard />");
 import React from "react";
 import Concepts from '../../containers/Dashboard/Concepts';
 import Practices from '../../containers/Dashboard/Practices';
+import Solutions from '../../containers/Dashboard/Solutions';
 
 const Dashboard = (props) => {
     return (
@@ -24,8 +25,8 @@ const Dashboard = (props) => {
                         </div>
                         
                          <div className="column">
-                            <h2 className="title is-4">Concepts Reuse</h2>
-                            <Concepts />            
+                            <h2 className="title is-4">Solutions</h2>
+                            <Solutions />         
                         </div>
                     </div>     
                 </div>
