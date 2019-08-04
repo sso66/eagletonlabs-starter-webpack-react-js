@@ -4,8 +4,8 @@ console.log( "Mounting configureStore.js..." );
 // "order": STATE
 //........................................
 import { createStore } from 'redux';
-//import reducer from './reducer';
-import reducer from './TrafficLight/reducer';
+import reducer from './rootReducer';
+//import reducer from './TrafficLight/reducer';
 
 export const configureStore = () => {
 

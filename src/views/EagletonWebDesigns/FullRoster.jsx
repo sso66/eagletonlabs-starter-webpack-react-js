@@ -3,8 +3,7 @@ console.info( 'Mounting FullRoster.jsx... <FullRoster />' );
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PlayerAPI from './PlayerAPI.js'
-
+import PlayerAPI from '../../utils/PlayerAPI'
 
 // Iterates over all of the players and creates a link to their profile page.
 //............................................................................

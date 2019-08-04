@@ -12,7 +12,7 @@ export const actionCreators = {
 		payload: new Date()		
 	}),
 
-    login: ( user ) => n({
+    login: ( user ) => ({
         type: types.LOGIN,
         payload: user
     }),
@@ -22,5 +22,5 @@ export const actionCreators = {
     })	
 }
 
-
 // eof
+
