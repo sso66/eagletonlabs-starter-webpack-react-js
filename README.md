@@ -54,8 +54,12 @@
 
   - Separating production and development builds as well as creating a **npm deploy** script
 
-- *Implementing `React` with Webpack for Property Management.*
-- *Implementing `Redux` with Webpack for State Management.*
-- *Implementing `SVG` with Webpack for 2D Property Management.*
+- *Implementing `React` with Webpack.*
+- *Implementing `React Router` with Webpack.*
+- *Implementing `Redux` with Webpack*
+- *Implementing `Node` with Webpack*
+- *Implementing `SASS` with Webpack.*
+- *Implementing `SVG` with Webpack.*
+
 
 	

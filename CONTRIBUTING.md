@@ -7,7 +7,7 @@
 	1.4 Help, I'm Stuck!
 	
 ### 2. Overview: current state
-	2.1 What is react?
+	2.1 What is React JSX?
 	2.2 Getting Started
 	2.3 Passing Data through Props
 	2.4 An Interactive Component with State
@@ -25,4 +25,3 @@
 	4.3 Implementing Time Travel
 	4.4 Wrapping Up
 	
-npx @svgr/cli icons/clock-icon.svg

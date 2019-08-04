@@ -10,6 +10,7 @@ import PlayerAPI from '../../utils/PlayerAPI'
 const FullRoster = () => (
     <div className="fullroster">
         <h2>FullRoster</h2>
+        <p>PlayerAPI: Favorite Players | All Players</p>
         <ul>
             {
                 PlayerAPI.all().map(p => (
