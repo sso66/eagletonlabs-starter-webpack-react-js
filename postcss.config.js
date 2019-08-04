@@ -2,9 +2,9 @@
 console.info('Mounting postcss.config.js...');
 
 module.exports = {
-  plugins: [
-    require('precss'),
-    require('autoprefixer')
-  ],
+	plugins: [
+    	require('precss'),
+    	require('autoprefixer')
+  	],
 };
 // eof 
