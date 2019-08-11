@@ -52,12 +52,12 @@ module.exports = {
                 }
             },
             {
-                test: [ /\.css$/, /\.sass$/ ],
+                test: [ /\.css$/, /\.scss$/, /\.sass$/ ],
                 loader: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
             },
             {
                 test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "url-loader?limit=100000"   // the urlloader uses data urls.
+                loader: "url-loader?limit=10000"   // the urlloader uses data urls.
            },
            // {
                 // test: /\.(ttf|eot|svg|woff|woff2)(\?[\s\S]+)$/,
@@ -69,12 +69,12 @@ module.exports = {
                 // }
             // },
             {
-                test: /\.(jpe?g|png|gif|ico|svg)$/i,
+                test: /\.(jpe?g|png|gif|ico|woff|woff2|eot|ttf|svg|otf)$/i,
                 loader: 'file-loader?name=[name].[ext]',
                 
            },
            {
-                test: /\.(gif|png|jpe|icon?g|svg|ico)$/i,
+                test: /\.(gif|png|jpe|icon?g|svg|ico|otf)$/i,
                 use: [
                     // {
                         // loader: 'file-loader',  

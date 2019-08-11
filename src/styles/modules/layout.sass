@@ -1,26 +1,28 @@
-/* layout.css
+// File: layout.css
+// Desc: CSS Flexbox module specifications
+// Date:
 
-.post
+.product
   position: relative
   padding: 20px
   flex-basis: auto
 
-.post-category
+.product-category
   font-size: .8rem
   text-transform: uppercase
   color: #4a4a4a
   text-decoration: underline
   
-.post-title
+.product-title
   font-size: 1.8rem
   font-weight: 600
   margin: 20px 0 10px
 
-.post-content
+.product-content
   font-size: 1.3rem
   margin-bottom: 50px
 
-.post-permalink
+.product-active-link
   color: #4a4a4a
   text-decoration: underline
   position: absolute
@@ -46,3 +48,21 @@
 
 .red
   background: #f8c9c1
+
+ 
+.layout
+  display: flex
+  flex-direction: row
+  border: 1px solid yellow
+  
+  .top
+    border: 1px solid red
+      
+  .left
+    border: 1px solid green
+  
+      
+  .center
+    border: 1px solid blue
+
+  

@@ -9,7 +9,7 @@ import { actionCreators } from  '../../redux/actionCreators';
 
 export const Home = ( props ) => (
     <div className="home">
-        <h1>Welcome Home</h1>
+        <h1>Welcome Home ...conclusions</h1>
         <p>Now: &nbsp; { props.currentTime.toString() }</p>
         <p>Now: &nbsp; { props.currentTime.toLocaleString() }</p>
         <button onClick={ props.updateTime }>Update Time</button>
