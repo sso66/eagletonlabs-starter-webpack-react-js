@@ -15,11 +15,8 @@ class App extends Component {
         const { store } = this.props;
         
         return (
-            <div className="app">  
-                <Index store={ store } />
-                <Header title="Eagleton Web Designs" /> 
-                <Main />
-                <Footer />               
+            <div className="">  
+                <Main />            
             </div>       
          )
     } 
