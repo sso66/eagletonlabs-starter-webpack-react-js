@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ( { store } ) => {
      return (
-        <div className="nav">
+        <div className="navbar">
             <Link to='/' className="link"> Mobile First | </Link>
         </div>
     )
