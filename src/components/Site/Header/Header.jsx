@@ -1,4 +1,7 @@
-// src/components/Site/Header/Header.jsx
+// File: src/components/Site/Header/Header.jsx
+// Desc: Mobile First RWD-SPA 
+// Date: 9/14/2019
+//..............................................................................
 console.info( 'Mounting Header.jsx... <Header />' );
 
 import React from 'react';

@@ -1,4 +1,7 @@
-// src/components/Nav/Navbar.jsx
+// File: src/components/Nav/Navbar.jsx
+// Desc: Mobile First RWD-SPA 
+// Date: 9/14/2019
+//..............................................................................
 console.info( 'Mounting Navbar.jsx... <Navbar />' );
 
 import React from 'react';
@@ -6,18 +9,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ( { store } ) => {
      return (
-        <nav>
+        <div className="nav">
             <Link to='/' className="link"> Mobile First | </Link>
-            {/*
-            <Link to='/' className="link"> Home | </Link>
-            <Link to='/about' className="link"> About | </Link>
-            <Link to='/Contact'> Contact | </Link>  
-            <Link to='/Admin'> Admin | </Link>  
-            <Link to='/schedule'> Schedule | </Link>            
-            <Link to='/roster'> Roster | </Link>
-            <Link to='/dashboard'> Dashboard | </Link>  
-            */}
-        </nav>
+        </div>
     )
 }  
 export default Navbar;

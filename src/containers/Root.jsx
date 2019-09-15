@@ -1,4 +1,7 @@
-// src/containers/Root.jsx
+// File: src/containers/Root.jsx
+// Desc: Mobile First RWD-SPA 
+// Date: 9/14/2019
+//..............................................................................
 console.log( "Mounting Root.jsx... <Root />" );
 
 import React from 'react';

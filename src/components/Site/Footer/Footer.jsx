@@ -1,11 +1,15 @@
-// Site/Footer/Footer.jsx
+// File: Site/Footer/Footer.jsx
+// Desc: Mobile First RWD-SPA 
+// Date: 9/14/2019
+//..............................................................................
+
 console.log( "Mounting Footer.jsx <Footer />..." );
 
 import React from 'react';
 
 const Footer = () => {
     return ( 
-        <footer className="footer">
+        <div className="footer">
             <h3>End of My Story: Lessons Learned!</h3>
             <p>
                 The golden rule of knowing what you are doing is to 
@@ -15,7 +19,7 @@ const Footer = () => {
                 Don't use a module until you understand 
                 the problem it's solving.
             </p>
-        </footer>
+        </div>
     )
 }
 

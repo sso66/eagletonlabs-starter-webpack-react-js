@@ -1,9 +1,11 @@
-// src/containers/App.jsx
+// File: src/containers/App.jsx
+// Desc: Mobile First RWD-SPA 
+// Date: 9/14/2019
+//..............................................................................
 console.info( 'Mounting App.jsx... <App />' );
 
 import React, { Component } from 'react';
 
-import Index from "../containers/Index";
 import Header from "../components/Site/Header/Header";
 import Navbar from "../components/Site/Nav/Navbar";
 import Main from "../components/Site//Main";
@@ -15,7 +17,7 @@ class App extends Component {
         const { store } = this.props;
         
         return (
-            <div className="">  
+            <div className="app">  
                 <Main />            
             </div>       
          )

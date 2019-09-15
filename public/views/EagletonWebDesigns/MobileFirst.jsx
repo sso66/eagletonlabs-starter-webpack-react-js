@@ -1,7 +1,4 @@
-// File: src/views/EagletonWebDesigns/MobileFirst.jsx
-// Desc: Mobile First RWD-SPA 
-// Date: 9/14/2019
-//..............................................................................
+// src/views/EagletonWebDesigns/MobileFirst.jsx
 console.info( 'Mounting MobileFirst.jsx... <MobileFirst />' );
 
 // "customer": CLIENT
