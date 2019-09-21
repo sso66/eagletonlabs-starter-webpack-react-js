@@ -10,7 +10,7 @@ import React from 'react';
 
 export const MobileFirst = ( props ) => (
     <div className="">
-                  <header>
+         <header>
             <h1>Blog</h1>           
         </header>
         

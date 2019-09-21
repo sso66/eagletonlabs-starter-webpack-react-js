@@ -7,6 +7,7 @@ console.info( 'Mounting Main.jsx... <Main />' );
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import Home from "../../views/EagletonWebDesigns/Home";
 import MobileFirst from "../../views/EagletonWebDesigns/MobileFirst";
 
 const Main = (props) => {
@@ -14,7 +15,8 @@ const Main = (props) => {
     return (
         <div className="main">
             <Switch>
-                <Route exact path='/' component={MobileFirst} />     
+                <Route exact path='/' component={Home} />    
+                <Route exact path='/mobile-first' component={MobileFirst} />     
             </Switch>  
         </div>
     )

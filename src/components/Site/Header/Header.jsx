@@ -34,7 +34,7 @@ class Header extends React.Component {
    		}
 
         return (
-    	    <div className="frame">
+    	    <div className="app">
                 <div className="pane">
       		        <div className="header">
                         <MenuButton />
