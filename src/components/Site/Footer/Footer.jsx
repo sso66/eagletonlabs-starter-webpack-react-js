@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="footer">
             <h3>End of My Story: Lessons Learned!</h3>
             <p>
-                The golden rule of knowing what you are doing is to 
-                understand why you are doing it.
+                The golden rule of knowing what (PURPOSE) you are doing is to 
+                understand why (REASON) you are doing it.
             </p> 
             <p>
                 Don't use a module until you understand 

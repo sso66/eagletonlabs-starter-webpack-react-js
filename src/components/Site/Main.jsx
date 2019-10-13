@@ -9,6 +9,9 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from "../../views/EagletonWebDesigns/Home";
 import MobileFirst from "../../views/EagletonWebDesigns/MobileFirst";
+import ThreeReact from "../../views/EagletonWebDesigns/ThreeReact";
+import ThreeScene from "../../views/EagletonWebDesigns/ThreeScene";
+import MetadataPage from "../../views/EagletonWebDesigns/MetadataPage";
 
 const Main = (props) => {
 
@@ -16,7 +19,10 @@ const Main = (props) => {
         <div className="main">
             <Switch>
                 <Route exact path='/' component={Home} />    
-                <Route exact path='/mobile-first' component={MobileFirst} />     
+                <Route path='/mobile-first' component={MobileFirst} />    
+                <Route path='/three-react' component={ThreeReact} />   
+                <Route path='/three-scene' component={ThreeScene} />    
+                <Route path='/metadata-page' component={MetadataPage} />   
             </Switch>  
         </div>
     )
