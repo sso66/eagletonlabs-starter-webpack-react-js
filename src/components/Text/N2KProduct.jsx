@@ -54,7 +54,7 @@ class N2KProduct extends React.Component {
 
             "\n ___ accepted props: values ___"  +
             "\n title: " + opts.title +
-            "\n value: " + opts.value +
+            "\n value: " + opts.value +c
             "\n name: " + opts.name +
             "\n width: " + opts.width +
             "\n height: " + opts.height +

@@ -1,6 +1,37 @@
+// File: n2k-svg.sass
+// Desc: Screens Setup Configuration Template for all N2K Components
+// Date: 11/30/2019
+//..............................................................................
+
+svg
+  max-height: 100%
+ 
+.bounding-box
+  stroke: rgba(0,255,255, 1)
+  strokeWidth: 10px
+  fill: rgba(0,0,0, 1)
+ 
 .title, .value, .units
+  fill: #FF9
+  //stroke: #FFF
+  font-family: Montserrat, Arial, sans-serif
+  //font-family: Brush Script MT, Brush Script, Segoe Script, cursive
+  font-size: 1.2em
+
+
+.gauge
+  stroke: #932
+  stroke-opacity: 1
   fill: #FFF
+  fill-opacity: 0.5
+
+
+.digital
   stroke: #FFF
-  font-family: "Montserrat, Arial, sans-serif"
-  //font-falmily: "Brush Script MT, Brush Script, Segoe Script, cursive"
-  font-size: 14
+  stroke-opacity: 1
+  fill: #FFF
+  //fill: url('#linearGradient')
+  fill-opacity: 0.5
+
+
+// eof
