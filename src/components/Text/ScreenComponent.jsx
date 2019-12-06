@@ -1,11 +1,11 @@
 // File: ScreenComponent.jsx
 // Desc: Screens Setup Configuration Template for all N2K Components
-// Date: 11/30/2019
+// Date: 12/02/2019
 //..............................................................................
 console.log("Mounting ScreenComponent... <ScreenComponent />");
 
 import React from 'react';
-import './n2k-svg.sass'
+import './screen-component.sass'
 
 class ScreenComponent extends React.Component {
     constructor(props) {
@@ -19,9 +19,13 @@ class ScreenComponent extends React.Component {
             display='',
             width='100%',
             height='100%',
+            x='0',
+            y='0',
             viewBox='0 0 40 40',
             strokeWidth='0.1',
             style={ 
+                position: 'relative',
+                //x:'0', y:'0',
                 backgroundColor: "#fff",
                 margin: "auto", 
                 border: "3px solid #f00",
@@ -52,11 +56,13 @@ class ScreenComponent extends React.Component {
         
         
         return (
-            // viewport: svg-root (dimension)
+            // viewport: svg-parent
             <svg 
                 display={display}
                 width={width} 
                 height={height}
+                x={x}
+                y={y}
                 viewBox={viewBox}
                 style={style}
                 //className={className}
@@ -65,23 +71,7 @@ class ScreenComponent extends React.Component {
                 {...this.props} 
                 // {...this.opts}
             >
-                // bounding box: svg-main (coordination)
-                <rect
-                    className="bounding-box"
-                    display=""
-                    x="0"
-                    y="0" 
-                    width={width}
-                    height={height}
-                 />
-                // viewport: svg-main
-                <svg
-                    viewBox="0 0 36 36"
-                    preserveAspectRatio="xMinYMin meet" 
-                    x="0"
-                    y="0"                
-                  >
-                    // bounding box: svg-header
+                   // bounding box: svg-header child (coordination)
                     <rect
                         className="bounding-box"
                         display=""
@@ -91,7 +81,7 @@ class ScreenComponent extends React.Component {
                         height="14%" 
                         strokeWidth={strokeWidth}                    
                     />      
-                    // viewport: svg-header
+                    // viewport: svg-header child (coordination)
                     <svg
                         x="1%"
                         y="1%" 
@@ -110,8 +100,11 @@ class ScreenComponent extends React.Component {
                         >
                             <tspan>{this.props.title}</tspan>
                         </text>
+                        
+                        {paintGradient(opts)}
+                        {drawRect(opts)}
                     </svg>  
-                    // bounding box: svg-content
+                    // bounding box: svg-content child (coordination)
                     <rect
                         className="bounding-box"
                         display=""
@@ -119,11 +112,9 @@ class ScreenComponent extends React.Component {
                         y="16%"
                         width="98%"
                         height="68%" 
-                        //stroke={stroke}
-                        strokeWidth={strokeWidth}
-                        //fill={fill}           
+                        strokeWidth={strokeWidth}       
                     />
-                    // viewport: svg-content
+                    // viewport: svg-content child (coordination)
                     <svg
                         x="1%"
                         y="16%"
@@ -132,6 +123,9 @@ class ScreenComponent extends React.Component {
                         viewBox="0 0 36 36"
                         preserveAspectRatio="xMidYMid meet"
                     >
+                        {paintGradient(opts)}
+                        {drawRect(opts)}
+
                         // Gauge component
                         <circle
                             className="gauge"
@@ -139,12 +133,12 @@ class ScreenComponent extends React.Component {
                             cx="50%"
                             cy="50%"
                             r="15.70795"
-                            strokeWidth={2}
+                            strokeWidth={1}
                         />
                         // Digital component
                         <rect
                             className="digital"
-                            display=""        
+                            display="none"        
                             x="2%"
                             y="17%"
                             rx="0.1"
@@ -164,7 +158,7 @@ class ScreenComponent extends React.Component {
                             <tspan>{this.props.value}</tspan>
                         </text>
                     </svg>
-                    // bounding box: svg-footer
+                    // bounding box: svg-footer (coordination)
                     <rect
                         className="bounding-box"
                         display=""
@@ -174,7 +168,7 @@ class ScreenComponent extends React.Component {
                         height="14%"
                         strokeWidth={strokeWidth}
                      />
-                    // viewport: svg-footer
+                    // viewport: svg-footer (coordination)
                     <svg
                         x="1%"
                         y="85%"
@@ -182,7 +176,10 @@ class ScreenComponent extends React.Component {
                         height="14%"
                         viewBox="0 0 36 36"        
                         preserveAspectRatio={"xMaxYMid meet"}           
-                    >
+                    >                        
+                        {paintGradient(opts)}
+                        {drawRect(opts)}
+                        
                         <text     
                             className="units"                     
                             display="" 
@@ -195,9 +192,38 @@ class ScreenComponent extends React.Component {
                         </text>
                     </svg>
                 </svg>
-            </svg> 
+
         )
     }
+}
+
+// create virtual light source
+const paintGradient = (opts) => {
+    return (
+        <linearGradient 
+            id="green-gradient"
+            x1="20%"
+            y1="20%"
+            x2="80%"
+            y2="80%"
+        >
+            <stop stopColor="mediumSpringGreen" offset="0" />
+            <stop stopColor="forestGreen" offset="0.3" />
+            <stop stopColor="lightBlue" offset="1" />
+        </linearGradient>
+    )        
+}
+// create element surface
+const drawRect = (opts) => {
+    return (
+        <rect 
+            width="100%"
+            height="100%"
+            rx="10%"
+            fill="url(#green-gradient)"
+            //opacity="0.5"
+        />
+    )
 }
 
 export default ScreenComponent;

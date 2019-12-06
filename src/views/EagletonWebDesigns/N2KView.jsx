@@ -28,14 +28,18 @@ export const N2KView = ( props ) => (
                 value="360" 
                 name="Degree"
                 display=""
-                width="100"
-                height="100"
+                x="800px"
+                y="0"
+                width="400"
+                height="400"
             />
             <ScreenComponent 
                 title="N2KView" 
                 value="360" 
                 name="Degree"
                 display=""
+                x="200"
+                y="0"
                 width="200"
                 height="200"
             />
@@ -46,6 +50,8 @@ export const N2KView = ( props ) => (
                 display=""
                 width="300"
                 height="300"
+                x="400"
+                y="0"
             />
        </div>
     
