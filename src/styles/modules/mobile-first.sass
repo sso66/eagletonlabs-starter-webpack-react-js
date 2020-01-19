@@ -1,0 +1,48 @@
+/* mobile-first.css
+/* make mobile default, non-media-queried styling
+/* Remember, our goal is to only overwrite a property if it changes and
+/*  only add new properties when the change needs to happen,
+
+body
+  margin: 0
+  padding: 0
+  font-size: 14px
+  line-height: 18px
+
+header
+  background: #304480
+  padding: 10px 20px
+
+h1
+  color: #fff
+
+.article, .aside
+  margin: 0 20px
+
+.article
+  border-bottom: 1px solid #304480
+
+/* media query targeting small device : tablet styling
+@media screen and (min-width: 768px)
+  header, .content
+    width: 728px
+    margin: 0 auto
+    padding: 10px 20px
+
+  .article, .aside
+    float: left
+    margin: 0
+
+  .article
+    width: 80%
+    border-bottom: 0
+
+  .aside
+    width: 20%
+
+/* media query targeting larger viewports: desktop styling
+@media screen and (min-width: 1024px)
+  header, .content
+    width: 960px
+
+/* eof

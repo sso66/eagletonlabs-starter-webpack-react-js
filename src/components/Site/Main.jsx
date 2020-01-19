@@ -12,7 +12,7 @@ import MobileFirst from "../../views/EagletonWebDesigns/MobileFirst";
 import ThreeReact from "../../views/EagletonWebDesigns/ThreeReact";
 import ThreeScene from "../../views/EagletonWebDesigns/ThreeScene";
 import MetadataPage from "../../views/EagletonWebDesigns/MetadataPage";
-import DeadSimple from "../../views/EagletonWebDesigns/DeadSimple/DeadSimple";
+
 import SvgResponsive from "../../views/EagletonWebDesigns/SvgResponsive";
 import SvgResponsiveNested from "../../views/EagletonWebDesigns/SvgResponsiveNested";
 import N2KView from "../../views/EagletonWebDesigns/N2KView";
