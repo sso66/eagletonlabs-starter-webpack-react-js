@@ -18,7 +18,8 @@ const Navbar = ( { store } ) => {
             <Link to='/deadsimpe' className="link"> DeadSimple |</Link>
             <Link to='/svg-responsive' className="link"> SVG Responsive | </Link>
             <Link to='/svg-responsive-nested' className="link"> SVG Responsive Nested | </Link>
-            <Link to='/n2kview' className="link"> N2KView</Link>
+            <Link to='/n2kview' className="link"> N2KView |</Link>
+
         </div>
     )
 }  
