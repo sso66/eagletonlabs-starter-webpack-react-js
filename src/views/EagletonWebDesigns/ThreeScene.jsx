@@ -37,6 +37,7 @@ class ThreeScene extends React.Component {
         this.cube = cube;
 
         this.mount.appendChild( this.renderer.domElement );
+                console.log(this.renderer.domElement)
         this.start();
 
     }
