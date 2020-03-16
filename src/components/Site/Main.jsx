@@ -15,7 +15,6 @@ import MetadataPage from "../../views/EagletonWebDesigns/MetadataPage";
 
 import SvgResponsive from "../../views/EagletonWebDesigns/SvgResponsive";
 import SvgResponsiveNested from "../../views/EagletonWebDesigns/SvgResponsiveNested";
-import N2KView from "../../views/EagletonWebDesigns/N2KView";
 
 
 const Main = (props) => {
@@ -30,7 +29,6 @@ const Main = (props) => {
                 <Route path='/metadata-page' component={MetadataPage} /> 
                 <Route path='/svg-responsive' component={SvgResponsive} />    
                 <Route path='/svg-responsive-nested' component={SvgResponsiveNested} /> 
-                <Route exact path='/n2kview' component={N2KView} />    
 
             </Switch>  
         </div>
