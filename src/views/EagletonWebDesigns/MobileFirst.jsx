@@ -12,11 +12,12 @@ import Clock from '../../components/Concepts/Clock'
 export const MobileFirst = ( props ) => (
     <div className="">
          <header>
-            <h1>Blog</h1>           
+            <h1>Blog</h1>         
         </header>
         
         <div className="content" role="main">
             <Clock />
+            
             <div className="article">
                 <h2>Article title</h2>
                 <div>08/31/2019</div>

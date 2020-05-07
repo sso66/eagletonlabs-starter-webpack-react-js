@@ -11,14 +11,11 @@ import Home from "../../views/EagletonWebDesigns/Home";
 import MobileFirst from "../../views/EagletonWebDesigns/MobileFirst";
 import ThreeReact from "../../views/EagletonWebDesigns/ThreeReact";
 import ThreeScene from "../../views/EagletonWebDesigns/ThreeScene";
-import MetadataPage from "../../views/EagletonWebDesigns/MetadataPage";
 
 import SvgResponsive from "../../views/EagletonWebDesigns/SvgResponsive";
 import SvgResponsiveNested from "../../views/EagletonWebDesigns/SvgResponsiveNested";
 
-
 const Main = (props) => {
-
     return (
         <div className="main">
             <Switch>
@@ -26,10 +23,8 @@ const Main = (props) => {
                 <Route path='/mobile-first' component={MobileFirst} />    
                 <Route path='/three-react' component={ThreeReact} />   
                 <Route path='/three-scene' component={ThreeScene} />    
-                <Route path='/metadata-page' component={MetadataPage} /> 
                 <Route path='/svg-responsive' component={SvgResponsive} />    
                 <Route path='/svg-responsive-nested' component={SvgResponsiveNested} /> 
-
             </Switch>  
         </div>
     )
