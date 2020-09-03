@@ -7,13 +7,13 @@ console.info( 'Mounting Main.jsx... <Main />' );
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from "../../views/EagletonWebDesigns/Home";
-import MobileFirst from "../../views/EagletonWebDesigns/MobileFirst";
-import ThreeReact from "../../views/EagletonWebDesigns/ThreeReact";
-import ThreeScene from "../../views/EagletonWebDesigns/ThreeScene";
+import Home from "../../views/Home";
+import MobileFirst from "../../views//MobileFirst";
+import ThreeReact from "../../views/ThreeReact";
+import ThreeScene from "../../views/ThreeScene";
 
-import SvgResponsive from "../../views/EagletonWebDesigns/SvgResponsive";
-import SvgResponsiveNested from "../../views/EagletonWebDesigns/SvgResponsiveNested";
+import SvgResponsive from "../../views//SvgResponsive";
+import SvgResponsiveNested from "../../views/SvgResponsiveNested";
 
 const Main = (props) => {
     return (

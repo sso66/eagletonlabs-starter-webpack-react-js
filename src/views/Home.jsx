@@ -5,7 +5,7 @@ console.info( 'Mounting Home.jsx... <Home />' );
 //........................................
 import React from 'react';
 import { connect } from 'react-redux';
-import { actionCreators } from  '../../redux/actionCreators';
+import { actionCreators } from  '../redux/actionCreators';
 
 export const Home = ( props ) => (
     <div className="home">
