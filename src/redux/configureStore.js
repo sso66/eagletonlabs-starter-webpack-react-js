@@ -1,16 +1,13 @@
 // src/redux/configureStore.js
-console.log( "Mounting configureStore.js..." );
+console.log( "Mounting src/redux/configureStore.js..." );
 
-// "order": STATE
+// "state": Store
 //........................................
 import { createStore } from 'redux';
 import reducer from './rootReducer';
-//import reducer from './TrafficLight/reducer';
 
 export const configureStore = () => {
-
-	const store = createStore( reducer );
-	
+	const store = createStore(reducer);	
 	return store;
 }
 

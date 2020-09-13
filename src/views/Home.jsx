@@ -1,5 +1,5 @@
 // src/views/EagletonWebDesigns/Home.jsx
-console.info( 'Mounting Home.jsx... <Home />' );
+console.info( 'Mounting src/views/Home.jsx... <Home />' );
 
 // "customer": CLIENT
 //........................................
@@ -9,15 +9,17 @@ import { actionCreators } from  '../redux/actionCreators';
 
 export const Home = ( props ) => (
     <div className="home">
-        <h1>Welcome Home ...conclusions</h1>
-        <p>Now: &nbsp; { props.currentTime.toString() }</p>
-        <p>Now: &nbsp; { props.currentTime.toLocaleString() }</p>
-        <button onClick={ props.updateTime }>Update Time</button>
+        <h2>Welcome Home ...Final Steps to Production</h2>
+        <div className='redux'>
+            <span><b>React Redux Connection</b></span>
+            <p>Today: &nbsp; { props.currentTime.toString() }</p>
+            <p>Now: &nbsp; { props.currentTime.toLocaleString() }</p>
+            <button onClick={ props.updateTime }>Update Time</button>
+        </div>
     </div>
 );
 
-const mapStateToProps = ( state ) => {
-       
+const mapStateToProps = ( state ) => {      
     return {
         currentTime: state.currentTime
     }

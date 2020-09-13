@@ -2,13 +2,14 @@
 // Desc: Mobile First RWD-SPA 
 // Date: 9/14/2019
 //..............................................................................
-console.info( 'Mounting index.js ... ' );
+console.info( 'Mounting src/index.js ... ' );
 
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
 
 import Root from './containers/Root';
 import configureStore from './redux/configureStore';
+
 import './styles/index.sass';
 
 const store  = configureStore();
