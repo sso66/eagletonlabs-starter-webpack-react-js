@@ -1,6 +1,6 @@
 // File: src/redux/middleware/debounceMiddleware.js
 // Date: 9/14/2020
-console.log( "Mounting src/redux/middleware/debounceMiddleware.js...\n" );
+console.log( "Mounting src/redux/middleware/debounceMiddleware.js...\n");
 
 // __ object to hold debounced actions (reference by action.type)
 const pending = {};

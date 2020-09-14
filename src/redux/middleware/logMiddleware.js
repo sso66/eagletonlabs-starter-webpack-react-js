@@ -1,7 +1,7 @@
 // File: src/redux/middleware/logMiddleware.js
 // Date: 9/14/2020
 // Note: chain of responsibility pattern and participant
-console.log( "Mounting src/redux/middleware/logMiddleware.js...\n" );
+console.log( "Mounting src/redux/middleware/logMiddleware.js...\n");
 
 // ___ to sample log for understanding next() function ___
 const logMiddleware = ({ getState, dispatch }) => next => action => {

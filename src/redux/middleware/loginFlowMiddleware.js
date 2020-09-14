@@ -1,7 +1,9 @@
 // File: src/redux/middleware/loginFlowMiddleware.js
 // Date: 9/14/2020
 // Note: chain of responsibility pattern and participant
-console.log( "Mounting src/redux/middleware/loginFlowMiddleware.js...\n" );
+import { SUCCESSFUL_LOGIN } from '../actions/action-types';
+
+console.log( "Mounting src/redux/middleware/loginFlowMiddleware.js...\n");
 
 const loginFlowMiddleware = ({ dispatch }) => next => action => {
     // ___ let the reducer save the access token in the state ___
@@ -12,6 +14,8 @@ const loginFlowMiddleware = ({ dispatch }) => next => action => {
         dispatch(fetchNotifications());
     }
 }
+
+export default loginFlowMiddleware;
 
 /*
  * Our new code holds the flow in single place and will allow us to easily support 
