@@ -6,10 +6,10 @@ console.log( "Mounting src/redux/actions/action-types.js..." );
 //........................................
 export default {
     
-	FETCH_NEW_TIME: 'fetch new time',
+	FETCH_NEW_TIME: 'fetch_new_time',
 	
-	// LOGIN: 'user login',
-	// LOGOUT: 'user logout',
+	// LOGIN: 'user_login',
+	// LOGOUT: 'user_logout',
 	
 	// STOP: 'stop',
 	// CAUTION: 'caution',

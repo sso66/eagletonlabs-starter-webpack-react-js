@@ -6,10 +6,11 @@ console.log( "Mounting src/redux/store/configureStore.js..." );
 //........................................
 import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers/rootReducer';
-import logMiddleware from '../middlewares/logMiddleware';
+import logMiddleware from '../middleware/logMiddleware';
+import measureMiddleware from '../middleware/measureMiddleware';
 
 export const configureStore = () => {
-	const store = createStore(reducer, applyMiddleware(logMiddleware));	
+	const store = createStore(reducer, applyMiddleware(logMiddleware, measureMiddleware));	
 	return store;
 }
 
