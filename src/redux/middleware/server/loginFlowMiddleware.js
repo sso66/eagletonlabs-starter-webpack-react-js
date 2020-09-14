@@ -1,7 +1,7 @@
 // File: src/redux/middleware/loginFlowMiddleware.js
 // Date: 9/14/2020
 // Note: chain of responsibility pattern and participant
-import { SUCCESSFUL_LOGIN } from '../actions/action-types';
+import { SUCCESSFUL_LOGIN } from '../../actions/actionTypes';
 
 console.log( "Mounting src/redux/middleware/loginFlowMiddleware.js...\n");
 

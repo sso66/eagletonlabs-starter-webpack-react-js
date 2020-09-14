@@ -4,7 +4,7 @@ console.log( "Mounting src/redux/reducers/rootReducer.js..." );
 
 // "short-order-cook": RECEIVER
 //........................................
-import types from '../actions/action-types';
+import types from '../actions/actionTypes';
 
 export const initialState = {
 	currentTime: new Date()

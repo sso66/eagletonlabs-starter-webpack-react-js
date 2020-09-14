@@ -3,10 +3,12 @@
 // Note: command design pattern and participant
 console.log( "Mounting src/redux/actions/actionCreators.js..." );
 
+import types from './actionTypes';
+
+const handleError = error => dispatch(apiError(error));
+
 // "waitress": INVOKER
 //........................................
-import types from './action-types';
-
 export const actionCreators = {   	
 	fetchNewTime: () => ({	    
 		type: types.FETCH_NEW_TIME,
@@ -29,7 +31,19 @@ export const actionCreators = {
     // logout: () => ({
     //     type: types.LOGOUT
     // })	
+
+    fetchRecipes: () => ({
+        type: types.API,
+        payload: {
+            url:'recipes.json',
+            success: SET_RECIPES
+        }
+    }),
+
+    wsConnected: () => ({ type: WS_CONNECTED }),
+    wsdisConnected: () => ({ type: WS_DISCONNECTED }),
 }
+
 
 // eof
 
