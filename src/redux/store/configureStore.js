@@ -8,6 +8,7 @@ import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers/rootReducer';
 import logMiddleware from '../middleware/logMiddleware';
 import measureMiddleware from '../middleware/measureMiddleware';
+import debounceMiddleware from '../middleware/debounceMiddleware';
 
 export const configureStore = () => {
 	const store = createStore(reducer, applyMiddleware(logMiddleware, measureMiddleware));	

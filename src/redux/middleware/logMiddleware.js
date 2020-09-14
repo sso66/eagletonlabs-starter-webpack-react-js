@@ -3,7 +3,7 @@
 // Note: chain of responsibility pattern and participant
 console.log( "Mounting src/redux/middleware/logMiddleware.js...\n" );
 
-// ___ understanding next() function ___
+// ___ to sample log for understanding next() function ___
 const logMiddleware = ({ getState, dispatch }) => next => action => {
     console.log("--> Before reducers have run")
     next(action);

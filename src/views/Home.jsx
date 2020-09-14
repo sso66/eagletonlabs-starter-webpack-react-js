@@ -33,7 +33,7 @@ const mapDispatchToProps = ( dispatch ) => ({
     updateTime: () => dispatch( actionCreators.fetchNewTime() )
 })
 
-console.log("___ connect React UI to Redux API ___");
+console.log("___ connect Redux API to React UI ___");
 export default connect(
     mapStateToProps,  
     mapDispatchToProps  

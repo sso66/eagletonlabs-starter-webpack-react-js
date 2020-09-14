@@ -3,7 +3,7 @@
 // Note: chain of responsibility pattern and participant
 console.log( "Mounting src/redux/middleware/measureMiddleware.js...\n" );
 
-// ___ recording benchmark with the name provides as a string: console I/O ___
+// ___ to record benchmark with the name provides as a string: console I/O ___
 const measureMiddleware = () => next => action => {
     console.time(action.type)
     next(action);
