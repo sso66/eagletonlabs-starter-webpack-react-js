@@ -1,5 +1,6 @@
-// src/redux/actions/actionCreators.js
-// command design pattern and participant
+// File: src/redux/actions/actionCreators.js
+// Date: 9/14/2020
+// Note: command design pattern and participant
 console.log( "Mounting src/redux/actions/actionCreators.js..." );
 
 // "waitress": INVOKER
@@ -12,11 +13,19 @@ export const actionCreators = {
 		payload: new Date()		
 	}),
 
-    // login: (user) => ({
-    //     type: types.LOGIN,
-    //     payload: user
-    // }),
+    login: (email, password) => ({
+        type: types.LOGIN,
+        payload: {
+            email: email, // 'info@redux-book.com',
+            password: password, // 'will-never-tell'
+        }
+    }),
     
+    loginSuccess: (accessToken) => ({
+        type: types.SUCCESSFUL_LOGIN,
+        payload: accessToken // 'success_token'
+    }),
+
     // logout: () => ({
     //     type: types.LOGOUT
     // })	

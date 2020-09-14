@@ -1,4 +1,5 @@
-// src/redux/actions/action-types.js 
+// File: src/redux/actions/action-types.js 
+// Date: 9/14/2020
 // command design pattern and particient
 console.log( "Mounting src/redux/actions/action-types.js..." );
 
@@ -8,8 +9,10 @@ export default {
     
 	FETCH_NEW_TIME: 'fetch_new_time',
 	
-	// LOGIN: 'user_login',
-	// LOGOUT: 'user_logout',
+	LOGIN: 'login',
+	SUCCESSFUL_LOGIN: 'successful_login',
+
+	// LOGOUT: 'logout',
 	
 	// STOP: 'stop',
 	// CAUTION: 'caution',
