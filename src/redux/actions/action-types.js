@@ -1,5 +1,6 @@
-// src/redux/types.js 
-console.log( "Mounting src/redux/actions.js..." );
+// src/redux/actions/action-types.js 
+// command design pattern and particient
+console.log( "Mounting src/redux/actions/action-types.js..." );
 
 // "order-slip": COMMAND
 //........................................

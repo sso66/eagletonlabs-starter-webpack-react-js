@@ -5,7 +5,7 @@ console.info( 'Mounting src/views/Home.jsx... <Home />' );
 //........................................
 import React from 'react';
 import { connect } from 'react-redux';
-import { actionCreators } from  '../redux/actionCreators';
+import { actionCreators } from  '../redux/actions/actionCreators';
 
 export const Home = ( props ) => (
     <div className="home">
@@ -19,16 +19,21 @@ export const Home = ( props ) => (
     </div>
 );
 
+console.log("___ mapStateToProps ___");
 const mapStateToProps = ( state ) => {      
+
+    
     return {
         currentTime: state.currentTime
     }
 }
 
+console.log("___ mapDispatchToProps ___");
 const mapDispatchToProps = ( dispatch ) => ({
     updateTime: () => dispatch( actionCreators.fetchNewTime() )
 })
 
+console.log("___ connect React UI to Redux API ___");
 export default connect(
     mapStateToProps,  
     mapDispatchToProps  

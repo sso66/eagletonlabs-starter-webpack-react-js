@@ -1,9 +1,10 @@
-// src/redux/actionCreators.js
-console.log( "Mounting src/redux/actionCreators.js..." );
+// src/redux/actions/actionCreators.js
+// command design pattern and participant
+console.log( "Mounting src/redux/actions/actionCreators.js..." );
 
 // "waitress": INVOKER
 //........................................
-import types from './actions';
+import types from './action-types';
 
 export const actionCreators = {   	
 	fetchNewTime: () => ({	    
@@ -11,7 +12,7 @@ export const actionCreators = {
 		payload: new Date()		
 	}),
 
-    // login: (user ) => ({
+    // login: (user) => ({
     //     type: types.LOGIN,
     //     payload: user
     // }),
