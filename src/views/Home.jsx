@@ -1,4 +1,7 @@
-// src/views/EagletonWebDesigns/Home.jsx
+// File: src/views/Home.jsx
+// Date: 9/1P/2020
+// Note: Observer Design Pattern and Participants
+// ................................................................................
 console.info( 'Mounting src/views/Home.jsx... <Home />' );
 
 // "customer": CLIENT
@@ -7,7 +10,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { actionCreators } from  '../redux/actions/actionCreators';
 
-export const Home = ( props ) => (
+export const Home = (props) => (
     <div className="home">
         <h2>Welcome Home ...Final Steps to Production</h2>
         <div className='redux'>
@@ -20,9 +23,7 @@ export const Home = ( props ) => (
 );
 
 console.log("___ mapStateToProps ___");
-const mapStateToProps = ( state ) => {      
-
-    
+const mapStateToProps = ( state ) => {         
     return {
         currentTime: state.currentTime
     }

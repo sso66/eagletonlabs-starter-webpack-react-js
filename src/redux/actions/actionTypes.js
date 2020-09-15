@@ -1,6 +1,7 @@
 // File: src/redux/actions/action-types.js 
-// Date: 9/14/2020
-// command design pattern and particient
+// Date: 9/15/2020
+// Note: Command Design Pattern and Participants
+// ................................................................................
 console.log( "Mounting src/redux/actions/actionTypes.js..." );
 
 // "order-slip": COMMAND

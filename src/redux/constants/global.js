@@ -1,4 +1,4 @@
-// File: src/redux/middleware/server/wsMiddleware.js
+// File: src/redux/constants/global.js
 // Date: 9/14/2020
 // Note: React globals
 

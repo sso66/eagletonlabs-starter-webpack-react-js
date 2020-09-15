@@ -1,13 +1,14 @@
 // File: src/redux/actions/actionCreators.js
-// Date: 9/14/2020
-// Note: command design pattern and participant
+// Date: 9/15/2020
+// Note: Command Design Pattern and Participants
+// ................................................................................
 console.log( "Mounting src/redux/actions/actionCreators.js..." );
 
 import types from './actionTypes';
 
 const handleError = error => dispatch(apiError(error));
 
-// "waitress": INVOKER
+// "waitress": INVOKER - COMMAND
 //........................................
 export const actionCreators = {   	
 	fetchNewTime: () => ({	    
@@ -44,6 +45,4 @@ export const actionCreators = {
     wsdisConnected: () => ({ type: WS_DISCONNECTED }),
 }
 
-
 // eof
-

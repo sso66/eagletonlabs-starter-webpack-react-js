@@ -1,8 +1,10 @@
-// src/redux/reducers/rootReducer.js
-// command design patterns and participant
+// File: src/redux/reducers/rootReducer.js
+// Date: 9/15/2020
+// Note: Command Design Pattern and Participants
+// ................................................................................
 console.log( "Mounting src/redux/reducers/rootReducer.js..." );
 
-// "short-order-cook": RECEIVER
+// "short-order-cook": RECEIVER: COMMAND
 //........................................
 import types from '../actions/actionTypes';
 
