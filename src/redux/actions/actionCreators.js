@@ -4,7 +4,7 @@
 // ................................................................................
 console.log( "Mounting src/redux/actions/actionCreators.js..." );
 
-import types from './actionTypes';
+import types from '../constants/actionTypes';
 
 const handleError = error => dispatch(apiError(error));
 

@@ -3,7 +3,7 @@
 // Note: chain of responsibility pattern and participant
 console.log( "Mounting src/redux/middleware/wsMiddleware.js...\n");
 
-import { WS_ROOT } from '../../constants/global';
+import { WS_ROOT } from '../../constants/actionTypes';
 import { wsConnected, wsDisconnected } from '../../actions/actionCreators'
 
 const SOCKET_STATES = {
