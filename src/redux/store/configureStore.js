@@ -1,6 +1,6 @@
 // File: src/redux/store/configureStore.js
 // Date: 9/15/2020
-// state design patterns and participant
+// Note: State Design Pattern and Participants
 // ................................................................................
 console.log( "Mounting src/redux/store/configureStore.js..." );
 
