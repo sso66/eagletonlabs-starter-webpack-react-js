@@ -10,14 +10,14 @@ import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers/rootReducer';
 
 import logMiddleware from '../middleware/client/logMiddleware';
-import measureMiddleware from '../middleware/client/measureMiddleware';
-import debounceMiddleware from '../middleware/client/debounceMiddleware';
-import thunkMiddleware from '../middleware/client/thunkMiddleware';
-import nullMiddlewareCreator from '../middleware/client/nullMiddlewareCreator';
+// import measureMiddleware from '../middleware/client/measureMiddleware';
+// import debounceMiddleware from '../middleware/client/debounceMiddleware';
+// import thunkMiddleware from '../middleware/client/thunkMiddleware';
+// import nullMiddlewareCreator from '../middleware/client/nullMiddlewareCreator';
 
-import loginFlowMiddleware from '../middleware/server/loginFlowMiddleware';
-import apiMiddleware from '../middleware/server/apiMiddleware';
-import wsMiddleware from '../middleware/server/wsMiddleware';
+// import loginFlowMiddleware from '../middleware/server/loginFlowMiddleware';
+// import apiMiddleware from '../middleware/server/apiMiddleware';
+// import wsMiddleware from '../middleware/server/wsMiddleware';
 
 export const configureStore = () => {
 	// const store = createStore(reducer);
