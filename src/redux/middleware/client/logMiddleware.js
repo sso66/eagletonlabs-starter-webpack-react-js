@@ -4,7 +4,7 @@
 // ................................................................................
 console.log( "Mounting src/redux/middleware/logMiddleware.js...\n");
 
-// "store manager": CHAIN-OF-RESPONSIBILITY
+// "store manager": MIDDLEWARE - CHAIN-OF-RESPONSIBILITY
 //-------------------------------------------------------------------
 // ___ to sample log middleware for understanding next() function ___
 const logMiddleware = ({ getState, dispatch }) => next => action => {
