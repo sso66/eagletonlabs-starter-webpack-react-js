@@ -7,7 +7,7 @@ console.info( 'Mounting src/components/Main.jsx... <Main />' );
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from "../../views/Home";
+import HomeView from "../../views/Home/HomeView";
 // import MobileFirst from "../../views//MobileFirst";
 // import ThreeReact from "../../views/ThreeReact";
 // import ThreeScene from "../../views/ThreeScene";
@@ -20,7 +20,7 @@ import Home from "../../views/Home";
     return (
         <div className="main">
             <Switch>
-                <Route exact path='/' component={Home} />    
+                <Route exact path='/' component={HomeView} />    
                 {/* <Route path='/mobile-first' component={MobileFirst} />    
                 <Route path='/three-react' component={ThreeReact} />   
                 <Route path='/three-scene' component={ThreeScene} />    

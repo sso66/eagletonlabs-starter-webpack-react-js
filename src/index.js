@@ -6,10 +6,8 @@ console.info( 'Mounting src/index.js ... ' );
 
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
-
 import Root from './containers/Root';
 import configureStore from './redux/store/configureStore';
-
 import './styles/index.sass';
 
 const store  = configureStore();

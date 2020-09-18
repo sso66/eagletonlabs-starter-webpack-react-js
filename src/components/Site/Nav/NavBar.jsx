@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Navbar = ( { store } ) => {
      return (
         <div className="navbar">
-            <Link to='/' className="link"> Home </Link>
+            <Link to='/' className="link"> Home View</Link>
             {/* <Link to='/mobile-first' className="link"> Mobile First | </Link>
             <Link to='/three-react' className="link"> Three React | </Link>
             <Link to='/three-scene' className="link"> ThreeScene | </Link>

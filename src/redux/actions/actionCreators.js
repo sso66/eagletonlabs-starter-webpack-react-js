@@ -41,8 +41,8 @@ export const actionCreators = {
         }
     }),
 
-    wsConnected: () => ({ type: WS_CONNECTED }),
-    wsdisConnected: () => ({ type: WS_DISCONNECTED }),
+    wsConnected: () => ({ type: types.WS_CONNECTED, active: null }),
+    wsDisconnected: () => ({ type: types.WS_DISCONNECTED, active: null })
 }
 
 // eof

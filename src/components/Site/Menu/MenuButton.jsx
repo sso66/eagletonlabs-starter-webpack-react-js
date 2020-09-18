@@ -6,6 +6,7 @@ console.log("Mounting MenuButton.jsx... <MenuButton />");
 
 import React from 'react';
 
+// ___ Hamburger Menu
 const MenuButton = (props) => (
   <div className="menuIcon">
     <div className="dashTop"></div>
