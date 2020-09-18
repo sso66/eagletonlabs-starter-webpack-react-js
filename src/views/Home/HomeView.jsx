@@ -13,8 +13,8 @@ import Timestamp from '../../components/Features/Timestamp';
 
 
 export const HomeView = (props) => (
-    <div className="home">
-        <h2 style={{textAlign: "center"}}>Welcome Home</h2>
+    <div className="homeview">
+        <h2 style={{textAlign: "center"}}>Eagleton Web Designs</h2>
         <div className='redux'>
             <h3><b>Timestamp Component</b></h3>
             <Timestamp 

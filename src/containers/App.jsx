@@ -5,20 +5,20 @@
 console.info( 'Mounting src/containers/App.jsx... <App />' );
 
 import React, { Component } from 'react';
-// import Header from "../components/Site/Header/Header";
-// import Navbar from "../components/Site/Nav/Navbar";
+import Header from "../components/Site/Header/Header";
+import Navbar from "../components/Site/Nav/Navbar";
 import Main from "../components/Site//Main";
-// import Footer from "../components/Site/Footer/Footer";
+import Footer from "../components/Site/Footer/Footer";
 import './App.sass';
 
 class App extends Component {
     render() {              
         return (
-            <div className="app">  
-                {/* <Header /> */}
-                {/* <Navbar /> */}
+            <div className="App">  
+                <Header />
+                <Navbar />
                 <Main /> 
-                {/* <Footer /> */}
+                <Footer />
             </div>       
          )
     } 
