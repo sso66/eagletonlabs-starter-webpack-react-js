@@ -4,7 +4,7 @@
 // ................................................................................
 console.log( "Mounting src/redux/store/configureStore.js..." );
 
-// "store": STORE - STATE
+// "store and store-order": STORE & STATE
 //........................................
 import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers/rootReducer';

@@ -9,7 +9,7 @@ import React, { Component } from 'react';
 // import Navbar from "../components/Site/Nav/Navbar";
 import Main from "../components/Site//Main";
 // import Footer from "../components/Site/Footer/Footer";
-import '../styles/App.sass';
+import './App.sass';
 
 class App extends Component {
     render() {              
