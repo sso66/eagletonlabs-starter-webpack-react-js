@@ -22,7 +22,7 @@ const init = () => {
 try {
     window.onload = init;
 } catch(e) {
-    alert("Engleton Web PWA" + e.message);
+    alert("Eagleton Web Designs" + e.message);
     e.preventDefault();
 } finally {
     console.log("Application mounted successfully!");

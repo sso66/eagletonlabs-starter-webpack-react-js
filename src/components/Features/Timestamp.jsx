@@ -14,7 +14,7 @@ console.log("Mounting src/components/Timestamp.jsx...")
 //     render() {
 //         return (        
 //             <div className='timestamp'>
-//                 <span><b>React Redux Connection</b></span>
+//                 <span><i>___ Making React Redux Connection ___</i></span>
 //                 <p>Today: &nbsp; { this.props.currentTime }</p>
 //                 <p>Now: &nbsp; { this.props.currentLocalTime }</p>
 //                 <button onClick={ this.props.updateTime }>Update Time</button>
