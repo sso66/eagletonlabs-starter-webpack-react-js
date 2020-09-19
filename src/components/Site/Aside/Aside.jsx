@@ -1,16 +1,17 @@
-// File: Site/Footer/Footer.jsx
+// File: Site/Aside/Aside.jsx
 // Desc: Mobile First RWD-SPA 
 // Date: 9/14/2019
 //..............................................................................
-console.log( "Mounting Footer.jsx <Footer />..." );
+console.log( "Mounting Aside.jsx <Aside />..." );
 
 import React from 'react';
 
-const Footer = () => {
+const Aside = () => {
     return ( 
-        <div className="footer">
-            <h3>End of My Story: Lessons Learned!</h3>
-            <span>Footer</span>
+        <div className="aside">
+
+            <h3>End of My Story: Lessons Learned!</h3>            
+            <span>Aside</span>
             <p>
                 The golden rule of knowing what (PURPOSE) you are doing is to 
                 understand why (REASON) you are doing it.
@@ -23,6 +24,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
-
-// eof
+export default Aside;
