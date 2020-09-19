@@ -2,7 +2,6 @@
 // Desc: Mobile First RWD-SPA 
 // Date: 9/14/2019
 //..............................................................................
-
 console.log( "Mounting Footer.jsx <Footer />..." );
 
 import React from 'react';

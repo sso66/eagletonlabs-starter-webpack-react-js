@@ -1,7 +1,9 @@
-// File: index.sass 
+// File: index.sass - webpack-starter.git 
 // Desc: Mobile First RWD-SPA: Responsive Web Design - Single Page Application
 // Date: 9/14/2019
 //..............................................................................
+// Flexbox Layout Module for Visibility, Positioning, and Sizing
+
 // @import './styles/vendors/animate.sass'
 // @import './styles/vendors/bulma.sass'
 // @import './styles/vendors/font-awesome.sass'
@@ -10,15 +12,18 @@
 
 
 * 
+  display:
   box-sizing: border-box
-  //border: 0.1px solid blue
+  // border: 1px solid blue
 
 
 html
+  display:
   // border: 1px solid red
 
 
 body
+  display:
   // background-color: black
   // color: white
   // font: normal 100% Helvetica, Arial, sans-serif
@@ -30,9 +35,8 @@ img
 
 
 #root
-  display: flex
-  flex-flow: column nowrap
-  //background-color: aqua
+  display: 
+  background-color: aqua
   border: 1px solid yellow
   
 
@@ -42,34 +46,34 @@ img
   background: teal
 
 
-.navbar
-  display: none
+.nav
+  display: 
   border: 1px solid blue
-  background: black
-  font-size: 1.1em
+  background: #000000
+  font-size: 0.65em
   
   a
     color: white 
     font-size: 1.5em
 
 
-.menubar
+.menu
   display: none
   //border: 1px solid blue
   
 
-.searchbar
+.search
   display: none
 
   
 .main
   display:
-  border: 3px solid  red
+  border: 1px solid  red
   padding: 1px
   background-color: mix(green, blue)
 
 
-.sidebar
+.aside
   display: none
   //border: 1px solid blue
   

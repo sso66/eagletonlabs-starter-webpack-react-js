@@ -7,11 +7,14 @@ console.info( 'Mounting src/components/Main.jsx... <Main />' );
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import HomeView from "../../views/Home/HomeView";
+import Home from "../../views/Home/HomeView";
+import About from "../../views/About/MobileFirst";
+import Products from "../../views/Products/SvgResponsive";
+import Contact from "../../views/Contact/ThreeReact";
+
 // import MobileFirst from "../../views//MobileFirst";
 // import ThreeReact from "../../views/ThreeReact";
 // import ThreeScene from "../../views/ThreeScene";
-
 // import SvgResponsive from "../../views//SvgResponsive";
 // import SvgResponsiveNested from "../../views/SvgResponsiveNested";
 
@@ -20,12 +23,14 @@ import HomeView from "../../views/Home/HomeView";
     return (
         <div className="main">
             <Switch>
-                <Route exact path='/' component={HomeView} />    
-                {/* <Route path='/mobile-first' component={MobileFirst} />    
-                <Route path='/three-react' component={ThreeReact} />   
-                <Route path='/three-scene' component={ThreeScene} />    
+                <Route exact path='/' component={Home} />    
+                <Route path='/about' component={About} />    
+                <Route path='/products' component={Products} />   
+                <Route path='/contact' component={Contact} />   
+                {/* 
                 <Route path='/svg-responsive' component={SvgResponsive} />    
-                <Route path='/svg-responsive-nested' component={SvgResponsiveNested} />  */}
+                <Route path='/svg-responsive-nested' component={SvgResponsiveNested} />  
+                */}
             </Switch>  
         </div>
     )

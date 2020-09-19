@@ -8,10 +8,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = ( { store } ) => {
-     return (
-        <div className="navbar">
-            <Link to='/' className="link"> Home View</Link>
-            {/* <Link to='/mobile-first' className="link"> Mobile First | </Link>
+    return (
+        <div className="nav">
+            <Link to='/' className="link">Home | </Link>
+            <Link to='/about' className="link">About | </Link>
+            <Link to='/products' className="link">Products | </Link>
+            <Link to='/contact' className="link">Contact</Link>
+            {/* 
+            <Link to='/mobile-first' className="link">Mobile First</Link>
             <Link to='/three-react' className="link"> Three React | </Link>
             <Link to='/three-scene' className="link"> ThreeScene | </Link>
             <Link to='/metadata-page' className="link"> MetadataPage | </Link>
@@ -19,7 +23,6 @@ const Navbar = ( { store } ) => {
             <Link to='/svg-responsive' className="link"> SVG Responsive | </Link>
             <Link to='/svg-responsive-nested' className="link"> SVG Responsive Nested | </Link>
             <Link to='/n2kview' className="link"> N2KView |</Link> */}
-
         </div>
     )
 }  

@@ -1,4 +1,4 @@
-// File: src/views/Home.jsx
+// File: src/views/Home/HomeView.jsx
 // Date: 9/18/2020
 // Note: Observer Design Pattern and Participants
 // ................................................................................
