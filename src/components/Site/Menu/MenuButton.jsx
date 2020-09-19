@@ -8,10 +8,10 @@ import React from 'react';
 
 // ___ Hamburger Menu
 const MenuButton = (props) => (
-  <div className="menuIcon">
-    <div className="dashTop"></div>
-    <div className="dashBottom"></div>
-    <div className="circle"></div>
+  <div className="menu menuIcon">
+    <div className="dashTop">---</div>
+    <div className="dashBottom">--</div>
+    <div className="circle">o</div>
   </div>
 )
 

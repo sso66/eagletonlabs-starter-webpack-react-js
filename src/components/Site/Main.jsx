@@ -10,7 +10,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from "../../views/Home/HomeView";
 import About from "../../views/About/MobileFirst";
 import Products from "../../views/Products/SvgResponsive";
-import Contact from "../../views/Contact/ThreeReact";
+import Contact from "../../views/Contact/ThreeScene";
 
 // import MobileFirst from "../../views//MobileFirst";
 // import ThreeReact from "../../views/ThreeReact";
