@@ -1,13 +1,13 @@
-// File: src/containers/Root.jsx
+// File: src/components/Root/Root.jsx
 // Desc: Mobile First RWD-SPA 
 // Date: 9/14/2019
 //..............................................................................
-console.log( "Mounting src/containers/Root.jsx... <Root />" );
+console.log( "Mounting src/components/Root/Root.jsx... <Root />" );
 
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from './App'
+import App from '../App/App'
 
 const Root = ({ store }) => {
     return ( 

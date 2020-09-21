@@ -1,15 +1,15 @@
-// File: src/containers/App.jsx
+// File: src/components/App/App.jsx
 // Desc: Mobile First RWD-SPA 
 // Date: 9/14/2019
 //..............................................................................
-console.info( 'Mounting src/containers/App.jsx... <App />' );
+console.info( 'Mounting src/components/App/App.jsx... <App />' );
 
 import React, { Component } from 'react';
-import Header from "../containers/Site/Header/Header";
-import Navbar from "../containers/Site/Nav/Navbar";
-import Main from "../containers/Site/Main";
-import Aside from '../containers/Site/Aside/Aside'
-import Footer from "../containers/Site/Footer/Footer";
+import Header from "../../components/Site/Header/Header";
+import Navbar from "../../components/Site/Nav/Navbar";
+import Main from "../../components/Site/Main";
+import Aside from '../../components/Site/Aside/Aside'
+import Footer from "../../components/Site/Footer/Footer";
 import './App.sass';
 
 class App extends Component {
