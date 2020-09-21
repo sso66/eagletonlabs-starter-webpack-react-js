@@ -12,7 +12,6 @@ import { actionCreators } from  '../../redux/actions/actionCreators';
 import { Timestamp } from '../../components/Features/Timestamp';
 import { ActionLink, LoginControl, Toggle } from '../../components/Features/Concepts'
 
-
 export const HomeView = (props) => (
     <div className="homeview">
         <h2 style={{textAlign: "center"}}>Eagleton Web Designs</h2>
@@ -46,5 +45,4 @@ export default connect(
 )(HomeView);
 
 // eof
-
     

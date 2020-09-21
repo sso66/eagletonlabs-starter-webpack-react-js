@@ -12,7 +12,7 @@ export const initialState = {
 	currentTime: new Date()
 }
 
-export const reducer = (state = initialState, action) => {
+export const rootReducer = (state = initialState, action) => {
 	switch (action.type) {	
 		case types.FETCH_NEW_TIME:
 			return {
@@ -24,6 +24,6 @@ export const reducer = (state = initialState, action) => {
 	}
 }
 
-export default reducer;
+export default rootReducer;
 
 // eof

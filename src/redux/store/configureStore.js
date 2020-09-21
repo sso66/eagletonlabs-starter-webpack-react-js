@@ -7,7 +7,7 @@ console.log( "Mounting src/redux/store/configureStore.js..." );
 // "store and store-order": STORE & STATE
 //........................................
 import { createStore, applyMiddleware } from 'redux';
-import reducer from '../reducers/rootReducer';
+import rootReducer from '../reducers/rootReducer';
 
 import logMiddleware from '../middleware/client/logMiddleware';
 // import measureMiddleware from '../middleware/client/measureMiddleware';
@@ -20,11 +20,11 @@ import logMiddleware from '../middleware/client/logMiddleware';
 import wsMiddleware from '../middleware/server/wsMiddleware';
 
 export const configureStore = () => {
-	// const store = createStore(reducer);
-	// const store = createStore(reducer, applyMiddleware(logMiddleware));	
-	// const store = createStore(reducer, applyMiddleware(nullMiddlewareCreator('OH_NO')))
-	// const store = createStore(reducer, applyMiddleware(logMiddleware, measureMiddleware));
-	const store = createStore(reducer, applyMiddleware(logMiddleware, wsMiddleware)); 
+	// const store = createStore(rootReducer);
+	const store = createStore(rootReducer, applyMiddleware(logMiddleware));	
+	// const store = createStore(rootReducer, applyMiddleware(nullMiddlewareCreator('OH_NO')))
+	// const store = createStore(rootReducer, applyMiddleware(logMiddleware, measureMiddleware));
+	// const store = createStore(rootReducer, applyMiddleware(logMiddleware, wsMiddleware)); 
 	
 	return store;
 }

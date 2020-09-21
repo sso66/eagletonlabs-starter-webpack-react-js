@@ -4,22 +4,14 @@
 //..............................................................................
 console.info( 'Mounting src/components/Main.jsx... <Main />' );
 
-import React, { Component } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
-import Home from "../../views/Home/HomeView";
+import { Home } from "../../views/Home";
 import About from "../../views/About/MobileFirst";
 import Products from "../../views/Products/SvgResponsive";
 import Contact from "../../views/Contact/ThreeScene";
 
-// import MobileFirst from "../../views//MobileFirst";
-// import ThreeReact from "../../views/ThreeReact";
-// import ThreeScene from "../../views/ThreeScene";
-// import SvgResponsive from "../../views//SvgResponsive";
-// import SvgResponsiveNested from "../../views/SvgResponsiveNested";
-
-// const Main = (props) => {
-   const Main =() => { 
+const Main =() => { 
     return (
         <div className="main">
             <Switch>
