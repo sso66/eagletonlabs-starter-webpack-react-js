@@ -1,4 +1,7 @@
-// webpack.config.js
+// File: webpack.config.js
+// Date: 9/14/2019
+// Note: Mobile First RWD-SPA 
+//.............................................................................. 
 console.info( 'Mounting webpack.config.js...' );
 
 const path = require( 'path' );
@@ -6,8 +9,8 @@ const webpack = require( 'webpack' );
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 
 module.exports = {
-    entry: path.resolve( __dirname + '/src/index.js' ),
-    //entry: ['babel-polyfill', './src/index.js'],
+    entry: path.resolve( __dirname + '/src/index.jsx' ),
+    //entry: ['babel-polyfill', './src/index.jsx'],
     output: {
         path: __dirname + '/build',
         filename: 'bundle.js',

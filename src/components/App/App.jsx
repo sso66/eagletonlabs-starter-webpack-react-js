@@ -1,6 +1,6 @@
 // File: src/components/App/App.jsx
-// Desc: Mobile First RWD-SPA 
 // Date: 9/14/2019
+// Note: Mobile First RWD-SPA 
 //..............................................................................
 console.info( 'Mounting src/components/App/App.jsx... <App />' );
 
