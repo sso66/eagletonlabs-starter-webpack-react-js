@@ -5,12 +5,14 @@
 console.log( "Mounting src/components/Features/Stopwatch.jsx... <Stopwatch />" );
 
 import React, { Component } from 'react';
+import './Clock.sass';
 
 class Stopwatch extends React.Component {
 	constructor(props) {
     	super(props);
-    	this.state = {date: new Date()};
-    	this.handleStopwatch = this.handleStopwatch.bind(this); 	
+		this.state = {date: new Date()};
+		this.handleStartClick = this.handleStartClick.bind(this); 	
+    	this.handleStopClick = this.handleStopClick.bind(this); 	
   	}
 
   	componentDidMount() {
@@ -29,11 +31,18 @@ class Stopwatch extends React.Component {
       		date: new Date()
    		 });
   	}
-
-	handleStopwatch() {
-		clearInterval(this.timerID);
-	}
 	
+	  handleStartClick() {
+    	this.timerID = setInterval(
+    		() => this.tick(), 
+    		1000
+    	);
+	}
+
+	handleStopClick() {
+		clearInterval(this.timerID);
+	}	
+
   	render() {
     	return (
       	<div className="clock">

@@ -1,5 +1,11 @@
+// File: src/components/Features/Clock.jsx
+// Date: 9/18/2020
+// Note: Observer Design Pattern and Participants
+// ................................................................................
+console.log("Mounting src/components/Features/Clock.jsx... <Clock/ />");
+
 import React from 'react';
-import './clock.sass';
+import './Clock.sass';
 
 class Clock extends React.Component {
   render() {
@@ -25,4 +31,6 @@ class Clock extends React.Component {
   }
 }
 
-export default Clock
+export default Clock;
+
+// eof

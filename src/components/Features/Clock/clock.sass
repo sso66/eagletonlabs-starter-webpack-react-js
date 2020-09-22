@@ -1,28 +1,36 @@
-/* clock.sass
-
+// File: src/components/Features/Clock.sass
+// Date: 9/18/2020
+// Note: Decorator Design Pattern and Participants
+// ................................................................................
+// Flexbox Layout Module for Visibility, Positioning, and Sizing
 .clock
-  position: relative
-  border-radius: 0.5em
+  border-radius: 0.3em
   margin: 10px auto
   font-family: 'Open Sans', sans-serif
   text-align: center
-  font-size: 60px
+  font-size: 3em
   line-height: 2.0em
-  background: #ff0
+  background: #f90
 
-.title
-  font-size: 0.2em
 
+// Note: Mobile First RWD-SPA 
+
+// desktop channel
 @media only screen and (min-width: 700px) and (max-width: 1000px)
   .clock
-    font-size: 50px
+    font-size: 2.5em
 
+
+// mobile tablet channel
 @media only screen and (min-width: 500px) and (max-width: 699px)
   .clock
-    font-size: 45px
+    font-size: 2em
 
+
+// mobile phone channel
 @media only screen and (min-width: 200px) and (max-width: 499px)
   .clock
-    font-size: 40px
+    font-size: 1.5em
+
 
 /* eof

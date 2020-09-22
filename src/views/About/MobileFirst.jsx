@@ -9,10 +9,10 @@ console.info( 'Mounting MobileFirst.jsx... <MobileFirst />' );
 import React from 'react';
 import { Stopwatch, Clock } from '../../components/Features/Clock';
 
-export const MobileFirst = ( props ) => (
-    <div className="">
-         <header>
-            <h1>Mobile First RWD-SPA</h1>         
+export const MobileFirst = (props) => (
+    <div className="about">
+        <header>
+            <h1 className="title">Mobile First RWD-SPA</h1>         
         </header>
         
         <div className="content" role="main">
@@ -34,7 +34,7 @@ export const MobileFirst = ( props ) => (
                 </div>                 
             </div>
 
-            <div className="sidebar">
+            <div className="article">
                 <h2>Related Articles</h2>
                 <nav>
                     <ul>
@@ -45,7 +45,6 @@ export const MobileFirst = ( props ) => (
                 </nav>
              </div>
         </div>
-
      </div>
 );
 
