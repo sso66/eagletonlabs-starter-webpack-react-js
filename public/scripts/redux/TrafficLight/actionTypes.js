@@ -1,4 +1,4 @@
-// src/redux/TrafficLight/types.js 
+// src/redux/TrafficLight/ActionTypes.js 
 console.log( "Mounting TrafficLight/types.js..." );
 
 // "order-slip": COMMAND

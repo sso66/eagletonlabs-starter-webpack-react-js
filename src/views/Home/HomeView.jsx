@@ -10,7 +10,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { actionCreators } from  '../../redux/actions/actionCreators';
 import { Timestamp } from '../../components/Features/Timestamp';
-import { ActionLink, LoginControl, Toggle } from '../../components/Features/Concepts'
+// import { ActionLink, LoginControl, Toggle } from '../../components/Features/Concepts'
 
 
 export const HomeView = (props) => (

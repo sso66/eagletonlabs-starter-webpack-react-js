@@ -1,5 +1,7 @@
-import AnalogClock from './AnalogClock';
+import Stopwatch from './Stopwatch';
+import Clock from './Clock';
 
 export {
-    AnalogClock,
+    Stopwatch,
+    Clock
 }

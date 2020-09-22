@@ -1,4 +1,4 @@
-// File: src/redux/middleware/logMiddleware.js
+// File: src/redux/middleware/client/logMiddleware.js
 // Date: 9/15/2020
 // Note: Chain of Responsibility Design Pattern and Participants
 // ................................................................................

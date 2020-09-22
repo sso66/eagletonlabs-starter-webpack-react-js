@@ -7,17 +7,17 @@ console.info( 'Mounting MobileFirst.jsx... <MobileFirst />' );
 // "customer": CLIENT
 //........................................
 import React from 'react';
-import Clock from '../../components/Features/Clock/Clock';
+import { Stopwatch, Clock } from '../../components/Features/Clock';
 
 export const MobileFirst = ( props ) => (
     <div className="">
          <header>
-            <h1>Blog</h1>         
+            <h1>Mobile First RWD-SPA</h1>         
         </header>
         
         <div className="content" role="main">
+            <Stopwatch />
             <Clock />
-            
             <div className="article">
                 <h2>Article title</h2>
                 <div>08/31/2019</div>

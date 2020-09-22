@@ -1,48 +1,28 @@
-// Clock.es6
-console.log("Mounting Clock.es6... <Clock />");
-
-import React, { Component } from 'react';
+import React from 'react';
+import './clock.sass';
 
 class Clock extends React.Component {
-	constructor(props) {
-    	super(props);
-    	this.state = {date: new Date()};
-    	this.handleStopClock = this.handleStopClock.bind(this); 	
-  	}
+  render() {
+    const currentTime = new Date(),
+          hours = currentTime.getHours(),
+          minutes = currentTime.getMinutes(),
+          seconds = currentTime.getSeconds(),
+          ampm = hours >= 12 ? 'pm' : 'am';
 
-  	componentDidMount() {
-    	this.timerID = setInterval(
-    		() => this.tick(), 
-    		1000
-    	);
-  	}
-
-  	componentWillUnmount() {
-    	clearInterval(this.timerID);
-  	}
-
-  	tick() {
-    	this.setState({
-      		date: new Date()
-   		 });
-  	}
-
-	handleStopClock() {
-		clearInterval(this.timerID);
-	}
-	
-  	render() {
-    	return (
-      	<div className="clock">
-        	<h1>Hello, world!</h1>
-        	<h2>It is now {this.state.date.toLocaleTimeString()}.</h2>
-        	<button onClick={this.handleStopClock}>Stop Clock</button>
-      	</div>
-
-    );
+    return (
+      <div className="clock">
+        {
+          hours == 0 ? 12 :
+            (hours > 12) ?
+              hours - 12 : hours
+        }:{
+          minutes > 9 ? minutes : `0${minutes}`
+        }:{
+          seconds > 9 ? seconds : `0${seconds}`
+        } {ampm}
+      </div>
+    )
   }
 }
 
-export default Clock;
-
-// eof 
+export default Clock
