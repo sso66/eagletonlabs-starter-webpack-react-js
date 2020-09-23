@@ -6,7 +6,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Timestamp.sass';
 
-console.log("Mounting src/components/Timestamp.jsx...")
+console.log("Mounting src/components/Timestamp/Timestamp.jsx...")
 
 // "customer": CLIENT - child
 //........................................

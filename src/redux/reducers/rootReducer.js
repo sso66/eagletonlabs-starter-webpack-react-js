@@ -6,6 +6,7 @@ console.log( "Mounting src/redux/reducers/rootReducer.js..." );
 
 // "short-order-cook": RECEIVER: COMMAND
 //........................................
+// import types from '../constants/action-types';
 import types from '../constants/actionTypes';
 
 export const initialState = {

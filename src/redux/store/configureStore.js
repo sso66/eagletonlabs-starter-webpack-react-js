@@ -9,7 +9,7 @@ console.log( "Mounting src/redux/store/configureStore.js..." );
 import { createStore, applyMiddleware } from 'redux';
 import rootReducer from '../reducers/rootReducer';
 
-import logMiddleware from '../middleware/client/logMiddleware';
+// import logMiddleware from '../middleware/client/logMiddleware';
 // import measureMiddleware from '../middleware/client/measureMiddleware';
 // import debounceMiddleware from '../middleware/client/debounceMiddleware';
 // import thunkMiddleware from '../middleware/client/thunkMiddleware';
@@ -17,11 +17,11 @@ import logMiddleware from '../middleware/client/logMiddleware';
 
 // import loginFlowMiddleware from '../middleware/server/loginFlowMiddleware';
 // import apiMiddleware from '../middleware/server/apiMiddleware';
-import wsMiddleware from '../middleware/server/wsMiddleware';
+// import wsMiddleware from '../middleware/server/wsMiddleware';
 
 export const configureStore = () => {
-	// const store = createStore(rootReducer);
-	const store = createStore(rootReducer, applyMiddleware(logMiddleware));	
+	const store = createStore(rootReducer);
+	// const store = createStore(rootReducer, applyMiddleware(logMiddleware));	
 	// const store = createStore(rootReducer, applyMiddleware(nullMiddlewareCreator('OH_NO')))
 	// const store = createStore(rootReducer, applyMiddleware(logMiddleware, measureMiddleware));
 	// const store = createStore(rootReducer, applyMiddleware(logMiddleware, wsMiddleware)); 

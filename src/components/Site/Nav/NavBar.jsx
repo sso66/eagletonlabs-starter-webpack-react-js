@@ -11,9 +11,9 @@ const Navbar = ( { store } ) => {
     return (
         <div className="nav">
             <Link to='/' className="link">Home | </Link>
-            <Link to='/about' className="link">About | </Link>
+            {/* <Link to='/about' className="link">About | </Link>
             <Link to='/products' className="link">Products | </Link>
-            <Link to='/contact' className="link">Contact</Link>
+            <Link to='/contact' className="link">Contact</Link> */}
             {/* 
             <Link to='/mobile-first' className="link">Mobile First</Link>
             <Link to='/three-react' className="link"> Three React | </Link>

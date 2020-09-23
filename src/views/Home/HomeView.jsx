@@ -8,7 +8,7 @@ console.info( 'Mounting src/views/Home/HomeView.jsx... <HomeView />' );
 //........................................
 import React from 'react';
 import { connect } from 'react-redux';
-import { actionCreators } from  '../../redux/actions/actionCreators';
+import { actionCreators } from  '../../redux/actions/client/actionCreators';
 import { Timestamp } from '../../components/Features/Timestamp';
 // import { ActionLink, LoginControl, Toggle } from '../../components/Features/Concepts'
 

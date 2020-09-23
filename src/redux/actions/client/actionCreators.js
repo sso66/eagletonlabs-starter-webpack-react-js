@@ -1,10 +1,10 @@
-// File: src/redux/actions/actionCreators.js
+// File: src/redux/actions/client/actionCreators.js
 // Date: 9/15/2020
 // Note: Command Design Pattern and Participants
 // ................................................................................
-console.log( "Mounting src/redux/actions/actionCreators.js..." );
+console.log( "Mounting src/redux/actions/client/actionCreators.js..." );
 
-import types from '../constants/actionTypes';
+import types from '../../constants/actionTypes';
 
 const handleError = error => dispatch(apiError(error));
 

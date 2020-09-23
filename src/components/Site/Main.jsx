@@ -7,18 +7,18 @@ console.info( 'Mounting src/components/Main.jsx... <Main />' );
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Home, Dashboard } from "../../views/Home";
-import About from "../../views/About/MobileFirst";
-import Products from "../../views/Products/SvgResponsive";
-import Contact from "../../views/Contact/ThreeScene";
+// import About from "../../views/About/MobileFirst";
+// import Products from "../../views/Products/SvgResponsive";
+// import Contact from "../../views/Contact/ThreeScene";
 
 const Main =() => { 
     return (
         <div className="main">
             <Switch>
                 <Route exact path='/' component={Home} />    
-                <Route path='/about' component={About} />    
+                {/* <Route path='/about' component={About} />    
                 <Route path='/products' component={Products} />   
-                <Route path='/contact' component={Contact} />   
+                <Route path='/contact' component={Contact} />    */}
             </Switch>  
         </div>
     )

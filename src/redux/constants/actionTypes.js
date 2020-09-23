@@ -1,4 +1,4 @@
-// File: src/redux/constants/action-types.js 
+// File: src/redux/constants/actionTypes.js 
 // Date: 9/15/2020
 // Note: Command Design Pattern and Participants
 // ................................................................................

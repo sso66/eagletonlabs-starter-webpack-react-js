@@ -5,22 +5,22 @@
 console.info( 'Mounting src/components/App/App.jsx... <App />' );
 
 import React, { Component } from 'react';
-import Header from "../../components/Site/Header/Header";
-import Navbar from "../../components/Site/Nav/Navbar";
+// import Header from "../../components/Site/Header/Header";
+// import Navbar from "../../components/Site/Nav/Navbar";
 import Main from "../../components/Site/Main";
-import Aside from '../../components/Site/Aside/Aside'
-import Footer from "../../components/Site/Footer/Footer";
+// import Aside from '../../components/Site/Aside/Aside'
+// import Footer from "../../components/Site/Footer/Footer";
 import './App.sass';
 
 class App extends Component {
     render() {              
         return (
             <div className="App">  
-                <Header />
-                <Navbar />
+                {/* <Header />
+                <Navbar /> */}
                 <Main /> 
-                <Aside />
-                <Footer />
+                {/* <Aside />
+                <Footer /> */}
             </div>       
          )
     } 
