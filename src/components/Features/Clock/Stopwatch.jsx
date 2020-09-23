@@ -4,14 +4,13 @@
 //..............................................................................
 console.log( "Mounting src/components/Features/Stopwatch.jsx... <Stopwatch />" );
 
-import React, { Component } from 'react';
+import React from 'react';
 import './Clock.sass';
 
 class Stopwatch extends React.Component {
 	constructor(props) {
     	super(props);
-		this.state = {date: new Date()};
-		this.handleStartClick = this.handleStartClick.bind(this); 	
+		this.state = { date: new Date() };
     	this.handleStopClick = this.handleStopClick.bind(this); 	
   	}
 
@@ -32,13 +31,6 @@ class Stopwatch extends React.Component {
    		 });
   	}
 	
-	  handleStartClick() {
-    	this.timerID = setInterval(
-    		() => this.tick(), 
-    		1000
-    	);
-	}
-
 	handleStopClick() {
 		clearInterval(this.timerID);
 	}	
@@ -48,7 +40,7 @@ class Stopwatch extends React.Component {
       	<div className="clock">
         	<h1>Hello, world!</h1>
         	<h2>It is now {this.state.date.toLocaleTimeString()}.</h2>
-        	<button onClick={this.handleStopwatch}>Stopwatch</button>
+        	<button onClick={this.handleStopClick}>Stopwatch</button>
       	</div>
 
     );
