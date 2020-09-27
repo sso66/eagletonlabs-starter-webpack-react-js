@@ -9,6 +9,7 @@
   - Size: small | medium | large
   - Position: static | absolute | relative | fixed
   - Orientation: landscape | portriat
+  - HTML Source Order vs CSS Display Order
    
  **B. Typography:**
   - Text Models : rtl | ltr
