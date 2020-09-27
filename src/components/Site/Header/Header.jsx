@@ -5,7 +5,7 @@
 console.info( 'Mounting Header.jsx... <Header />' );
 
 import React from 'react';
-import MenuButton from '../Menu/MenuButton'
+import MenuButton from '../Nav/MenuButton'
 
 class Header extends React.Component {
 	constructor(props) {

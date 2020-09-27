@@ -12,10 +12,14 @@ import { actionCreators } from  '../../redux/actions/client/actionCreators';
 import { Timestamp } from '../../components/Features/Timestamp';
 // import { ActionLink, LoginControl, Toggle } from '../../components/Features/Concepts'
 import { MobileFirst } from '../../components/Features/Matrix'
+import Heading from '../../components/Site/Heading/Heading';
+
+import './HomeView.sass';
 
 export const HomeView = (props) => (
     <div className="homeview">
-        <h2 style={{textAlign: "center"}}>Eagleton Web Designs</h2>
+        <Heading />
+        <h2 style={{textAlign: "center"}}>Home View</h2>
         <div className='redux'>
             <h3><b>Timestamp Component</b></h3>
             <Timestamp 
