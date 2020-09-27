@@ -14,6 +14,7 @@ import { Home, Dashboard } from "../../views/Home";
 const Main =() => { 
     return (
         <div className="main">
+            Main
             <Switch>
                 <Route exact path='/' component={Home} />    
                 {/* <Route path='/about' component={About} />    

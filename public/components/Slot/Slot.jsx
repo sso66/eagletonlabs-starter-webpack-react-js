@@ -1,12 +1,12 @@
-// File: src/component/Site/Layout/Layout.jsx
+// File: src/component/Site/Slot/Slot.jsx
 // Desc: React Pattern: "slots" props at work
 // Date: 8/10/2019
 //..............................................................
-console.log( "Mounting Layout.jsx... <Layout />" );
+console.log( "Mounting Layout.jsx... <Slot />" );
 
 import React from "react";
 
-const Layout = ( props ) => {
+const Slot = ( props ) => {
     return (
         <div className="layout">
             <div className="top">{ props.top }</div>

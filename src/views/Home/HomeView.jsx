@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { actionCreators } from  '../../redux/actions/client/actionCreators';
 import { Timestamp } from '../../components/Features/Timestamp';
 // import { ActionLink, LoginControl, Toggle } from '../../components/Features/Concepts'
-
+import { MobileFirst } from '../../components/Features/Matrix'
 
 export const HomeView = (props) => (
     <div className="homeview">
@@ -27,6 +27,8 @@ export const HomeView = (props) => (
         {/* <ActionLink />
         <LoginControl />
         <Toggle /> */}
+
+        <MobileFirst />
     </div>
 );
 
