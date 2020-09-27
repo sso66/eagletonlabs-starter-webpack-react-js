@@ -1,4 +1,4 @@
-// File: src/components/Features/Clock.jsx
+// File: src/components/Features/Clock/Clock.jsx
 // Date: 9/18/2020
 // Note: Observer Design Pattern and Participants
 // ................................................................................

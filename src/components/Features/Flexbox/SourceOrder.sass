@@ -1,0 +1,81 @@
+// File: src/components/Features/Flexbox/SourceOrder.sass
+// Date: 9/18/2020
+// Note: Observer Design Pattern and Participants
+// ................................................................................
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700)
+
+body
+  background-color: #6D695C
+  // background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAACVBMVEUAAAAAAAAAAACDY+nAAAAAA3RSTlMmDQBzGIDBAAAAG0lEQVR42uXIIQEAAADCMHj/0NdkQMws0HEeAqvwAUGJthrXAAAAAElFTkSuQmCC);
+
+  font-size: 100%
+  color: #333
+  font-family: Lato, Arial, sans-serif
+  padding: 0
+  margin: 0
+
+main
+  display: block
+  box-sizing: border-box
+  width: 90%
+  margin: 1em auto
+  padding: 1em 2em
+  color: #000
+  background-color: rgba(204, 204, 204, 0.7)
+  border: 0.07em solid rgba(0, 0, 0, 0.5)
+  border-radius: .5em
+
+button
+  text-align: center
+  font-size: 100%
+  border-radius: 1em
+  border: .1em solid #333
+  padding: 1em
+
+  strong
+    display: block
+    box-sizing: border-box
+    line-height: 1.35
+    width: 1.5em
+    height: 1.5em
+    text-align: center
+    font-size: 200%
+    background-color: #000
+    color: #fff
+    border-radius: 50%
+    margin: 0 auto
+    border: .1em solid #fff
+
+  &:hover, &:focus
+    background-color: #060
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5)
+    color: #fff
+    outline: none
+
+div + div
+  margin-top: 1em
+
+main > div
+  display: inline-flex
+  justify-content: space-around
+  width: 100%
+
+  button
+    width: 23%
+
+div.shuffled button
+  &:nth-child(1)
+    order: 2
+
+  &:nth-child(2)
+    order: 4
+
+  &:nth-child(3)
+    order: 1
+
+  &:nth-child(4)
+    order: 3
+
+  &:hover, &:focus
+    background-color: #600

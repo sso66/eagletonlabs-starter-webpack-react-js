@@ -13,6 +13,7 @@ import { Timestamp } from '../../components/Features/Timestamp';
 // import { ActionLink, LoginControl, Toggle } from '../../components/Features/Concepts'
 import { MobileFirst } from '../../components/Features/Matrix'
 import Heading from '../../components/Site/Heading/Heading';
+import SourceOrder from '../../components/Features/Flexbox/SourceOrder';
 
 import './HomeView.sass';
 
@@ -31,7 +32,7 @@ export const HomeView = (props) => (
         {/* <ActionLink />
         <LoginControl />
         <Toggle /> */}
-
+        <SourceOrder />
         <MobileFirst />
     </div>
 );
