@@ -13,9 +13,22 @@
 .main
   padding: 1px
 
+$primary-color: orange
+$secondary-color: lighten(darkblue, 35%)
 
 .heading
-  color: snow
+  color: $primary-color
+
+  & h1
+    background: $secondary-color    
+  
+    & span    
+      background: black
+      margin: 1px
+      border: 1px solid white
+      padding: 1px
+      font-size: .75em
+      opacity: 0.7
 
 
 .content
