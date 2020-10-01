@@ -1,6 +1,6 @@
 // File: src/components/Features/Flexbox/SourceOrder.sass
 // Date: 9/18/2020
-// Note: Observer Design Pattern and Participants
+// Note: Decorator Design Pattern and Participants
 // ................................................................................
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700)
@@ -15,6 +15,8 @@ body
   padding: 0
   margin: 0
 
+
+// No Order: HTML source order vs CSS display order
 main
   display: block
   box-sizing: border-box
@@ -25,6 +27,7 @@ main
   background-color: rgba(204, 204, 204, 0.7)
   border: 0.07em solid rgba(0, 0, 0, 0.5)
   border-radius: .5em
+
 
 button
   text-align: center
@@ -53,9 +56,13 @@ button
     color: #fff
     outline: none
 
+// CSS sibling selector
 div + div
   margin-top: 1em
 
+
+// Re-Ordered: HTML source order vs CSS display order
+// CSS child selector and Flexbox Items inline-flex value and order values
 main > div
   display: inline-flex
   justify-content: space-around
@@ -79,3 +86,6 @@ div.shuffled button
 
   &:hover, &:focus
     background-color: #600
+
+// eof
+
