@@ -22,6 +22,10 @@
  - Looping through an array `forEach` Loop ES5+ - DO
  - Looping through an array `for in` Loop ES5+ - DO
  - Looping through and array `map` function ES6+ - DO
+ - Looping through and array `filter` function ES6+ - DO
+ - Looping through and array `reduce` function ES6+ - DO
 #### Find Elements in an Array
  - Finding elements in an array `find` method - ES5+ DO
 #### Quickly Filling Arrays 
+ - The `Array.prototype.fill` method
+ - The `Array.from` method (static method)
