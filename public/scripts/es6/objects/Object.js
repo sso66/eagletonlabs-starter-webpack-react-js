@@ -44,20 +44,20 @@ console.log("Added Properties - Address: " + address);
 let { name } = obj.nestedObj;
 console.log("Nested Object - First Name: " + name)
 
-// Invoke Computed Propies
 console.log("Computed Properties - First Name: " + firstName);
 
-// Function as key values
 console.log("Function as key values - FullName: " + obj.printFullName());
 
 console.log("Object Existence - First Name:" + ('firstName' in obj));
+console.log("Object hasOwnProperty - First Name:" + (obj.hasOwnProperty('firstName')));
+console.log("Object hasOwnProperty - Middle Name:" + (obj.hasOwnProperty('middleName')));
 
 console.log("Updating Object Properties - First Name: " + (obj.firstName = 'Timothy'));
 
 console.log("Deleting Object Properties - First Name: " + (delete obj.firstName));
 console.log("Reading/Retriving Object Properties - First Name: " + (obj.firstName));
 
-console.log("\n___ Iterating (Enumerating Object ___");
+console.log("\n___ Iterating (Enumerating) object's keys and values ___");
 for (const property in obj) {
     const value = obj[property]; // Read the value
     console.log(property, value);
@@ -82,11 +82,11 @@ for (const [key, value] of Object.entries(obj)) {
 
 // Comparing two different objects
 const obj1 = {
-    name: 'Alex'
+    name: 'Alex Martin'
 }
 
 // const obj2 = {
-//     name: 'Alex'
+//     name: 'Alex Martin'
 // }
 // const obj2 = obj1;
 
@@ -97,9 +97,16 @@ const obj2 = {
 console.log("Comparing two different objects: " + (obj1 === obj2));
 console.log("Comparing two same objects: " + (obj1 === obj1));
 
-
 console.log("Copying the different objects: " )
 
 console.log("Comparing two different objects: " + (obj1 === obj2));
 console.log("Comparing two same objects: " + (obj1 === obj1));
+
+console.log("Making a copy with object ...spread operator: " + obj2.name);
+
+console.log("Copy with JSON.stringify: " + JSON.stringify(obj));
+
+const obj3 = Object.assign({}, obj);
+console.log("Object.assign({}, obj): " + JSON.stringify(obj3));
+
 // eof
