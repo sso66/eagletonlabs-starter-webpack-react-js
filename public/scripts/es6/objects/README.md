@@ -1,4 +1,4 @@
-## The Chronicles of JavaScript Objects
+ ## The Chronicles of JavaScript Objects
 ### Objects and Properties
  - Creation - Creating a new object.
  - Addition - Adding properties to an object.
@@ -11,13 +11,33 @@
  - Copying -Making a copy of an existing object.
  
  #### Creation
+  - Creating an object using "literal" notation
+  - Creating objects using Object constructor with new keyword (Don't)
+  - Computed Properties
+  - Function as key values
  #### Addition
+  - Dot Notation
+  - Bracket Notation
  #### Reading/Retrieving
+  - A Primer on Prototype - "Prototype Chain"
  #### Existence
+  - hasOwnProperty
  #### Updation
  #### Iteration (Enumeration)
- #### Comparison
- #### Copying
+  - for-in loops
+  - Object.keys()
+  - Object.values()
+  - Object.entries()
+  - Reflect.ownKeys()
+#### Comparison
+#### Copying
+ - Object Spread Operator
+ - JSON.stringyfy
+ - Object.assign
+ 
+#### What about arrays?
+#### And fuctions?
+
  
  
  
