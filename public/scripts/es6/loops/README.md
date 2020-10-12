@@ -25,5 +25,14 @@
    - Non-enumerable properties are hidden from for...in Loops
  - While Loops
  - While and continue
-
 ### Array
+ - Array.forEach
+ - Array.every
+ - Array.some
+ - Array.filter
+ - Array.map
+ - Array.reduce
+ - How to understand reducers in more comples, practical situations?
+ - Array.reduce or Array.filter?
+ - Reducers and Updating Object Propertes in a Database (Redux's Store)
+ 
