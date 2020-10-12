@@ -13,7 +13,7 @@
  - Skiping Steps
  - Breaking Early
  - Breaking to a Label
-   - Breaking from a labeled non-for loop scope
+   - Breaking from a labeled non for loop scope
  - for...of Loops
    - for...of and Generators
    - for...of and Strings
@@ -21,4 +21,9 @@
    - for...of and Objects (won't work)
    - for...of and Objects that were converted to iterables
  - for...in Loops
+   - properties
+   - Non-enumerable properties are hidden from for...in Loops
+ - While Loops
+ - While and continue
+
 ### Array
