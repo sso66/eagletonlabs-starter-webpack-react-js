@@ -35,8 +35,8 @@
  - JSON.stringyfy
  - Object.assign
  
-#### What about arrays?
-#### And fuctions?
+#### What about arrays? JavaScript Arrays are Objects too.
+#### And fuctions? Javascript Functions also "First-Class" Objects
 
  
  
