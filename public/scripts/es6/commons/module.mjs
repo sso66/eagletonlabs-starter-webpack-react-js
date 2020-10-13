@@ -5,7 +5,7 @@ var me = 'Stephen'
 // Function
 function sayMe() {
   	// Scope: local
-  	//var me = 'Karen'
+  	var me = 'Karen'
 	
 	return me
 }	
