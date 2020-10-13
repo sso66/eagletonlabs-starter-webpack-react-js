@@ -2,6 +2,8 @@
 // Date: 10/13/2020
 // Note: Understanding ES6+ ArrayExtra's operations
 
+const { element } = require("prop-types");
+
 /*
  * These methods help developers write clean and readable code. A
  * lot these methods reduce the need to reach for utilities like
@@ -24,3 +26,27 @@ console.log('Array.map()');
 const numbers = [2, 3, 4, 5]
 const dollars = numbers.map(number => '$' + number);
 console.log(dollars);
+
+console.log('Array.reduce()');
+const sequence = [5, 10, 15];
+const total = sequence.reduce((accumlater, currentValue) => accumlater + currentValue);
+console.log(total);
+
+console.log('Array.forEach()');
+const emotions = ['happy', 'sad', 'angry'];
+emotions.forEach(emotion => console.log(emotion))
+
+console.log('Array.some()');
+const userPrivileges = ['user', 'user', 'user', 'admin'];
+const containAdmin = userPrivileges.some(element => element === 'admin');
+console.log(containAdmin);
+
+console.log('Array.every()');
+const ratings = [3, 5, 4, 3, 5];
+const goodOverallRating = ratings.every(rating => rating >= 3);
+console.log(goodOverallRating);
+
+console.log('Array.includes()');
+const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];
+const includeWaldo = names.includes('waldo');
+console.log(includeWaldo);
