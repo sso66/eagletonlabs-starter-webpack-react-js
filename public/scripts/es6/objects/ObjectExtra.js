@@ -1,7 +1,7 @@
-// Proj: webpack-starter.git
-// File: wepublic/scripts/es6/objects
-
-console.log("Object.js...\n");
+// File: es6/objects/ObjectExtra.js
+// Date: 10/13/2020
+// The Chronicles of JavaScript Objects
+console.log("ObjectExtra.js...\n");
 
 // Initialize Computed Properties
 const propertyName = 'firstName';

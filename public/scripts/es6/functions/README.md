@@ -29,8 +29,8 @@ Function objects.`
  - Singleton Design Pattern
 #### Closures
  - Applications of Closures
-  - Partial Application
-  - Event Handlers
-  - Ajax
-  - Private methods
+ - Partial Application
+ - Event Handlers
+ - Ajax
+ - Private methods
  

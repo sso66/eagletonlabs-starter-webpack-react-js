@@ -1,4 +1,4 @@
- ## The Chronicles of JavaScript Objects
+ ## The Chronicles of JavaScript Objects: ObjectExtra.js
 ### Objects and Properties
  - Creation - Creating a new object.
  - Addition - Adding properties to an object.
