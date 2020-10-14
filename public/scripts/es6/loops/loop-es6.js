@@ -104,13 +104,11 @@ function* generator() {
 for (let value of generator())
   console.log( value );
 
-
 console.log("\nfor...of Loops and Strings");  
 let string = 'text';
 
 for (let value of string)
   console.log( value );
-
 
 console.log("\nfor...of Loops And Arrays");
 let array = [0, 1, 2];
@@ -122,13 +120,11 @@ console.log("\nfor…of Loops And Objects (won’t work)");
 // for (let value of object) // Error: object is not iterable
 //    console.log( value );
 
-
 console.log("\nfor…of loops and objects that were converted to iterables");
 let enumerable = { property : 1, method : () => {} };
 for (let key of Object.keys( enumerable )) console.log("Object.keys(): " + key);
 for (let value of Object.values( enumerable )) console.log("Object.values():" + value);
 for (let entry of Object.entries( enumerable )) console.log("Object.entries(): " + entry);
-
 
 console.log("\nfor...in Loops")
 let object = { a: 1, b: 2, c: 3, method: () => { } };
