@@ -9,8 +9,7 @@ for (let j = 1; j < 5; j++) {
 };
 
 // favor es6 template literal over es5 string concat
-console.log(`
-prefer const over let, because const cannot be 
+console.log(`prefer const over let, because const cannot be 
 reassigned once declared\n`);
 
 // eof
