@@ -1,6 +1,6 @@
 # es6-es7
 ## commons
-1. Let and const
+1. let and const
 2. Arrow Functions
 3. Default parameters
 4. Destructuring
