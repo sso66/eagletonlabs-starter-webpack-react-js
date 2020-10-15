@@ -1,9 +1,9 @@
-# es6-es7
-## basics
+## es6+
+### basics/
 1. Transpilers - Babel
-2. Let
-3. Constants
-4. Creating objects
+2. `let`
+3. `const`
+4. Creating Objects
 5. Destructuring assignment
 6. Default parameters and values
 7. Rest operator
@@ -13,4 +13,3 @@
 11. Sets and Maps
 12. Template literals
 13. Modules
-
