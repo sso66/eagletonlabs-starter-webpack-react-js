@@ -1,5 +1,7 @@
 // File: es6/objects/ObjectReact.js
 // Date: 10/13/2020
+// Note: Useful JavaScript Array and Object Methods in React-Redux
+console.log("ObjectReact.js...\n");
 
 console.log('Object.values()');
 const icecreamColors = {

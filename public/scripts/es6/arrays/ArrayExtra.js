@@ -1,6 +1,6 @@
 // File: es6/arrays/ArrayExtra.js
 // Date: 10/13/2020
-// Note: Understanding ES6+ ArrayExtra's operations
+// Note: // The Chronicles of JavaScript Objects
 
 /*
  * Many of the Array* methods are iterators. Instead of passing your

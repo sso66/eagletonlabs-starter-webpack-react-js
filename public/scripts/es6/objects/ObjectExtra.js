@@ -3,10 +3,10 @@
 // The Chronicles of JavaScript Objects
 console.log("ObjectExtra.js...\n");
 
-// Initialize Computed Properties
+console.log("\nInitialize Computed Properties");
 const propertyName = 'firstName';
 
-// 1. Creating a new object
+console.log("\n1. Creating a new object");
 const obj = {
     firstName: 'Alex',
     'lastName': 'Martin',
@@ -21,10 +21,10 @@ const obj = {
     }
 };
 
-// 2. Adding properties to an object
+console.log("n2. Adding properties to an object");
 obj.address = 'Earth';
 
-// 3. Reading/Retrieving the value associated with a key
+console.log("\n3. Reading/Retrieving the value associated with a key");
 // ES5+ WET
 console.log("First Name: " + obj.firstName);
 console.log("Last Name: " + obj['lastName']);

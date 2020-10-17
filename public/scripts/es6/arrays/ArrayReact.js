@@ -1,7 +1,7 @@
 // File: es6/arrays/ArrayReact.js
 // Date: 10/13/2020
-// Note: Understanding ES6+ ArrayExtra's operations
-
+// Note: Useful JavaScript Array and Object Methods in React-Redux
+console.log("ArrayNode.js...\n");
 /*
  * These methods help developers write clean and readable code. A
  * lot these methods reduce the need to reach for utilities like
