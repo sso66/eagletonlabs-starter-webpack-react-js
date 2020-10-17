@@ -1,5 +1,8 @@
-// class.js
-// 8. Classes
+// File: es6/basics/ class.js
+// Date: 10/15/2020
+// Note: Inheritance
+console.log("\n 8. Classes: creating with new keyword");
+
 class Pony {
   constructor(color) {
     this.color = color;

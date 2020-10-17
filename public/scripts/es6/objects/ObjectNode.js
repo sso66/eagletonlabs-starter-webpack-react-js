@@ -1,6 +1,7 @@
 // File: es6/objects/ObjectNode.js
 // Date: 10/13/2020
-// Note: Understanding ES6+ Destructing operations
+// Note: Understanding ES6+ Objet Destructing operations
+
 console.log("ObjectReact.js...\n");
 
 const person = { name: 'Sarah', country: 'Nigeria', job: 'Developer', friends: [ 'Annie', 'Becky'] };

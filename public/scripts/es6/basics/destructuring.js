@@ -1,7 +1,7 @@
 // File: es6/basics/destructuring.js
 // Date: 10/15/2020
 
-// 5. Destructuring assignments
+console.log("\n5. Destructuring assignments: Objects with Function");
 
 // ES5+ w/var
 // var httpOptions = { timeout: 2000, isCache: true };

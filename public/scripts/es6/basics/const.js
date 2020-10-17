@@ -6,7 +6,8 @@
  * and you can't assign another value later
  */
 
-// 3. const keyword for immutable variable assignments
+console.log("\n3. const keyword for immutable variable assignments");
+
 // ES6+ Constants
 const poniesInRace = 0;
 //poniesInRace = 7; // can't assign another value

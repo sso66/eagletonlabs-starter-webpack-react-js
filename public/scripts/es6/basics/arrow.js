@@ -1,6 +1,9 @@
-// arrow.js
-// 10. Arrow functions: Callbacks and Anonymous
-// Re: ES6 with Promises
+// File: es6/basics/arrow.js
+// Date: 10/15/2020
+
+console.log("\n10. Arrow functions: Callbacks and Anonymous");
+
+// Re: ES6+ with Promises API
 // getUser(login)
 //   .then(function (user) {
 //     return getRights(user); // getRights is returning a promise
@@ -95,7 +98,7 @@
 // // log the result
 // console.log("max value: " + maxFinder.max);
 
-// An elegant solution with the arrow function syntax:
+// An elegant solution with the Arrow function syntax:
 const maxFinder = {
   max: 0,
   find: function (numbers) {
@@ -113,4 +116,5 @@ maxFinder.find([2, 3, 4]);
 console.log("max value: " + maxFinder.max);
 // This make the arrow functions the perfect candidates for anonymous
 // functions in callbacks!
+
 // eof
