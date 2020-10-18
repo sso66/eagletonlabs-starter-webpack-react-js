@@ -42,7 +42,7 @@ const Person = {
 }
 console.log(Person.fullname);
 
-// Computed Object Property Names for "Mobile First"
+// Computed Object Property Names for "Mobile First" RWD-SPA
 const newPropertyName = 'smile';
 const anObject = { aProperty: 'a value'};
 anObject[newPropertyName] = ':D';

@@ -63,4 +63,5 @@ class PonyC extends AnimalB {
 }
 const pony4 = new PonyC(20*100, 'white');
 console.log("Pony4's speed: " + pony4.speed + "and the color: " + pony4.color)
+
 // eof

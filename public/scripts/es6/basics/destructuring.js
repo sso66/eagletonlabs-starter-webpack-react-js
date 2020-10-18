@@ -1,35 +1,37 @@
 // File: es6/basics/destructuring.js
 // Date: 10/15/2020
+// Note: key/value Comprehension and key/value Observation
+console.log("\n5. Destructuring Assignments: Object | Array with Function");
 
-console.log("\n5. Destructuring assignments: Objects with Function");
-
-// ES5+ w/var
+// ES5 w/var: WET
 // var httpOptions = { timeout: 2000, isCache: true };
 // var httpTimeout = httpOptions.timeout;
 // var httpCache = httpOptions.isCache;
 // console.log(httpTimeout + " : " + httpCache);
 
-// ES5 w/const
-//const httpOptions = { timeout: 2000, isCache: true };
+// ES5+ w/const or w/let...still WET
+// const httpOptions = { timeout: 2000, isCache: true };
 
-// // regular assignment different key/value
+// Regular assignment different key/value
 // const httpTmeout = httpOptions.timeout;
 // const httpCache = httpOptions.isCache;
 // console.log("regular " + httpTmeout + " : " + httpCache);
 
-// ES6+
+// ES6+ w/const or w/let DRY 
 const httpOptions = { timeout: 2000, isCache: true };
 // later with destructuring assignment with different key/value
 const { timeout: httpTimeout, isCache: httpCache } = httpOptions;
 console.log("destructuring (different KVO): " + httpTimeout + " : " + httpCache);
 
-//ES5 w/const
+//ES5 w/const 
 // regular assignment same key/value
 // const timeout = httpOptions.timeout;
 // const isCache = httpOptions.isCache;
 // console.log("regular " + timeout + " : " + isCache);
 
 // later with destructuring assignment with same key/value
+// { pattern Object } = { design Object }
+// [ pattern Array ] = [ design Array ]
 const { timeout, isCache } = httpOptions;
 // you now have a variable named 'timeout'
 // and one named 'isCache' with correct values
