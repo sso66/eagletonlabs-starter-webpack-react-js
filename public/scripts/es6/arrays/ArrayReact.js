@@ -1,7 +1,8 @@
 // File: es6/arrays/ArrayReact.js
 // Date: 10/13/2020
 // Note: Useful JavaScript Array and Object Methods in React-Redux
-console.log("ArrayNode.js...\n");
+
+console.log("ArrayReact.js...\n");
 /*
  * These methods help developers write clean and readable code. A
  * lot these methods reduce the need to reach for utilities like
@@ -48,3 +49,5 @@ console.log('Array.includes()');
 const names = ['sophie', 'george', 'waldo', 'stephen', 'henry'];
 const includeWaldo = names.includes('waldo');
 console.log(includeWaldo);
+
+// eof

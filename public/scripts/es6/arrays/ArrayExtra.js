@@ -2,6 +2,7 @@
 // Date: 10/13/2020
 // Note: // The Chronicles of JavaScript Objects
 
+console.log("\nArrayExtra.js");
 /*
  * Many of the Array* methods are iterators. Instead of passing your
  * array (list) into for or while loop, you should use build-in Array

@@ -1,6 +1,7 @@
 // File: es6/array/ArrayNode.js
 // Date: 10/17/2020
 // Note: Understanding ES6+ Array Destructing operations
+console.log("ArrayNode.js);
 
 console.log("\n1. Array Basic Destructuring");
 const introduction = ["Hello", 'I', "am", "Sarah", '.']; // common sentence
