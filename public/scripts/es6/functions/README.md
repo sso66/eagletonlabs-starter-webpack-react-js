@@ -15,9 +15,9 @@
 #### Immediately Invoked Function Expression (aka IIEF)
  - Where can IIEF be used?
 #### Technical Notes:
-`All functions are objects but not all objects are functions. What distingushes the 
-function from other objects is that functions can be called. In brief, they are 
-Function objects.`
+`All functions are objects but not all objects are functions. 
+What distingushes the function from other objects is that functions can be called. 
+In brief, they are Function objects.`
 #### Objects and Functions (call, apply and bind)
  - Using call() method to invoke a method on another object.
  - Using apply() method to invoke a method on another object.
