@@ -6,7 +6,7 @@
 
 ### 2. Arrow Functions
     The nitty-gritty of arrow functions
-    The lexical **this**
+    The lexical this
 ### 3. Default Parameters
 ### 4. Destructuring
     Destructuring Objects
