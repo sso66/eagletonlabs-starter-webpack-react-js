@@ -1,7 +1,4 @@
 // File: es6/functions/FunctionES6.js
-
-const { func } = require("prop-types");
-
 // Date: 10/14/2020
 console.log("\nThe Chronicles of JavaScript Functions")
 
@@ -93,57 +90,170 @@ console.log("\nThe Chronicles of JavaScript Functions")
 // }
 // countDown(10);
 
-console.log("\n10. Immediately Invoked Function Expression (a.k.a IIFE)");
+// console.log("\n10. Immediately Invoked Function Expression (a.k.a IIFE)");
 
-(function() {
-    let message = "I don't have a name!";
-    console.log("\nAnonymous function: " +message);
-    console.log("\tThe beauty of IIEF is that it can only be invoked once.")
-})();
+// (function() {
+//     let message = "I don't have a name!";
+//     console.log("\nAnonymous function: " +message);
+//     console.log("\tThe beauty of IIEF is that it can only be invoked once.")
+// })();
 
-console.log("\n11. Where IIFF can be used?");
-console.log(`It can be used in scenarios where you need to run the function only
-once, like fetching some initial data, setting some configuration values,
-checking system status on start up, etc. 
-in Objects (Arrays) and Functions (call, apply, bind)\n`);
+// console.log("\n11. Where IIFF can be used?");
+// console.log(`It can be used in scenarios where you need to run the function only
+// once, like fetching some initial data, setting some configuration values,
+// checking system status on start up, etc. 
+// in ES5+ Objects (Arrays) and Functions (call, apply, bind)\n`);
 
-console.log(`NOTE: All functions are objects but not all object are functions.
-What distinguishes the function from other objects is that functions can be 
-called. In brief, they are 'Function' objects.`)
+// console.log(`NOTE: All functions are objects but not all object are functions.
+// What distinguishes the function from other objects is that functions can be 
+// called. In brief, they are 'Function' objects.`)
 
-const user = {
-    userName: "codingmonk",
-    dispayName: "John",
-    sendMessage: (message) => {
-        console.log(`Sending ${message} to ${this.displayName}`);
-        console.log(`Sending ${message} to ${student.displayName}`);
-    }  
-}
-const student = {
-    displayName: "Jill"
-}
-user.sendMessage('Hello...');
+// const user = {
+//     userName: "codingmonk",
+//     dispayName: "John",
+//     // sendMessage: (message) => {
+//     sendMessage: function(message) {
+//         console.log(`Sending ${message} to ${this.displayName}`);
+//     }  
+// }
+// const student = {
+//     displayName: "Jill"
+// }
+// user.sendMessage('Hello...');
 
-console.log("\n12. Using call() method to invoke on another object");
-user.sendMessage.call(student, "Hello from John");
+// console.log("\n12. Using call() method to invoke on another object");
+// user.sendMessage.call(student, "Hello from John");
 
-console.log("\n13. Using apply() method to invoke on another object ");
-user.sendMessage.apply(student, ["[Hello from John]"]);
+// console.log("\n13. Using apply() method to invoke on another object ");
+// user.sendMessage.apply(student, ["[Hello from John]"]);
 
-console.log("\n14. Using bind method");
-let sendMessageToStudent = user.sendMessage.bind(student);
-sendMessageToStudent("Yet another message");
+// console.log("\n14. Using bind method");
+// let sendMessageToStudent = user.sendMessage.bind(student);
+// sendMessageToStudent("Yet bound message");
 
 // console.log("\n15. Constructor function");
+// function User(name, email) {
+//     this.name = name;
+//     this.email = email;
+//     if (!(this instanceof User)) {
+//         return new User(name, email); 
+//     }
+//     this.save = function() {
+//         this.id = (+new Date());
+//         // this.id = new Date().toDateString();
+//         console.log(`${this.name} saved to Class DB successfully!`);
+//         return this.id;
+//     }
+// }
+
+// let customer = new User('Stephen', 'someemail@test.com');
+// console.log(customer);
+// User.prototype.saveDB = function() {
+//     this.id = +new Date();
+//     console.log(`${this.name} saved to Prototype DB successfully!`);
+//     return this.id
+// }
+// console.log(customer.save());
+// console.log(customer.saveDB()); // extract output and save()
+
 // console.log("\n16. Why use a prototype for adding instance methods?");
+
+// let users = [];
+// for (let i = 0; i < 10; i++) {
+//     let user = new User(`user {i}`);
+//     user.email = `user${i}@test.com`; // lets create dynamic email address
+//     users.push(user);
+// }
+
+// console.log(users);
+
 // console.log("\n17. Providing protection against missing 'new' for invoking constructor function");
-// console.log("\n18. How to return a custom object from constructor function?");
-// console.log("\n19. Singleton");
-// console.log("\n20. Closures");
-// console.log("\n21. Applications of Closures:");
-// console.log("\t- Partial Application - Function Fragments");
-// console.log("\t- Event Handlers");
-// console.log("\t- AJAX");
-// console.log("\t- Private Methods");
+// let user1 = new User("stephen", "sun.stephen.oo@gmail.com");
+// let user2 = User("stephen", "sun.stephen.oo@gmail.com");
+// console.log(user1);
+// console.log(user2)
+
+console.log("\n18. How to return a custom object from constructor function?");
+
+const fetch = require("node-fetch");
+const loader = require("sass-loader");
+
+function Api(baseUrl) {
+    let secret = +new Date();
+    let self = this; // in case you access to 'this' of Api.
+
+    return {
+        fetchData: function(resource) {
+            // Here you cannot use 'this' as 'this' points to the
+            // fetchData function.
+
+            // The 'self' variable created above will point the API instance
+            let url = `${baseUrl}/${resource}/`;
+            console.log(url);
+            fetch(`${url}`)
+                .then(response => response.json())
+                .then(json => console.log(json));
+        }
+    }
+}
+/* 
+ * The above approach is typically singleton pattern, where you
+ * only need on instance to work with. You can also use the object
+ * literal syntax to creat this type of behavior.
+ */
+// How do you use the above function?
+let api = new Api("https://jsonplaceholder.typicode.com");
+// api.fetchData("posts"); // get posts data
+// api.fetchData("users"); // get user data    
+
+
+console.log("\n19. Singleton");
+const Singleton = (function() {
+    let instance;
+
+    function createInstance() {
+        let object = new Object("I am the instance");
+    }
+
+    return {
+        getInstance: function() {
+            if (!instance) {
+                instance = createInstance();
+            }
+            return instance;
+        }
+    }
+})();
+
+let instance1 = Singleton.getInstance();
+let instance2 = Singleton.getInstance();
+console.log(instance1 === instance2);
+
+console.log("\n20. Closures");
+// ES5+ without closure
+// for (var i = 1; i < 5; i++) {
+//     console.log("log: " + i)
+//     setTimeout(function() {
+//         console.log(i);
+//     }, 1000);
+// }
+
+// ES5+ with closure
+function logLater(i) {
+    setTimeout(function() {
+        console.log("log-later: " + i);
+    }, 1000)
+}
+
+for (var i = 1; i < 5; i++) {
+    console.log("log-now: " + i);
+    logLater(i);
+}
+
+console.log("\n21. Applications of Closures:");
+console.log("\t- Partial Application - Function Fragments");
+console.log("\t- Event Handlers");
+console.log("\t- AJAX - Fetch API");
+console.log("\t- Private Methods");
 
 // eof
