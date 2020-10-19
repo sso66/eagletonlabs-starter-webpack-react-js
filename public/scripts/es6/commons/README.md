@@ -6,13 +6,13 @@
 
 ### 2. Arrow Functions
     The nitty-gritty of arrow functions
-    The lexical this
+    The lexical `this`
 ### 3. Default Parameters
 ### 4. Destructuring
     Destructuring Objects
     Destructuring Arrays
     Swapping Variables with Destructuring Arays
-    Destructuring Arrays and Objects with Delcaring Functions
+    Destructuring Arrays and Objects with Declaring Functions
     The rest parameter and spread operator
 ### 5. Enhanced Object Literals
     Property Value shorthands
