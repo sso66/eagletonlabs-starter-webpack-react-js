@@ -24,11 +24,10 @@ console.log("\n1. Global Context");
 module.exports.color = 'red'; // Node.js
 console.log(this.color);
 console.log(module.exports.color); 
-console.log(this);  // export object
+console.log(this);  // exports object
 console.log(this === module.exports); // true
 
 console.log("\n2. Function Context");
-
 function printColor() {
     var color = 'blue';
     console.log(module.exports.color);
@@ -67,7 +66,7 @@ var o = new Colors('purple');
 console.log("o.print(): " + o.print());
 
 console.log("\n5. Event Listener Function Context");
-console.log("\n6. Style Object Context");   
+console.log("\n6. Style Object & Function Context");   
 console.log("\n7. Arrow Function Context");
 
 // eof
