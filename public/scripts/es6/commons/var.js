@@ -187,17 +187,29 @@ let button = {
     }
 }
 
-console.log(`This use case is particulary helpful if you need to add or remove 
+console.log(`\nThis use case is particulary helpful if you need to add or remove 
 a CSS class selector after some time has elapsed:`)
 
-let selector = {
-    button: document.querySelector('button'),
-    endAnimation: function() {
-        this.button.classList.add('is-closing')
-        setTimeout(() => {
-            this.button.classList.remove('is-closing')
-            this.button.classList.remove('is-open')
-        }, 3000)
-    }
-}
+// let selector = {
+//     button: document.querySelector('button'),
+//     endAnimation: function() {
+//         this.button.classList.add('is-closing')
+//         setTimeout(() => {
+//             this.button.classList.remove('is-closing')
+//             this.button.classList.remove('is-open')
+//         }, 3000)
+//     }
+// }
+
+console.log("Finally, use the arrow function anywhere to make code neater and shorter");
+let list = [1, 7, 98, 5, 4, 2]
+let moreThan20Filter = list.filter(num => num > 20)
+console.log("moreThan20Filter: " + moreThan20Filter)
+
+console.log("\n3. Default Parameters")
+console.log("\n4. Destructring")
+console.log("\n5. The rest parameter and spread operator");
+console.log("\n6. Enhanced object literals");
+console.log("\n7. Template literals");
+
 // eof

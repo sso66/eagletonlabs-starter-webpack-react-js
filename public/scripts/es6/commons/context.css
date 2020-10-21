@@ -1,0 +1,5 @@
+.title { font-size: 2em; }
+
+.is-open { font-size: 2em; background: tomato; }
+.is-closing { font-size: 2em; background: lightgreen; }
+.is-closing::after { content: '...Processing!'; }           
