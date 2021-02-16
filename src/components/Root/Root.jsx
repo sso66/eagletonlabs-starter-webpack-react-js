@@ -10,7 +10,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { App } from '../App'
 
-const Root = ({ store }) => {
+function Root({ store }) {
+// const Root = ({ store }) => {
     return ( 
         <div className="root">      
             <Provider store={ store }>  

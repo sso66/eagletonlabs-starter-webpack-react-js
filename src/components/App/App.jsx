@@ -12,8 +12,10 @@ import Aside from '../../components/Site/Aside/Aside'
 import Footer from "../../components/Site/Footer/Footer";
 import './App.sass';
 
-class App extends Component {
-    render() {              
+const App = () => {
+// function App() {
+// class App extends Component {
+    // render() {              
         return (
             <div className="App">  
                 <Header />
@@ -23,7 +25,8 @@ class App extends Component {
                 <Footer />
             </div>       
          )
-    } 
+    // } 
+// }
 }
 
 export default App;
