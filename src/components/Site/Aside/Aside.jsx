@@ -10,7 +10,7 @@ const Aside = () => {
     return ( 
         <div className="aside">
 
-            <h3>End of My Story: Lessons Learned!</h3>            
+            <h3>The End of My Story: Lessons Learned!</h3>            
             <span>Aside</span>
             <p>
                 The golden rule of knowing what (PURPOSE) you are doing is to 

@@ -9,13 +9,13 @@ import React from 'react';
 const Footer = () => {
     return ( 
         <div className="footer">
-            <h3>End of My Story: Lessons Learned!</h3>
+            <h3>The End of My Story: Lessons Learned!</h3>
             <span>Footer</span>
             <p>
                 The golden rule of knowing what (PURPOSE) you are doing is to 
                 understand why (REASON) you are doing it.
             </p> 
-            <p>
+            <p style={{ color: '#ffffff', fontSize:'24px' }}>
                 Don't use a module until you understand 
                 the problem it's solving.
             </p>

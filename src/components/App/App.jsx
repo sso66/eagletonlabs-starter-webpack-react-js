@@ -18,10 +18,10 @@ const App = () => {
     // render() {              
         return (
             <div className="App">  
-                <Header />
-                <Navigation />
+                {/* <Header /> */}
+                {/* <Navigation /> */}
                 <Main /> 
-                <Aside />
+                {/* <Aside /> */}
                 <Footer />
             </div>       
          )
