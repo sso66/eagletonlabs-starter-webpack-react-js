@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter",
   "version": "1.5.1",
-  "description": "Eagleton Web Designs",
+  "description": "Webpack module loader and React JSX Desigh Patterns",
   "main": "index.js",
   "scripts": {
     "build": "webpack --inline --progress -d",
