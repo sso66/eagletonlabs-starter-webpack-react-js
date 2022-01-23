@@ -61,6 +61,6 @@
 	- *Implementing `Node` with Webpack*
 	- *Implementing `SASS` with Webpack.*
 	- *Implementing `SVG` with Webpack.*
-
+  - Update Webpack 4 to Webpack 5 
 
 	
