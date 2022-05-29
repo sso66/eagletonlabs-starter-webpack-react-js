@@ -9,7 +9,7 @@ import { Switch, Route } from 'react-router-dom';
 import { Home, Dashboard } from "../../views/Home";
 import About from "../../views/About/MobileFirst";
 import Product from "../../views/Product/SvgResponsive";
-import Contact from "../../views/Contact/ThreeScene";
+
 
 const Main =() => { 
     return (
@@ -19,7 +19,6 @@ const Main =() => {
                 <Route exact path='/' component={Home} />    
                 <Route path='/about' component={About} />    
                 <Route path='/product' component={Product} />   
-                <Route path='/contact' component={Contact} />   
             </Switch>  
         </div>
     )
