@@ -21,9 +21,9 @@ export const HomeView = (props) => (
     <div className="homeview">
         {/* <Header /> */}
         {/* <Heading /> */}
-        <h1>Eagleton Labs</h1>
-        <h2 style={{ textAlign: "center" }}>Home</h2>
-        <h3 style={{ textShadow: '3px 3px #0000FF', fontSize:'1.5rem' }}>NOW I WON</h3>
+        <h2>Eagleton Labs</h2>
+        {/* <h3 style={{ textAlign: "center" }}>Home</h3> */}
+        {/* <h3 style={{ textShadow: '3px 3px #0000FF', fontSize:'1.5rem' }}>NOW I WON</h3> */}
         <div className='redux'>
             {/* <h3><b>Timestamp Component</b></h3> */}
             {/* <Timestamp 

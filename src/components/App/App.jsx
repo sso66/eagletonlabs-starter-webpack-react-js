@@ -5,11 +5,11 @@
 console.info( 'Mounting src/components/App/App.jsx... <App />' );
 
 import React, { Component } from 'react';
-import Header from "../../components/Site/Header/Header";
-import Navigation from "../../components/Site/Nav/Navigation";
+// import Header from "../../components/Site/Header/Header";
+// import Navigation from "../../components/Site/Nav/Navigation";
 import Main from "../../components/Site/Main";
-import Aside from '../../components/Site/Aside/Aside'
-import Footer from "../../components/Site/Footer/Footer";
+// import Aside from '../../components/Site/Aside/Aside'
+// import Footer from "../../components/Site/Footer/Footer";
 import './App.sass';
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
                 {/* <Navigation /> */}
                 <Main /> 
                 {/* <Aside /> */}
-                <Footer />
+                {/* <Footer /> */}
             </div>       
          )
     // } 
