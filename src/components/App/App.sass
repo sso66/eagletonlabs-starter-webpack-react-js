@@ -1,22 +1,22 @@
 // File: src/components/App/App.sass - webpack-starter.git 
-// Desc: Mobile First RWD-SPA: Responsive Web Design - Single Page Application
+// Note: Mobile First RWD-SPA: Responsive Web Design - Single Page Application
 // Date: 9/14/2019
 //..............................................................................
-// Flexbox Layout Module for Visibility, Positioning, and Sizing
+
+$primary-color: orange
+$secondary-color: lighten(darkblue, 35%)
 
 .App 
   display: flex
   flex-flow: column nowrap
-  // border: 1px solid orange
+  background: black
+  border: 3px solid red
   text-align: center
-  font-family: Verdana, Geneva, Tahoma, sans-serif
-
+  font-family: Verdana, Geneva, Tahoma, mono, sans-serif
+  color: white
 
 .main
   padding: 1px
-
-$primary-color: orange
-$secondary-color: lighten(darkblue, 35%)
 
 .heading
   color: $primary-color
@@ -32,8 +32,4 @@ $secondary-color: lighten(darkblue, 35%)
       font-size: .75em
       opacity: 0.7
 
-
-// .content
-
- 
 //eof

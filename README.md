@@ -56,11 +56,7 @@
 
 	- *Implementing `React & ReactDOM` with Webpack.*
 	- *Implementing `React Router` with Webpack.*
-	- *Implementing `Redux` with Webpack*
-	- *Implementing `React-Redux` with Webpack*
 	- *Implementing `Node` with Webpack*
 	- *Implementing `SASS` with Webpack.*
 	- *Implementing `SVG` with Webpack.*
   - Update Webpack 4 to Webpack 5 
-
-	

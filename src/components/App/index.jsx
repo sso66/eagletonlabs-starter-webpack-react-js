@@ -1,7 +1,3 @@
-import App from './App';
-import test from './App.test';
+import App from "./App";
 
-export {
-    App,
-    test
-}
+export { App };
