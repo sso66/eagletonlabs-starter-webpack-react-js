@@ -18,7 +18,6 @@ function Root({ store }) {
   );
 }
 
-
 export default Root;
 
 // eof

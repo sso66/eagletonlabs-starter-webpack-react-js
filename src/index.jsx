@@ -2,7 +2,7 @@
 // Date: 9/14/2019
 // Note: Mobile First RWD-SPA
 //..............................................................................
-console.info("Mounting src/index.js ... ");
+console.info("Mounting src/index.jsx ... ");
 
 import React from "react";
 import { render } from "react-dom";
