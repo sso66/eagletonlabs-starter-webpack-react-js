@@ -22,7 +22,7 @@ const Home = (props) => {
       <h2>Eagleton Labs</h2>
       <h3 style={{ textAlign: "center" }}>Home</h3>
       <hr />
-      <p>Mel's Diner: The Render Flow and React State Management </p>
+      <p>Mel's Diner: React Render Flow and State Management</p>
       <ol style={{ border: '1px solid yellow' }}>
         <li>customer</li>
         <li>waitress</li>
