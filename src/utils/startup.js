@@ -1,3 +1,4 @@
+// startup.js
 console.log( 'Mounting startup.js' );
 window.addEventListener( 'mousedown', function ( e ) {
 

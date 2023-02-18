@@ -1,5 +1,5 @@
 ## Sass (Syntactically Awesome Style Sheets) Guides and Patterns 
-*What topics to look for React-Redux-Node index.sass/App.sass/View.sass/Component.sass?*
+*What topics to look for React-Node index.sass/App.sass/View.sass/Component.sass?*
 ### Basic characteristics and unit of measurements:
 ### Rules: Cascade | Specificity | Inheritance 
 ### Flexbox Module Specifications
