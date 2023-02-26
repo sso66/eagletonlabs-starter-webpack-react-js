@@ -1,10 +1,10 @@
 // File: src/components/App/App.jsx
 // Date: 9/14/2019
-// Note: Mobile First RWD-SPA
+// Note: Mobile First RWD-SPA 
 //..............................................................................
 console.info("Mounting src/components/App/App.jsx... <App />");
 
-import React, { Component } from "react";
+import React from "react";
 // import Header from "../../components/Site/Header/Header";
 // import Navigation from "../../components/Site/Nav/Navigation";
 import Main from "../../components/Site/Main";
