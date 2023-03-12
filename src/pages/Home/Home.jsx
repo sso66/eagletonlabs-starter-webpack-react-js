@@ -32,7 +32,7 @@ const Home = (props) => {
         <li>waitress</li>
         <li>short-order-cook</li>
         <li>order-store</li>
-        <li>store-helper</li>
+        <li>store-helper (store-owner & store-manager)</li>
       </ol>
       {/* <h3><b>Timestamp Component</b></h3> */}
       {/* <Timestamp 

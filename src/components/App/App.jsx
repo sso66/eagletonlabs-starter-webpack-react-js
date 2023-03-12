@@ -7,9 +7,9 @@ console.info("Mounting src/components/App/App.jsx... <App />");
 import React from "react";
 // import Header from "../../components/Site/Header/Header";
 // import Navigation from "../../components/Site/Nav/Navigation";
-import Main from "../../components/Site/Main";
+// import Main from "../../components/Site/Main";
 // import Aside from '../../components/Site/Aside/Aside'
-// import Footer from "../../components/Site/Footer/Footer";
+import Footer from "../../components/Site/Footer/Footer";
 import "./App.sass";
 
 const App = () => {
@@ -20,9 +20,9 @@ const App = () => {
     <div className="App">
       {/* <Header /> */}
       {/* <Navigation /> */}
-      <Main />
+      {/* <Main /> */}
       {/* <Aside /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
   // }
