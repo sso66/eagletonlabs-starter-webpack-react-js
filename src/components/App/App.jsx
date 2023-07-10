@@ -12,6 +12,17 @@ import React from "react";
 import Footer from "../../components/Site/Footer/Footer";
 import "./App.sass";
 
+const Flexbox = () => {
+  return (
+    <div className="parent">
+      <div className="child">
+        CSS Flexbox Module:<hr />
+        It' works!
+      </div>
+    </div>
+  )
+}
+
 const App = () => {
   // function App() {
   // class App extends Component {
@@ -23,6 +34,7 @@ const App = () => {
       {/* <Main /> */}
       {/* <Aside /> */}
       <Footer />
+      <Flexbox />
     </div>
   );
   // }
