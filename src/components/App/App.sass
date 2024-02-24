@@ -5,7 +5,7 @@
 $primary-color: orange
 $secondary-color: lighten(darkblue, 35%)
 
-.App 
+.App
   display: flex
   flex-flow: column nowrap
   background: black
@@ -21,9 +21,9 @@ $secondary-color: lighten(darkblue, 35%)
   color: $primary-color
 
   & h1
-    background: $secondary-color    
-  
-    & span    
+    background: $secondary-color
+
+    & span
       background: black
       margin: 1px
       border: 1px solid white
@@ -31,20 +31,24 @@ $secondary-color: lighten(darkblue, 35%)
       font-size: .75em
       opacity: 0.7
 
-.parent 
+.parent
   display: inline-flex
+  // display: flex
+  // flex-flow: column nowrap
   height: 300px
   color: #000000
-
 
 .child
   width: 100px
   height: 100px
   background: orange
   margin: auto
+  font-family: monospace
+  font-size: 1.025rem
+  // display: flex
+  // flex: 1 0 auto
 
 hr
   border: 2px solid teal
-
 
 //eof
