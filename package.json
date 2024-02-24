@@ -1,6 +1,6 @@
 {
   "name": "webpack-starter",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Webpack module loader and React JSX Design Patterns",
   "main": "index.js",
   "scripts": {

@@ -12,7 +12,8 @@ module.exports = {
   entry: path.resolve(__dirname + "/src/index.jsx"),
   //entry: ['babel-polyfill', './src/index.jsx'],
   output: {
-    path: __dirname + "/build",
+    // path: __dirname + "/build",
+    path: __dirname + "/dist",
     filename: "bundle.js",
   },
   //watch: true,
@@ -103,7 +104,8 @@ module.exports = {
   ],
   watch: false,
   devServer: {
-    contentBase: "./build",
+    // contentBase: "./build",
+    contentBase: "./dist",
     historyApiFallback: true,
     inline: true,
     hot: true,

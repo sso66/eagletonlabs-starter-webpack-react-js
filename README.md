@@ -1,4 +1,4 @@
-## Webpack Starter
+# webpack-starter.git
 - *Getting Started with the Basics of Webpack Module Loader*
 
 - *Defining a* **webpack.config.js** *file*
@@ -59,4 +59,4 @@
 	- *Implementing `Node` with Webpack*
 	- *Implementing `SASS` with Webpack.*
 	- *Implementing `SVG` with Webpack.*
-  - Update Webpack 4 to Webpack 5 
+  - *Update Webpack 4 to Webpack 5* 
