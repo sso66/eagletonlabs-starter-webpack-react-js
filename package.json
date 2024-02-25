@@ -17,6 +17,8 @@
     "webpack",
     "html5",
     "threejs",
+    "webgl",
+    "webgpl",
     "sass",
     "svg",
     "react",
