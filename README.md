@@ -59,4 +59,12 @@
 	- *Implementing `Node` with Webpack*
 	- *Implementing `SASS` with Webpack.*
 	- *Implementing `SVG` with Webpack.*
-  
+ 
+  - Git  Tutorial: Learn Git Branching in 5 minutes
+    - What is branching?
+    - Creating branches
+    - Deleting branches
+    - Merging branches
+    - Rebasing branches
+    - Git concepts to learn next
+    - Continue reading about Git
