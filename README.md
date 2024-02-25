@@ -60,7 +60,7 @@
 	- *Implementing `SASS` with Webpack.*
 	- *Implementing `SVG` with Webpack.*
  
-  - Git  Tutorial: Learn Git Branching in 5 minutes
+  - Git Tutorial: Learn Git Branching in 5 minutes
     - What is branching?
     - Creating branches
     - Deleting branches
