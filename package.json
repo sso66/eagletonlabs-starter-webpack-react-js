@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter",
   "version": "1.0.0",
-  "description": "Webpack module loader and React JSX Design Patterns",
+  "description": "Webpack module bundler and React JSX Design Patterns",
   "main": "index.js",
   "scripts": {
     "build": "webpack --inline --progress -d",
