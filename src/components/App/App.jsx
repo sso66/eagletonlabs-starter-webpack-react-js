@@ -5,13 +5,12 @@
 console.info('Mounting src/components/App/App.jsx... <App />')
 
 import React from 'react'
+import './App.sass'
 // import Header from "../../components/Site/Header/Header";
 // import Navigation from "../../components/Site/Nav/Navigation";
 // import Main from "../../components/Site/Main";
 // import Aside from '../../components/Site/Aside/Aside'
 import Footer from '../../components/Site/Footer/Footer'
-
-import './App.sass'
 
 const Flexbox = () => {
   return (
@@ -19,7 +18,7 @@ const Flexbox = () => {
       <div className='child'>
         CSS Flexbox Module
         <div />
-        It' works!
+        Flexible Layout for React Apps
       </div>
     </div>
   )

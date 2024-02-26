@@ -99,7 +99,7 @@ module.exports = {
         postcss: ["autoprefixer"],
       },
     }),
-    new webpack.BannerPlugin("Eagleton Web Designs Production\n" + new Date()),
+    new webpack.BannerPlugin("Eagleton Labs Production\n" + new Date()),
     new webpack.HotModuleReplacementPlugin(),
   ],
   watch: false,
