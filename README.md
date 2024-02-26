@@ -60,7 +60,7 @@
 	- *Implementing `SASS` with Webpack.*
 	- *Implementing `SVG` with Webpack.*
  
-  - Git Tutorial: Learn Git Branching in 5 minutes
+  - [Git Tutorial: Learn Git Branching in 5 minutes](https://www.educative.io/blog/git-branching-tutorial)
     - What is branching?
     - Creating branches
     - Deleting branches
@@ -68,3 +68,49 @@
     - Rebasing branches
     - Git concepts to learn next
     - Continue reading about Git
+  
+  - Get hands-on with Git
+  
+  Use live coding environments and real-world examples to learn on of the most widely version control tools and and do the exercises (live-coding-exercise) branch to level up your coding skills. 
+  
+  - Git Cheatsheet to branching, merging and rebasing
+  ```
+  // Create branches
+  // local
+  git checkout <name>
+
+  git checkout -b <name>
+  // remote
+  git push -u origin <name>
+
+  // Delete branches
+  git checkout master | main
+  // or
+  git switch master | main
+
+  // local
+  git branch -d <name>
+  git branch -D <name>
+  // remote
+  git push origin --delete <name>
+  // Try to synchronize your branch
+  git fetch -p  // '-p' means "prume"
+  // Merge branches
+  git fetch all
+
+  git check master | main
+  
+  git checkout master | main
+  // or
+  git switch master | main
+
+  git merge feature
+
+  // Rebase branches 
+  // (preferred method to ensure review process)
+  git checkout feature
+  // or
+  git switch feature
+  ```
+
+  - [A practical guide to using the Git stash command](https://opensource.com/article/21/4/git-stash)
