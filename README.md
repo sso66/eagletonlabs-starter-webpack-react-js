@@ -115,5 +115,6 @@
   // or
   git switch feature
   ```
-
-  - [A practical guide to using the git stash command](https://opensource.com/article/21/4/git-stash)
+- [A practical guide to using the git stash command](https://opensource.com/article/21/4/git-stash)
+- [GitHub Pull Request Tutorial](https://yangsu.github.io/pull-request-tutorial/)
+- [Git - Changelog Guide](https://www.freecodecamp.org/news/a-beginners-guide-to-git-what-is-a-changelog-and-how-to-generate-it/)

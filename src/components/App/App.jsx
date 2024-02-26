@@ -18,7 +18,7 @@ const Flexbox = () => {
       <div className='child'>
         CSS Flexbox Module
         <div />
-        Flexible Layout for React Apps
+        Use Live Coding Environments & Real-World Examples
       </div>
     </div>
   )

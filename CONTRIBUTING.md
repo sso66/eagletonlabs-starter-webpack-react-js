@@ -1,4 +1,5 @@
-## Tic-Tac-Toe Game - React Tutorial Project
+# [Tutorial: Intro to React](https://legacy.reactjs.org/tutorial/tutorial.html)
+## Tic-Tac-Toe Game Project
 
 ### 1. Before We Start
 	1.1 What We're Building
