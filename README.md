@@ -113,4 +113,4 @@
   git switch feature
   ```
 
-  - [A practical guide to using the Git stash command](https://opensource.com/article/21/4/git-stash)
+  - [A practical guide to using the git stash command](https://opensource.com/article/21/4/git-stash)
