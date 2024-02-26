@@ -59,9 +59,9 @@
 	- *Implementing `Node` with Webpack*
 	- *Implementing `SASS` with Webpack.*
 	- *Implementing `SVG` with Webpack.*
-  
-  - [*Exploring `font-awesome` alternatives in 2024*](https://thenounproject.com/)
-  - [*Implementing The Noun Project NPM*](https://www.npmjs.com/package/the-noun-project)
+
+  - [*Implementing The Noun Project NPM: Icons and Photos For Everything*](https://www.npmjs.com/package/the-noun-project)
+  - [*Exploring `font-awesome` alternatives in 2024: *](https://thenounproject.com/)
  
   - [Git Tutorial: Learn Git Branching in 5 minutes](https://www.educative.io/blog/git-branching-tutorial)
     - What is branching?
