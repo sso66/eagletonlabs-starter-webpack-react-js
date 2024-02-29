@@ -1,0 +1,13 @@
+.parent {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 200px; /* Or whatever */
+}
+
+.child {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100px; /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto; /* Magic! */
+}

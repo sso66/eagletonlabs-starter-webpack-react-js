@@ -62,5 +62,4 @@
 
   - [*Implementing The Noun Project NPM*](https://www.npmjs.com/package/the-noun-project)
   - [*Exploring `font-awesome` alternatives in 2024: Icons and Photos For Everything*](https://thenounproject.com/)
- 
-  
+  - [*Using React with CSS Flexbox*](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

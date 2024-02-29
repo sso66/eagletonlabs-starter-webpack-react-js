@@ -1,5 +1,5 @@
 // File: src/components/App/App.jsx
-// Date: 9/14/2019
+// Date: 9/14/2019 - 2/26/2024
 // Note: Mobile First RWD-SPA
 //..............................................................................
 console.info('Mounting src/components/App/App.jsx... <App />')
@@ -11,18 +11,8 @@ import './App.sass'
 // import Main from "../../components/Site/Main";
 // import Aside from '../../components/Site/Aside/Aside'
 import Footer from '../../components/Site/Footer/Footer'
-
-const Flexbox = () => {
-  return (
-    <div className='parent'>
-      <div className='child'>
-        CSS Flexbox Module
-        <div />
-        Use Live Coding Environments & Real-World Examples
-      </div>
-    </div>
-  )
-}
+import SourceOrder from '../Features/Flexbox/SourceOrder'
+import FlexboxModule from '../Features/Flexbox/FlexboxModule'
 
 const App = () => {
   // function App() {
@@ -30,12 +20,16 @@ const App = () => {
   // render() {
   return (
     <div className='App'>
+      <h1 style={{ color: 'snow' }}>
+        Live Coding Environments & Real-World Examples
+      </h1>
       {/* <Header /> */}
+      <FlexboxModule />
+      <SourceOrder />
       {/* <Navigation /> */}
       {/* <Main /> */}
       {/* <Aside /> */}
       <Footer />
-      <Flexbox />
     </div>
   )
   // }
