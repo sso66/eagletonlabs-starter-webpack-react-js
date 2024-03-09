@@ -1,7 +1,5 @@
 # webpack-react-js-starter.git
 
-[Digital Envelope Routine Error Fix](https://paulyu.dev/article/fixing-node-digital-envelope-routines-error/)
-
 - _Getting Started with the Basics of Webpack Module Loader_
 
 - _Defining a_ **webpack.config.js** _file_
@@ -75,3 +73,5 @@
   - [_Implementing The Noun Project NPM_](https://www.npmjs.com/package/the-noun-project)
   - [_Exploring `font-awesome` alternatives in 2024: Icons and Photos For Everything_](https://thenounproject.com/)
   - [_Using React with CSS Flexbox_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  - [Digital Envelope Routine Error Fix](https://paulyu.dev/article/fixing-node-digital-envelope-routines-error/)
+
