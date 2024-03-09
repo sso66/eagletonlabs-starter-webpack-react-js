@@ -73,5 +73,5 @@
   - [_Implementing The Noun Project NPM_](https://www.npmjs.com/package/the-noun-project)
   - [_Exploring `font-awesome` alternatives in 2024: Icons and Photos For Everything_](https://thenounproject.com/)
   - [_Using React with CSS Flexbox_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  - [Digital Envelope Routine Error Fix](https://paulyu.dev/article/fixing-node-digital-envelope-routines-error/)
+  - [_Digital Envelope Routine Error Fix_](https://paulyu.dev/article/fixing-node-digital-envelope-routines-error/)
 
