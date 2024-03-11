@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "webpack --inline --progress -d",
     "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "webpack --config webpack-production.config.js -p"
+    "build": "webpack --config webpack-production.config.js -p"
   },
   "repository": {
     "type": "git",
@@ -26,9 +25,9 @@
     "jshint",
     "lodash"
   ],
-  "author": "Sun Stephen Oo",
+  "author": "Sun Stephen Oo <sun.stephen.oo@gmail.com>",
   "private": true,
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sso66/webpack-starter/issues"
   },
