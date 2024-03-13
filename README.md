@@ -1,6 +1,6 @@
 # webpack-react-js-starter.git
 
-- _Getting Started React with the Basics of Webpack Module Bundler_
+- _Getting React Started with the Basics of Webpack Module Bundler_
 
 - _Defining a_ **webpack.config.js** _file_
 
