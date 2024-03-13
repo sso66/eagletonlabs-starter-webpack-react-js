@@ -19,7 +19,9 @@ const Home = (props) => {
   return (
     <div className="home">
       {/* <Header /> */}
-      <h2>Eagleton Labs</h2>
+      <h2 style={{ color: 'snow' }}>
+        Live Coding Environments & Real-World Examples
+      </h2>
       <h3 style={{ textAlign: "center" }}>Home</h3>
       <p>TO DO: cleanup / backtrack / rollup</p>
       <hr />

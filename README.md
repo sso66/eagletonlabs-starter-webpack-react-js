@@ -1,5 +1,7 @@
 # webpack-react-js-starter.git
 
+## Lessons Learned
+
 - _Getting React Started with the Basics of Webpack Module Bundler_
 
 - _Defining a_ **webpack.config.js** _file_
@@ -74,4 +76,3 @@
   - [_Exploring `font-awesome` alternatives in 2024: Icons and Photos For Everything_](https://thenounproject.com/)
   - [_Using React with CSS Flexbox_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [_Digital Envelope Routine Error Fix_](https://paulyu.dev/article/fixing-node-digital-envelope-routines-error/)
-
