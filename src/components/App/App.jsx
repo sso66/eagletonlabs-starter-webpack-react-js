@@ -20,7 +20,7 @@ const App = () => {
   // render() {
   return (
     <div className='App'>
-      <h1>Eagleton Labs Starter Webpack React JS</h1>
+      <h1>Eagleton Labs Webpack React JS</h1>
       {/* <Header /> */}
       {/* <FlexboxModule /> */}
       {/* <SourceOrder /> */}

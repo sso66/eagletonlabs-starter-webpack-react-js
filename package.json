@@ -1,5 +1,5 @@
 {
-  "name": "eagletonlabs-starter-webpack-react-js",
+  "name": "eagletonlabs-webpack-react-js",
   "version": "1.0.0",
   "description": "Webpack module bundler and React JSX Design Patterns",
   "main": "index.js",
