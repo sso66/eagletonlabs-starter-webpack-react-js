@@ -1,4 +1,4 @@
-# webpack-react-js-starter.git
+# eagletonlabs-webpack-react-js-
 
 ## Lessons Learned
 
