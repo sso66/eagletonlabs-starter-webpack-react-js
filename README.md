@@ -2,7 +2,7 @@
 
 ## Lessons Learned
 
-- _Getting React Started with the Basics of Webpack Module Bundler_
+- _Getting Started with the Basics of Webpack Module Bundler for React JS_
 
 - _Defining a_ **webpack.config.js** _file_
 
